@@ -1,6 +1,6 @@
 # Java learning Notes
 
-##Architecturally Neutral
+## Architecturally Neutral
 
 
 ## Compile Time Checking
