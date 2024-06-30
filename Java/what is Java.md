@@ -1,10 +1,7 @@
 # Java learning Notes
 
-
-
-
-## Architecturally Neutral
+## 
 
 
 ## Compile Time Checking
-Doeast 
+Source code is taken and turned into 
