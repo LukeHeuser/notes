@@ -1,1 +1,7 @@
-# This is a test Title
+# Java learning Notes
+
+##Architecturally Neutral
+
+
+## Compile Time Checking
+Doeast 
