@@ -37,4 +37,4 @@ Developers are the primary users of Java API's.
 The Java runtime environment JRE
 
 
-[JRE Diagram](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.scientecheasy.com%2F2021%2F03%2Fwhat-is-jre.html%2F&psig=AOvVaw1TN2cCHLOj7G5jZHawTWUh&ust=1719973827333000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJjytPmnh4cDFQAAAAAdAAAAABAr)
+![Alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.scientecheasy.com%2F2021%2F03%2Fwhat-is-jre.html%2F&psig=AOvVaw1TN2cCHLOj7G5jZHawTWUh&ust=1719973827333000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJjytPmnh4cDFQAAAAAdAAAAABAr "A title")
