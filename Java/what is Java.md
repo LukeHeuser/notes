@@ -21,4 +21,13 @@ The **main difference** between the `Java Compiler` and `Java Interpreter` is th
 For this reason, the `Interpreter` is **quicker** to analyze `source code`, `debug errors`, and the execution is line-by-line.
 
 ## Java API
+The `Java Application Programming Interface (API)` is integrated in the JDK and offers a connection interface between different Java classes and user interfaces. The java API explains the function of each class or interface. 
 
+Developers are the primary users of Java API's
+
+**Five types of Java API's**
+* "Open' Java API
+* Private Java API
+* Partner Java API
+* Composite Java API
+* Web Java API
