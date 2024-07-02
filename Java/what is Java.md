@@ -23,7 +23,7 @@ For this reason, the `Interpreter` is **quicker** to analyze `source code`, `deb
 ## Java API
 The `Java Application Programming Interface (API)` is integrated in the JDK and offers a connection interface between different Java classes and user interfaces. The java API explains the function of each class or interface. 
 
-Developers are the primary users of Java API's
+Developers are the primary users of Java API's. 
 
 **Five types of Java API's**
 * "Open' Java API
@@ -31,3 +31,10 @@ Developers are the primary users of Java API's
 * Partner Java API
 * Composite Java API
 * Web Java API
+
+## Java Runtime Environemnt (JRE)
+
+The Java runtime environment JRE
+
+
+[JRE Diagram](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.scientecheasy.com%2F2021%2F03%2Fwhat-is-jre.html%2F&psig=AOvVaw1TN2cCHLOj7G5jZHawTWUh&ust=1719973827333000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJjytPmnh4cDFQAAAAAdAAAAABAr)
