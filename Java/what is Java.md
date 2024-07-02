@@ -1,6 +1,6 @@
 # What is Java?
 * Java is a simple and secure, `OOP` programming language.
-* Because of it's `Archetecturally Neutral` behavaior, it has no implemntation dependent features. In other words, the programme doesn't compile into machine code native to the OS.
+* Because of it's `Archetecturally Neutral` behavaior, it has no implemntation dependent features. In other words, the program doesn't compile into machine code native to the OS.
 * Robust and Secure:
     * Everything is `Sandboxed`
 
@@ -34,7 +34,6 @@ Developers are the primary users of Java API's.
 
 ## Java Runtime Environemnt (JRE)
 
-The Java runtime environment JRE
-
+The `JRE` is a software environemnt in which te Java program is exectured. Below is a digram referencing the above and how it fits in the execution.
 
 ![Alt Text](https://www.scientecheasy.com/wp-content/uploads/2021/03/java-runtime-environment-1.png "A title")
