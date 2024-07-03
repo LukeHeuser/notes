@@ -1,6 +1,6 @@
 # What is Java?
 * Java is a simple and secure, `OOP` programming language.
-* Because of it's `Archetecturally Neutral` behavaior, it has no implemntation dependent features. In other words, the program doesn't compile into machine code native to the OS.
+* Because of it's `Archetecturally Neutral` behavaior, it has no implementation dependent features. In other words, the program doesn't compile into machine code native to the OS.
 * Robust and Secure:
     * Everything is `Sandboxed`
 
