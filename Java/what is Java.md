@@ -30,7 +30,13 @@ For this reason, the `Interpreter` is **quicker** to analyze `source code`, `deb
 the `Java Virtual Machine (JVM)` is what allows Java to run on any plateform and secures complete independence. As stated above, The JVM takes bytecode and interprets it into Machine Code which in turn gets executed by the hardware/ OS.
 
 ### Class Loader Subsystem
-The class loader subsystem is responsible for loading Java classes into the JVM from many different sources such as the local system or a network lcoation.
+The `class Loader Subsystem` is responsible for loading Java classes into the JVM from many different sources such as the local system or a network lcoation.
+
+### JVM Memory
+The `JVM Memory` is where the `JVM` stores all the required information for executing a Java program.
+
+### Heap Area
+The `Heap Area` is where all the objects created by the Java program are stored. This is a dynamic area of the memory that is shared among all threads of the `JVM`.
 
 ### JVM Advantages
 * Plateform-Indepence for executing Java code
