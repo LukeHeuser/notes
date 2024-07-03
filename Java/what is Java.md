@@ -16,9 +16,9 @@ The Compiler parses the entire source code. First, searching for syntax and othe
 ## Java Interpreter
 The `java Interpreter` examines and executes the `Source Code` line-by-line rather than first parsing like the `Java Compiler`. If an error is found, it is highlighted and the code is halted until it is fixed. Once fixed, the interpreter continues to execute.
 
-The **main difference** between the `Java Compiler` and `Java Interpreter` is the interpreter analyzes and executes code line-by-line. Where as the compiler will analyze the entire source code and then list all errors until they are fixed.
+The **main difference** between the `Java Compiler` and `Java Interpreter` is the interpreter analyzes and executes code line-by-line. Where as the compiler will analyze the entire source code and then list all errors until they are fixed. Once fixed, the source code will be compiled into bytecode and interpreted by the JVM into Machine Code. Which gets ran by the hardware/ OS.
 
-For this reason, the `Interpreter` is **quicker** to analyze `source code`, `debug errors`, and the execution is line-by-line.
+For this reason, the `Interpreter` is **quicker** to analyze `source code`, `debug errors`, and the execution happens line-by-line. However, it is slower to run a program comparatively.
 
 ## Java API
 The `Java Application Programming Interface (API)` is integrated in the JDK and offers a connection interface between different Java classes and user interfaces. The java API explains the function of each class or interface. 
