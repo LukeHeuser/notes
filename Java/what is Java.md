@@ -14,7 +14,7 @@ The Compiler parses the entire source code. First, searching for syntax and othe
 * This is what allows Java to be executed on any OS
 
 ### Just-In-Time (JIT) Compiler
-The `JIT Compiler` compiles bytecode into native machine code that can then be executed directly by the CPU. This happens during the execution of a program. Hence the name.. The JIT compiler dyanimcally generates machine code for frequently used bytecode sequences in Java applications. This process is effecient but can cost in memory usage. The JIT compiler is tuned for long-running applications. Typically those found on servers.
+The `JIT Compiler` compiles bytecode into native machine code that can then be executed directly by the CPU. This happens during the execution of a program. Hence the name.. The JIT compiler dyanimcally generates machine code for frequently used bytecode sequences in Java applications. This process is effecient but can be costly in memory usage. The JIT compiler is tuned for long-running applications. Typically those found on servers.
 
 `-Xquickstart`: A command-line option that can be used to improve the performance of a short-running application 
 
@@ -23,7 +23,7 @@ The `java Interpreter` examines and executes the `Source Code` line-by-line rath
 
 The **main difference** between the `Java Compiler` and `Java Interpreter` is the interpreter analyzes and executes code line-by-line. Where as the compiler will analyze the entire source code and then list all errors until they are fixed. Once fixed, the source code will be compiled into bytecode and interpreted by the JVM into Machine Code. Which gets ran by the hardware/ OS. 
 
-For this reason, the `Interpreter` is **quicker** to analyze `source code`, `debug errors`, and the execution happens line-by-line. However, it is slower to run a program comparatively.
+For this reason, the `Interpreter` is **quicker** to analyze `source code`, `debug errors`, and the execution happens line-by-line. However, it is slower to run the program.
 
 ## Java Virtual Machine
 
@@ -34,6 +34,13 @@ the `Java Virtual Machine (JVM)` is what allows Java to run on any plateform and
 * Performs bytecode verfication ensuring safety and security of Java programs
 * Enables automatic memory management through the use of a garbage collector
 * Supports dynamic class loading, allowing new classes to be loaded at runtime
+
+### JVM Disadvantages
+* JVM has a longer startup time compared to native applications
+* JVM requies the use of more memory due to the need for the garbage collector and other features
+* Debugging a JVM-based application can be challenging due to the additional layers of abstraction
+* The performance of a JVM-based application may be worse when compared to native applications due to the overhaed of: bytecoode interpretation & JIT compilation
+
 
 ## Java API
 The `Java Application Programming Interface (API)` is integrated in the JDK and offers a connection interface between different Java classes and user interfaces. The java API explains the function of each class or interface. 
