@@ -65,6 +65,6 @@ Developers are the primary users of Java API's.
 
 ## Java Runtime Environemnt (JRE)
 
-The `JRE` is a software environemnt in which te Java program is executed. Below is a digram referencing the above and how it fits in the execution.
+The `JRE` is a software environemnt in which the Java program is executed. All the above is outlined below in a diagram. The diagram clearly states the general flow of Java Code.
 
 ![Alt Text](https://www.scientecheasy.com/wp-content/uploads/2021/03/java-runtime-environment-1.png "A title")
