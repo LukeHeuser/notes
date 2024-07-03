@@ -11,7 +11,7 @@ The Compiler parses the entire source code. First, searching for syntax and othe
 
 * The Compiler bgins by searching for syntax errors
 * This also serves as Javas error detection system
-* This is what allows Java to be executed on any OS
+* This is what allows Java to be executed on any OS (See JVM)
 
 ### Just-In-Time (JIT) Compiler
 The `JIT Compiler` compiles bytecode into native machine code that can then be executed directly by the CPU. This happens during the execution of a program. Hence the name.. The JIT compiler dyanimcally generates machine code for frequently used bytecode sequences in Java applications. This process is effecient but can be costly in memory usage. The JIT compiler is tuned for long-running applications. Typically those found on servers.
