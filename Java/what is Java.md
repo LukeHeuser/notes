@@ -14,7 +14,9 @@ The Compiler parses the entire source code. First, searching for syntax and othe
 * This is what allows Java to be executed on any OS
 
 ### Just-In-Time (JIT) Compiler
-The JIT compiler compiles bytecode into native machine code can be executed directly by the CPU.
+The `JIT Compiler` compiles bytecode into native machine code that can then be executed directly by the CPU. This happens during the execution of a program. Hence the name.. The JIT compiler dyanimcally generates machine code for frequently used bytecode sequences in Java applications. This process is effecient but can cost in memory usage. The JIT compiler is tuned for long-running applications. Typically those found on servers.
+
+`-Xquickstart`: A command-line option that can be used to improve the performance of a short-running application 
 
 ## Java Interpreter
 The `java Interpreter` examines and executes the `Source Code` line-by-line rather than first parsing like the `Java Compiler`. If an error is found, it is highlighted and the code is halted until it is fixed. Once fixed, the interpreter continues to execute.
