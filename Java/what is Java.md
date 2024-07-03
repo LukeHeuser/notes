@@ -27,7 +27,10 @@ For this reason, the `Interpreter` is **quicker** to analyze `source code`, `deb
 
 ## Java Virtual Machine
 
-the `Java Virtual Machine (JVM)` is what allows Java to run on any plateform and secures complete independence. As stated above, The JVM takes bytecode and interprets it into Machine Code which in turn gets executed by the hardware/ OS. 
+the `Java Virtual Machine (JVM)` is what allows Java to run on any plateform and secures complete independence. As stated above, The JVM takes bytecode and interprets it into Machine Code which in turn gets executed by the hardware/ OS.
+
+### Class Loader Subsystem
+The class loader subsystem is responsible for loading Java classes into the JVM from many different sources such as the local system or a network lcoation.
 
 ### JVM Advantages
 * Plateform-Indepence for executing Java code
