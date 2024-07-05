@@ -7,6 +7,7 @@ What is a statement? A `statement` in Java is an instruction.. A command for the
 
 * **Expression Satatment**
 * **Decleration Satement**
+     * Used
 * **Control Flow Statements**
 
 ### Expression Statement
