@@ -9,7 +9,7 @@ A `literal` is the SIMPLIST form of an expression. It can not be changed like a 
 ## Statements
 What is a statement? Java statements are fundamental building blocks in Java. A `statement` in Java is an instruction; a command for the programming language to execute. Statements can be simple or compound. There are three types of statements in Java.
 
-Simply put, a `statement` is any instruction given to the programming language to execute.
+Simply put, a `statement` is any instruction given to the programming language to execute. "carrying out actions."
 
 ### Expression Statement
 An `expression statement` is a statement that includes one or more expressions. They can change values of `variables`, `call methods`, and `create objects`.
@@ -39,4 +39,8 @@ The data type is delcared, a name is given to the variable so it may be accessed
 ### Control-Flow Statements
 `Control Flow Statements` determine the order that statements are executed. A great example of a `Contorl Flow Statement` is an if/else statement. 
 
+## Variables
+A `Variable` needs a data type & name to be stored in the RAM. An expression is used to assign a single value to the variable. Variables are, as the name suggests, variable. Meaning, their value can change.
 
+* A variable needs an expression to initialize a value
+* 
