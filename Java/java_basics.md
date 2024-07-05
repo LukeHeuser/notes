@@ -2,26 +2,25 @@
 
 
 ## Expressions
-An `expression` is a coding contruct made up of variables, operators, & method invocations that equate to the a single value. As seen on the right side of an equals.
+An `expression` is a coding contruct made up of variables, operators, & method invocations that equate to a single value. The expression is the code segment found on the right side of the equals sign in an assignment or decleration statement.
 
 A `literal` is the SIMPLIST form of an expression. It can not be changed like a variable. 
-
 
 ## Statements
 What is a statement? A `statement` in Java is an instruction.. A command for the programming language to execute. There are three types of statements in Java.
 
 ### Expression Statement
 An expression statemtent can include one or more expressions.
-While all expression statements are statements; not all statements are expression statments.
+While all expression statements are statements; not all statements are expression statments. This is because expressions can be assigned and used as operands, while statements can only be decalred.
 
 EX.
 ~~~
-int myFirstnumer = ((10 + 5) * (2 + 4))
+int myFirstNumber = ((10 + 5) * (2 + 4))
 ~~~
 This line of code has three expressions, 
 1. (10 + 5)
 2. (2  + 4)
-3. (15 * 8)
+3. (15 * 8) What is assigned to myFirstNumber
 
 
 ### Decleration Statment
