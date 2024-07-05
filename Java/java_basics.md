@@ -19,8 +19,10 @@ EX.
 int myFirstnumer = ((10 + 5) * (2 + 4))
 ~~~
 This line of code has three expressions, 
-    1. (10 + 5)
-    2.
+1. (10 + 5)
+2. (2  + 4)
+3. (15 * 8)
+
 
 ### Decleration Statment
 A Decleration Statment is used to define a variable by indicating the `Data Type` & `Name`. Optionally to set to a specific value.
