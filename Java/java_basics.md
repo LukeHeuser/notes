@@ -36,11 +36,27 @@ int myFirstNumber = 25;
 ~~~
 The data type is delcared and a name is given to the variable so it may be accessed later in memory and a value has been set.  However, it is not required to set a value.
 
+FOR REFERENCE: the value of `25` in the code above is an expression. 
+
 ### Control-Flow Statements
 `Control Flow Statements` determine the order that statements are executed. A great example of a `Contorl Flow Statement` is an if/else statement. 
 
 ## Variables
 A `Variable` needs a data type & name to be stored in the RAM. An expression is used to assign a single value to the variable. Variables are, as the name suggests, variable. Meaning, their value can change.
 
+Behind the scence: Java has allocated a place in memory to store the information and set up a mechanism to allow access of the location through the given name. 
+
 * A variable needs an expression to initialize a value
-* 
+* A variable can only be delcared once, but can be initialized many times changing the value
+* There are 8 Primitive data types that a variable can be assigned
+
+## Operators
+`Operatores` perforam an operation on a variable or value.
+
+An Example is addition, subtraction, division, & multiplication.
+
+## Primitive Data Types
+
+There are 8 Primitive Data Types:
+
+
