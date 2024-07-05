@@ -9,8 +9,10 @@ A `literal` is the SIMPLIST form of an expression. It can not be changed like a 
 ## Statements
 What is a statement? Java statements are fundamental building blocks in Java. A `statement` in Java is an instruction; a command for the programming language to execute. Statements can be simple or compound. There are three types of statements in Java.
 
+Simply put, a `statement` is any instruction given to the programming language to execute.
+
 ### Expression Statement
-An `expression statement` is a statement that includes one or more expressions. They can change values of variables, call methods, and create objects.
+An `expression statement` is a statement that includes one or more expressions. They can change values of `variables`, `call methods`, and `create objects`.
 
 While all expression statements are statements; not all statements can be an expression. This is because expressions can be assigned and used as operands, while statements can only be declared.
 
@@ -18,7 +20,7 @@ EX.
 ~~~
 int myFirstNumber = ((10 + 5) * (2 + 4))
 ~~~
-This line of code has three expressions, 
+This line of code has three expressions:
 1. (10 + 5)
 2. (2 + 4)
 3. (15 * 8) What is assigned to myFirstNumber
