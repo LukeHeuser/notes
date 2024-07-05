@@ -32,7 +32,7 @@ int myFirstNumber;
 // OR
 int myFirstNumber = 25;
 ~~~
-The data type is delcared, a name is given to the variable so it may be accessed later in memory and a value has been set.  However, it is not required.
+The data type is delcared, a name is given to the variable so it may be accessed later in memory and a value has been set.  However, it is not required to set a value.
 
 ### Control-Flow Statements
 Control-Flow Statements determine the order that statements are executed.
