@@ -59,4 +59,4 @@ An Example is addition, subtraction, division, & multiplication.
 
 There are 8 Primitive Data Types:
 
-
+![Alt Text](https://www.ggorantala.dev/content/images/size/w1000/2023/04/image.png)
