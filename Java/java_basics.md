@@ -59,4 +59,8 @@ An Example is addition, subtraction, division, & multiplication.
 
 There are 8 Primitive Data Types:
 
+Below is a graph showcasing their width, min and max, as well as range.
 ![Alt Text](https://www.ggorantala.dev/content/images/size/w1000/2023/04/image.png)
+
+Below is a Sketh dividing the the types of primitive and non-primitive data types.
+![Alt Text](https://www.ggorantala.dev/content/images/2023/04/data-types-detail.png)
