@@ -68,11 +68,11 @@ Below is a Sketh dividing the primitive and non-primitive data types.
 Primitive data types are simply a place holder in memory for a value. For instance, a number or a character. It's important to note that `Primitive Data Types` are not objects. The value stsored in primitives are called literals.
 
 ### Wrapper Class
-Wrapper Classes are used to convert `Primitive data types` into an `object` and an `object` back into primitive data types. This is a very powerful tool as it allows a way for `Primitive data types` to be treated as objects. Great examples of this are `Generics`, `Data Structers`, and `Libraries`! Generics only work with objects, not primitives.
+`Wrapper Classes` are used to convert `Primitive data types` into an `object` and an `object` back into `primitive data types`. This is a very powerful tool as it allows a way for Primitive data types to be treated as objects. Great examples of this are `Generics`, `Data Structers`, and `Libraries`! Many only work with objects, not primitives.
 
-A Wrapper Class also provides simple operations including basic information about primitive data types which can't be stored on the primitive itself
+A Wrapper Class also provides simple operations including basic information about primitive data types which can't be stored on the primitive itself.
+EX.
 ```
 int myMinIntValue = Integer.MIN_VALUE;
 ```
-The wrapper class in this case is the keyword ***Integer***, shown as an expression. To isntatiate a wrapper class, the full name of the primitive data type starting with a capital letter followed by 
-
+The wrapper class in this case is the keyword ***Integer***, shown as an expression. To isntatiate a wrapper class, the full name of the primitive data type starting with a capital letter followed by the function you wish to use.
