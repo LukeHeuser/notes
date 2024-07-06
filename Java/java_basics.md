@@ -62,7 +62,7 @@ There are 8 Primitive Data Types:
 Below is a graph showcasing their width, min and max, as well as range.
 ![Alt Text](https://www.ggorantala.dev/content/images/size/w1000/2023/04/image.png)
 
-Below is a Sketh dividing the primitive and non-primitive data types.
+Below is a Sketch dividing the primitive and non-primitive data types.
 ![Alt Text](https://www.ggorantala.dev/content/images/2023/04/data-types-detail.png)
 
 Primitive data types are simply a place holder in memory for a value. For instance, a number or a character. It's important to note that `Primitive Data Types` are not objects. The value stsored in primitives are called literals.
