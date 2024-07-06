@@ -78,7 +78,7 @@ int myMinIntValue = Integer.MIN_VALUE;
 The wrapper class in this case is the keyword ***Integer***, shown as an expression. To isntatiate a wrapper class, you must use the full name of the primitive data type starting with a capital letter followed by the function you wish to use.
 
 ## Overflow & Underflow
-`Overflow` & `Underflow`; AKA `Wrap Arrounds`. Happens when the data type exceds it's bit-size (maximum or minimum value, AKA width) through an expression. Integer 'wrap around' events does not give an error because when using an expression that `overflows` or `underflows`; the java compilier doesn't attempt to e valuate the expression to determine its value. However, when using a literal to give an primitive type a larger or smaller allowed value, an error will be thrown.
+`Overflow` & `Underflow`; AKA `Wrap Arrounds`. Happens when the data type exceds it's bit-size (maximum or minimum value, AKA width) through an expression. Integer 'wrap around' events does not give an error because when using an expression that `overflows` or `underflows`; the java compilier doesn't attempt to evaluate the expression to determine its value. This causes the value to `Wrap Around` to a negative or positive value. However, when using a literal to assign an integer a larger or smaller allowed value, an error will be thrown.
 
 ```
 int willThisCimpile = (Integer.MAX_VALUE + 1);
