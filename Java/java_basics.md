@@ -80,12 +80,17 @@ The wrapper class in this case is the keyword ***Integer***, shown as an express
 ## Overflow & Underflow
 `Overflow` & `Underflow`; AKA `Wrap Arrounds`. Happens when the data type exceds it's bit-size (maximum or minimum value, AKA width) through an expression. Integer 'wrap around' events does not give an error because when using an expression that `overflows` or `underflows`; the java compilier doesn't attempt to evaluate the expression to determine its value. This causes the value to `Wrap Around` to a negative or positive value. However, when using a literal to assign an integer a larger or smaller allowed value, an error will be thrown.
 
+### Example 1
 ```
 int willThisCompile = (Integer.MAX_VALUE + 1);
 int willThisCompile = (2147483647 + 1);
 ```
 Both will overflow to a negative number.
- 
+```
+willThisCompile ==> -2147483648 
+```
+This is the minumum value of an integer
+### Example 3
 ```
 int willThisCompile = 2147483648;
 ```
