@@ -51,7 +51,7 @@ Behind the scence: Java has allocated a place in memory to store the information
 * There are 8 Primitive data types that a variable can be assigned
 
 ## Operators
-`Operatores` perforam an operation on a variable or value.
+`Operatores` perform an operation on a variable or value.
 
 An Example is addition, subtraction, division, & multiplication.
 
