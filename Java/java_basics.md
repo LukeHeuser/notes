@@ -99,3 +99,21 @@ An Error is thrown;
 Error:
 interger number too large
 ```
+
+## Casting 
+Casting means to treat or convert a number from one type to another.
+```
+Byte myMinByte = Byte.MIN_VALUE;
+byte myFirstByte = (myMinByte / 2);
+```
+The code above will give an Error: *incompatible types: int cannot be converted to java.lang.Byte*
+
+This is because the default data type in Java is an Integer. The Java compiler does not attempt to evalute the value in the expression to make sure the value fits in the allowable range of a `Byte`. However, if the expression were to use literals. the `Java Compiler` would be able to evalue the value at compile time and figure out whether it fits into the `variable`. 
+
+Casting can fix this:
+```
+Byte myMinByte = Byte.MIN_VALUE;
+byte myFirstByte = (byte) (myMinByte / 2);
+
+
+
