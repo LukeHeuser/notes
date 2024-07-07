@@ -108,12 +108,11 @@ byte myFirstByte = (myMinByte / 2);
 ```
 The code above will give an Error: *incompatible types: int cannot be converted to java.lang.Byte*
 
-This is because the default data type in Java is an Integer. The Java compiler does not attempt to evalute the value in the expression to make sure the value fits in the allowable range of a `Byte`. However, if the expression were to use literals. the `Java Compiler` would be able to evalue the value at compile time and figure out whether it fits into the `variable`. 
+This is because the default data type in Java is an Integer. The Java compiler does not attempt to evalute the value in the expression to make sure the value fits in the allowable range of a `Byte`. However, if the expression were to use literals. the `Java Compiler` would be able to evalue the value at compile time and figure out whether or not it fits into the `variable`. 
 
-Casting can fix this:
+###There is a solution; casting:
 ```
 Byte myMinByte = Byte.MIN_VALUE;
 byte myFirstByte = (byte) (myMinByte / 2);
-
-
-
+```
+The output above will be -64. The statement works because we have told the compiler what data type we are using through casting. To do this, we simply state the data type prior to the expression we wish to utilize. This is common practice and not special to Java.
