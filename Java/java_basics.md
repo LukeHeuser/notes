@@ -2,7 +2,7 @@
 
 
 ## Expressions
-An `expression` is a coding contruct made up of variables, operators, & method invocations that equate to a single value. The expression is the code segment found on the right side of the equals sign in an assignment or decleration statement.
+An `expression` is a coding contruct made up of `variables`, `operators`, & `method invocations` that equate to a single value. The expression is the code segment found on the right side of the equals sign in an assignment or decleration statement.
 
 A `literal` is the SIMPLIST form of an expression. It can not be changed like a variable. 
 
