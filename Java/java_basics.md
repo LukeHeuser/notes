@@ -118,3 +118,14 @@ Byte myMinByte = Byte.MIN_VALUE;
 byte myFirstByte = (byte) (myMinByte / 2);
 ```
 The output above will be -64. The statement works because we have told the compiler what data type we are using through casting. To do this, we simply state the data type prior to the expression we wish to utilize. This is common practice and not special to Java.
+
+## Floating-Point Number Data Type
+There are two floating point/ real world number data types; `Float`, and the more successful older brother, `Double`.
+
+
+The `Flaot` is a 32-bit data type, the least accurate of the two. The `Double` is a 64-bit data type. The most accurate of the two as well as javas default floating point data type. This is for many reasons.
+
+* The double is faster to process on modern computers
+* Many java libraries have Double only math functions that will not process with a float
+* Modern computers have copious amounts of RAM where the extra space for a double isn't an issue
+
