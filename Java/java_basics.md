@@ -44,6 +44,8 @@ FOR REFERENCE: the value of `25` in the code above is an expression.
 ## Variables
 A `Variable` needs a data type & name to be stored in the RAM. An expression is used to assign a single value to the variable. Variables are, as the name suggests, variable. Meaning, their value can change.
 
+Multiple variables can be assigned on the same line as long as the data type is first declared.
+
 Behind the scence: Java has allocated a place in memory to store the information and set up a mechanism to allow access of the location through the given name. 
 
 * A variable needs an expression to initialize a value
@@ -87,7 +89,7 @@ int willThisCompile = (2147483647 + 1);
 ```
 Both will overflow to a negative number.
 ```
-willThisCompile ==> -2147483648 
+int willThisCompile ==> -2147483648 
 ```
 This is the minumum value of an integer
 ### Example 3
