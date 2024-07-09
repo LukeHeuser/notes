@@ -145,8 +145,9 @@ The `Char` primitive Data type is different than that of a string. The Char data
 The Char occupies two bytes/ or 16 bits. Thus, has a width of 16. This is because each char value has a unicode value that it is assigned to. Java takes a lot of the tedious work when assign a literal value. 
 
 ## Boolean Primitive Data Types
+The `boolea`n pimitive type holds two values, True or False. Developers often use the word "is" as a prefix for the booolean variable name. This makes a name that seems to ask a question more intuitive to read.
 
-
+Mostly used in conditional logic.
 
 
 
