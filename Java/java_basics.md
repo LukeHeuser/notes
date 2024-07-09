@@ -135,5 +135,24 @@ To assign a `Float` to a declared float variable, the literal must be followed b
 
 **However** there is a class to use when absolute accuracy is required. `Big Decimal Class`. This class overcomes the limitations with how floating point numbers are stored. This is not a java problem specifically.
 
+## Char Primitive Data Type
+The `Char` primitive Data type is different than that of a string. The Char data type can only store one `'character'`. There are three different ways to call a char
+
+* Literal Character = ***char myChar = 'D';***
+* Unicode Value = ***char myChar = '\u0044'; = 'D'*** 
+* Integer Value = ***char myChar = 68; = 'D'***
+
+The Char occupies two bytes/ or 16 bits. Thus, has a width of 16. This is because each char value has a unicode value that it is assigned to. Java takes a lot of the tedious work when assign a literal value. 
+
+## Boolean Primitive Data Types
+
+
+
+
+
+
+
+
+
 
 
