@@ -131,7 +131,7 @@ The `Float` is a 32-bit data type, the least precise of the two. The `Double` is
 
 `Precision` refers to the format and amount of space occupied by the relevant type.
 
-To assign a `Float` to a declared float variable, the literal must be followed by a lowercase or uppercase `F` suffix. This is required in java. The same however, is not true with a `Double`, it is optional. With this and the above in mind. It is typically not wise to use flaot types java. It is far more common to use Double than Float.
+To assign a `Float` to a declared float variable, the literal must be followed by a lowercase or uppercase `F` suffix. This is required in java. The same however, is not true with a `Double`, it is optional to follow a literal with a 'D'. With this and the above in mind. It is typically not wise to use flaot types java. It is far more common to use Double than Float.
 
 **However** there is a class to use when absolute accuracy is required. `Big Decimal Class`. This class overcomes the limitations with how floating point numbers are stored. This is not a java problem specifically.
 
