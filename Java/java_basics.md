@@ -123,9 +123,17 @@ The output above will be -64. The statement works because we have told the compi
 There are two floating point/ real world number data types; `Float`, and the more successful older brother, `Double`.
 
 
-The `Flaot` is a 32-bit data type, the least accurate of the two. The `Double` is a 64-bit data type. The most accurate of the two as well as javas default floating point data type. This is for many reasons.
+The `Float` is a 32-bit data type, the least precise of the two. The `Double` is a 64-bit data type. The most precise of the two as well as javas default floating point data type. This is for many reasons:
 
 * The double is faster to process on modern computers
 * Many java libraries have Double only math functions that will not process with a float
 * Modern computers have copious amounts of RAM where the extra space for a double isn't an issue
+
+`Precision` refers to the format and amount of space occupied by the relevant type.
+
+To assign a `Float` to a declared float variable, the literal must be followed by a lowercase or uppercase `F` suffix. This is required in java. The same however, is not true with a `Double`, it is optional. With this and the above in mind. It is typically not wise to use flaot types java. It is far more common to use Double than Float.
+
+**However** there is a class to use when absolute accuracy is required. `Big Decimal Class`. This class overcomes the limitations with how floating point numbers are stored. This is not a java problem specifically.
+
+
 
