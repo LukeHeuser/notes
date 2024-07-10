@@ -149,11 +149,15 @@ The `boolea`n pimitive type holds two values, True or False. Developers often us
 
 Mostly used in conditional logic.
 
-##Strings
-A `String` is an immutable class that contains a sequence of 'characters'. Immutable meaning, a string can't be changed after its been created. The, `String Builder` class is mutable. Menaing, it can be changed however it does not share the same special features as a string. Such as being able to assign it a string literal or use the '+' operator.
+## String
+A `String` is an `immutable` class (which is treated as an object in java) that contains a sequence/ or array of 'characters'. Immutable meaning, a string can't be changed after its been created. But (the fun part)! The refernce to the object can be changed. Every time a modifcaftion is made, a new instance of that string is create and the previous value is copied to the new `String` which the change.
 
-* Concantonation is common practice with strings and occures with the '+' operator when assainging a string variable.
-* Unicode can be used in a string, simply use the unicode where you wish to place it and it will populate 
+The, `String Builder` class is mutable. Meaning it can be changed. However, it does not share the same special features as a String. Such as being able to assign it a string literal or use the '+' operator.
+
+* To initialize, the `String` must start with a capital 'S'
+* Concantonation: common practice with strings and occures with the '+' operator when assigning a string variable
+* Unicode can be used in a string, simply use the unicode where you wish to place it and it will populate
+* Can be used like a 9th primitive type, however it is not a data type but a class
 
 
 
