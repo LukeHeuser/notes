@@ -142,15 +142,18 @@ The `Char` primitive Data type is different than that of a string. The Char data
 * Unicode Value = ***char myChar = '\u0044'; = 'D'*** 
 * Integer Value = ***char myChar = 68; = 'D'***
 
-The Char occupies two bytes/ or 16 bits. Thus, has a width of 16. This is because each char value has a unicode value that it is assigned to. Java takes a lot of the tedious work when assign a literal value. 
+The Char occupies two bytes/ or 16 bits. Thus, has a width of 16. This is because each char value has a unicode value that it is assigned to. Java takes a lot of the tedious work when assigning a literal value. 
 
 ## Boolean Primitive Data Types
 The `boolea`n pimitive type holds two values, True or False. Developers often use the word "is" as a prefix for the booolean variable name. This makes a name that seems to ask a question more intuitive to read.
 
 Mostly used in conditional logic.
 
+##Strings
+A `String` is an immutable class that contains a sequence of 'characters'. Immutable meaning, a string can't be changed after its been created. The, `String Builder` class is mutable. Menaing, it can be changed however it does not share the same special features as a string. Such as being able to assign it a string literal or use the '+' operator.
 
-
+* Concantonation is common practice with strings and occures with the '+' operator when assainging a string variable.
+* Unicode can be used in a string, simply use the unicode where you wish to place it and it will populate 
 
 
 
