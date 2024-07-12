@@ -171,7 +171,7 @@ The, `String Builder` class is mutable. Meaning it can be changed. However, it d
 
 The `+` operator means concatenation for strings.
 
-## Operators , Operatnds, and Expressions
+## Operators , Operands, and Expressions
 
 `Operators` are the special symbols that perform operations on one, two, or three operands and return a result. 
 `Operands` is the term used to describe any object that is manipulated by an operator.
