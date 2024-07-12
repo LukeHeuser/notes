@@ -179,12 +179,17 @@ An `Expression` is formed by combining literals, method return values, and opera
 
 ### Abbreviating Operators
 
+The Post-Fix increment operator is a stand along statement & does not require an assignment. The `Compound Assignment Operator` is a stand alone statement that includes the assignment. This allows for a further tweaking to change how much the increment or decrement is.
+
 Post-Fix Increment operator:
 *`result ++;`*
 Compound Assignment operator with `+` sign:
+*`result += 1`*
 
 Post-Fix Decrement operator:
 *`result --;`*
+Compound Assignment operator with `-` sign:
+*`result -= 1`*
 
 
 ### Modulo
