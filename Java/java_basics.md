@@ -144,6 +144,16 @@ The `Char` primitive Data type is different than that of a string. The Char data
 
 The Char occupies two bytes/ or 16 bits. Thus, has a width of 16. This is because each char value has a unicode value that it is assigned to. Java takes a lot of the tedious work when assigning a literal value. 
 
+Adding two chars gives the reslt of the `deciaml values` found in the Unicode.
+```
+char myFirstChar = 'A'; // Decimal value of 65
+char mySecondChar = 'B'; // Decimal value of 66
+
+char myTotalChar = (char) (myFirstChar + mySecondChar) // equals 131
+```
+
+To concatenat a char, the expression must first `+` a `""` *(blank space). This will initialize a string and the letters being added to this blank string.
+
 ## Boolean Primitive Data Types
 The `boolea`n pimitive type holds two values, True or False. Developers often use the word "is" as a prefix for the booolean variable name. This makes a name that seems to ask a question more intuitive to read.
 
@@ -159,8 +169,10 @@ The, `String Builder` class is mutable. Meaning it can be changed. However, it d
 * Unicode can be used in a string, simply use the unicode where you wish to place it and it will populate
 * Can be used like a 9th primitive type, however it is not a data type but a class
 
+The `+` operator means concatenation for strings.
 
+## Operators , Operatnds, and Expressions
 
-
-
-
+`Operators` are the special symbols that perform operations on one, two, or three operands and return a result. 
+`Operands` is the term used to describe any object that is manipulated by an operator.
+An `Expression` is formed by combining literals, method return values, and operators.
