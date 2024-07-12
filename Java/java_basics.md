@@ -191,6 +191,13 @@ Post-Fix Decrement operator:
 Compound Assignment operator with `-` sign:
 *`result -= 1`*
 
+It's important to note the below when **understanding** `Compound Assignment Operators`.
+
+```
+x -= y; // how a compound assignment operator appears
+x = (data type of x) (x-y) // what is really happening
+```
+There is this sort of *soft cast* happening with the data type of X to y. For example, if 'X' is an int and 'Y' was a fractional double. the result will omit the decimal givng the incorrect increment or decrement.
 
 ### Modulo
 The `Modulo`, also known as the remainder operator; `%`
