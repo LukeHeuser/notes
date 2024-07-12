@@ -176,3 +176,24 @@ The `+` operator means concatenation for strings.
 `Operators` are the special symbols that perform operations on one, two, or three operands and return a result. 
 `Operands` is the term used to describe any object that is manipulated by an operator.
 An `Expression` is formed by combining literals, method return values, and operators.
+
+### Abbreviating Operators
+
+Post-Fix Increment operator:
+*`result ++;`*
+Compound Assignment operator with `+` sign:
+
+Post-Fix Decrement operator:
+*`result --;`*
+
+
+### Modulo
+The `Modulo`, also known as the remainder operator; `%`
+
+The modulo returns the remainder of a number through division. For example, it is very useful for creating an odd or even funciton.
+```
+10 % 2 = 0
+11 % 2 = 1
+25 % 3 = 1
+76 % 18 = 4
+```
