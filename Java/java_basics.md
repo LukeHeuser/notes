@@ -212,7 +212,10 @@ The modulo returns the remainder of a number through division. For example, it i
 
 ## Proper Capitalization
 
-The proper capatalization is below:
+The proper `Pascal Case` or `Cammel Case` is below:\
+
+* Project Name
+* 
 
 ## What is a Method
 A method is a collection of one or more statemnts, that perform an action.
