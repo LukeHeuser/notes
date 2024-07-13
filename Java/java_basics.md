@@ -214,8 +214,13 @@ The modulo returns the remainder of a number through division. For example, it i
 
 The proper `Pascal Case` or `Cammel Case` is below:\
 
+Upper Camel Case
 * Project Name
-* 
+* Class Name
+
+Lower Camel Case
+* Mathod Name
+* Variable Name
 
 ## What is a Method
 A method is a collection of one or more statemnts, that perform an action.
