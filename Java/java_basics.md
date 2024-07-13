@@ -241,7 +241,7 @@ The `Method Decleration` is a way to pass information to a method.
 Below is a rough brake down of the class relationship with the method relation ship through our favorite program.
 
 ```
-Class FirstClass // This is the class that contain
+Class FirstClass                             // This is the Class 
 {                                            // All the code inside these braces are defined as the class code block, or class body
   public static void main(String[] args)     // This is the main method of the Hello World program. The code inside the parenthases is also known as the method decleration
   {                                          // All the code inside these braces are defined as the, 'Method Body'
