@@ -227,12 +227,15 @@ Lower Camel Case
 An Access modified allows us to define which parts of our code, or another persons code, can access a particular element.
 
 ### Public
-The Public java keyword means the classe, attribute, method or constructor is available to access from any class
+The Public java keyword means the class, attribute, method or constructor is available to access from any class
 
 ### Private
+The Private java keyword means it can only be accessed in 
 
 ## What is a Method
 A method is a collection of one or more statemnts, that perform an action.
+
+* `Void` means that the method will not return any information
 
 The `Main Method` of a program is the entry point of a java program. A java program will search for the main method to begin executing.
 
@@ -249,9 +252,3 @@ Class FirstClass                             // This is the Class
   }
 }
 ```
-
-
-
-## Access Modifiers
-
-
