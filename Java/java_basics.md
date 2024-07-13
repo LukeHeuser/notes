@@ -238,7 +238,8 @@ The `Main Method` of a program is the entry point of a java program. A java prog
 
 The `Method Decleration` is a way to pass information to a method.
 
-The `Code block`, AKA the `Method Body` is the code .
+Below is a rough brake down of the class relationship with the method relation ship through our favorite program.
+
 ```
 Class FirstClass // This is the class that contain
 {                                            // All the code inside these braces are defined as the class code block, or class body
