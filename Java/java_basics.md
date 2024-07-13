@@ -209,3 +209,31 @@ The modulo returns the remainder of a number through division. For example, it i
 25 % 3 = 1
 76 % 18 = 4
 ```
+
+## Proper Capitalization
+
+The proper capatalization is below:
+
+## What is a Method
+A method is a collection of one or more statemnts, that perform an action.
+
+The `Main Method` of a program is the entry point of a java program. A java program will search for the main method to begin executing.
+
+The `Method Decleration` is a way to pass information to a method.
+
+The `Code block`, AKA the `Method Body` is the code .
+```
+Class FirstClass
+{
+public static void main(String[] args)
+{
+
+
+}
+```
+
+
+
+## Access Modifiers
+
+
