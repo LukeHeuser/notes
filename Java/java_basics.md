@@ -239,10 +239,10 @@ The `Method Decleration` is a way to pass information to a method.
 The `Code block`, AKA the `Method Body` is the code .
 ```
 Class FirstClass // This is the class that contain
-{ // All the code inside these braces are defined as the class code block, or class body
-  public static void main(String[] args) // This is the main method of the Hello World program. The code inside the parenthases is also known as the method decleration
-  { // All the code inside these braces are defined as the, 'Method Body'
-  System.out.println("Hello World!"); // This is a statement that prints to the console, "Hello World!"
+{                                            // All the code inside these braces are defined as the class code block, or class body
+  public static void main(String[] args)     // This is the main method of the Hello World program. The code inside the parenthases is also known as the method decleration
+  {                                          // All the code inside these braces are defined as the, 'Method Body'
+  System.out.println("Hello World!");        // This is a statement that prints to the console, "Hello World!"
   }
 }
 ```
