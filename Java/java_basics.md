@@ -215,12 +215,19 @@ The modulo returns the remainder of a number through division. For example, it i
 The proper `Pascal Case` or `Cammel Case` is below:\
 
 Upper Camel Case
-* Project Name
-* Class Name
+* *Project Name*
+* *Class Name*
 
 Lower Camel Case
-* Mathod Name
-* Variable Name
+* *Mathod Name*
+* *Variable Name*
+
+## Access Modifiers
+
+An Access modified allows us to define which parts of our code, or another persons code, can access a particular element.
+
+### Public
+The Public java keyword is a
 
 ## What is a Method
 A method is a collection of one or more statemnts, that perform an action.
@@ -231,12 +238,12 @@ The `Method Decleration` is a way to pass information to a method.
 
 The `Code block`, AKA the `Method Body` is the code .
 ```
-Class FirstClass
-{
-public static void main(String[] args)
-{
-
-
+Class FirstClass // This is the class that contain
+{ // All the code inside these braces are defined as the class code block, or class body
+  public static void main(String[] args) // This is the main method of the Hello World program. The code inside the parenthases is also known as the method decleration
+  { // All the code inside these braces are defined as the, 'Method Body'
+  System.out.println("Hello World!"); // This is a statement that prints to the console, "Hello World!"
+  }
 }
 ```
 
