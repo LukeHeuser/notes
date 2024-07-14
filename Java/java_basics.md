@@ -55,7 +55,7 @@ Behind the scence: Java has allocated a place in memory to store the information
 ## Operators
 `Operatores` perform an operation on a variable or value.
 
-An Example is addition, subtraction, division, & multiplication.
+An  basic example is `Addition`, `Subtraction`, `Division`, & `Multiplication`.
 
 ## Primitive Data Types
 
@@ -252,3 +252,38 @@ Class FirstClass                             // This is the Class
   }
 }
 ```
+
+## If-then Statement
+
+The `if-then` statement is the most basic of control flow statements. It tells the program to execute a certain seciton of code only if the test evaluates to true, AKA `Conditional Logic`.
+
+Conditional logic uses specific statments in java to allow us to check a condition. Based on the condition (the expression), execute certain code if it is true or false.
+
+### Conditional Logic Operators
+
+* Equality Operator: `==`
+* Not Equal to: `!=` 
+* Logical And Operator: `&&`
+* Logical Or Operator: `||`
+
+### The Not Operator and Its Counter Part
+The `!` mark is the Not operator, also knows as the `logical complement operator`! The not operator can be used with any boolean variable to test for the inverse value.
+```
+boolean isCar = false;
+if(!isCar) {
+  System.print.outln("The isCar variable is false")
+} else {
+  System.print.outln("The isCar variable is true")
+}
+```
+The code above is testing the boolean value for a false value. Since this statemnt is true, the system will print, "The isCar variable is false".
+
+```
+boolean isCar = false;
+if(isCar) {
+  System.print.outln("The isCar variable is true")
+} else {
+  System.print.outln("The isCar variable is false")
+}
+```
+The code above is testing if the value in 'isCar' true. The previous line is set to false so the code block will execute the else .
