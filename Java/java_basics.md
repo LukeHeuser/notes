@@ -246,7 +246,8 @@ Below is a rough brake down of the class relationship with the method relation s
 ```
 Class FirstClass                             // This is the Class 
 {                                            // All the code inside these braces are defined as the class code block, or class body
-  public static void main(String[] args)     // This is the main method of the Hello World program. The code inside the parenthases is also known as the method decleration
+  public static void main(String[] args)     // This is the main method of the Hello World program. The code inside the parenthases is also
+                                             // known as the method decleration
   {                                          // All the code inside these braces are defined as the, 'Method Body'
   System.out.println("Hello World!");        // This is a statement that prints to the console, "Hello World!"
   }
@@ -268,6 +269,7 @@ Conditional logic uses specific statments in java to allow us to check a conditi
 
 ### The Not Operator and Its Counter Part
 The `!` mark is the Not operator, also knows as the `logical complement operator`! The not operator can be used with any boolean variable to test for the inverse value.
+
 ```
 boolean isCar = false;
 if(!isCar) {
@@ -286,4 +288,6 @@ if(isCar) {
   System.print.outln("The isCar variable is false")
 }
 ```
-The code above is testing if the value in 'isCar' true. The previous line is set to false so the code block will execute the else .
+The code above is testing if the value in 'isCar' is true. The previous line is set to false so the if statement code block will not execute. As such, the else statement will then execute.
+
+It is generally recommended to use the abreviated forms for the code is more concise and readable. Additionally, this can help prevent errors by accidentally using an assignment operator when testing booleans for true or false.
