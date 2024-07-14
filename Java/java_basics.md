@@ -273,9 +273,9 @@ The `!` mark is the Not operator, also knows as the `logical complement operator
 ```
 boolean isCar = false;
 if(!isCar) {
-  System.print.outln("The isCar variable is false")
+  System.out.println("The isCar variable is false");
 } else {
-  System.print.outln("The isCar variable is true")
+  System.out.println("The isCar variable is true");
 }
 ```
 The code above is testing the boolean value for a false value. Since this statemnt is true, the system will print, "The isCar variable is false".
@@ -283,9 +283,9 @@ The code above is testing the boolean value for a false value. Since this statem
 ```
 boolean isCar = false;
 if(isCar) {
-  System.print.outln("The isCar variable is true")
+  System.out.println("The isCar variable is true");
 } else {
-  System.print.outln("The isCar variable is false")
+  System.out.println("The isCar variable is false");
 }
 ```
 The code above is testing if the value in 'isCar' is true. The previous line is set to false so the if statement code block will not execute. As such, the else statement will then execute.
