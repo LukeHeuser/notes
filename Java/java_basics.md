@@ -296,7 +296,8 @@ It is generally recommended to use the abreviated forms for the code is more con
 The `Ternary Operator` has three operands. The only operator currently in java that deos have three. Java officially calls it the `conditional operator`. It is a shortcut to assigning one of two values to a variable, depending on a given condition. It is a shortcut to the `if-then-else` statement.
 
 ```
-String motorcycleManufacturer = "Ducati";
-String isDomestic = (motorcycleManufacturer == "Ducati") ? false
-
+String makeOfMotorcycle = "Ducati";
+boolean isDomestic = makeOfMotorcycle == "Ducati" ? false : true;
+String s = (isDomestic) ? "This bike is domestic": "This bike is not domestic";
+System.out.println(s);
 ```
