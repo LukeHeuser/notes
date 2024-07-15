@@ -301,3 +301,6 @@ boolean isDomestic = makeOfMotorcycle == "Ducati" ? false : true;
 String s = (isDomestic) ? "This bike is domestic": "This bike is not domestic";
 System.out.println(s);
 ```
+
+The `Ternary Operator` is a way to replace an `if statement` if you want a balue back based on a condition.
+
