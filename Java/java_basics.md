@@ -268,7 +268,7 @@ Conditional logic uses specific statments in java to allow us to check a conditi
 * Logical Or Operator: `||`
 
 ### The Not Operator and Its Counter Part
-The `!` mark is the Not operator, also knows as the `logical complement operator`! The not operator can be used with any boolean variable to test for the inverse value.
+The `!` mark is the Not operator, also knows as the `logical complement operator`! The not operator can be used with any boolean variable to test for the inverse value. It does this by literally inversing the value of the given boolean.
 
 ```
 boolean isCar = false;
@@ -278,7 +278,7 @@ if(!isCar) {
   System.out.println("The isCar variable is true");
 }
 ```
-The code above is testing the boolean value for a false value. Since this statemnt is true, the system will print, "The isCar variable is false".
+The code above is testing the boolean value for a false value. Since this statemnt is true, the system will print, "The isCar variable is false". The '!' operator inverses our boolean of **isCar**. This makes the value true whill will execeute our print line saying the value is false.
 
 ```
 boolean isCar = false;
