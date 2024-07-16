@@ -293,7 +293,12 @@ The code above is testing if the value in 'isCar' is true. The previous line is 
 It is generally recommended to use the abreviated forms for the code is more concise and readable. Additionally, this can help prevent errors by accidentally using an assignment operator when testing booleans for true or false.
 
 ## Ternary Operator
-The `Ternary Operator` has three operands. The only operator currently in java that deos have three. Java officially calls it the `conditional operator`. It is a shortcut to assigning one of two values to a variable, depending on a given condition. It is a shortcut to the `if-then-else` statement.
+The `Ternary Operator` has three operands. The only operator currently in java that deos have three. Java officially calls it the `conditional operator`. It is a shortcut to assigning one of two values to a variable, depending on a given condition. It is quite literally the `if-then-else` statement in shorthand.
+
+Example One:
+```
+
+```
 
 ```
 String makeOfMotorcycle = "Ducati";
