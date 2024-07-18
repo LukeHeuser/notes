@@ -9,7 +9,7 @@ A `literal` is the SIMPLIST form of an expression. It can not be changed like a 
 ## Statements
 What is a statement? Java statements are fundamental building blocks in Java. A `statement` in Java is an instruction; a command for the programming language to execute. Statements can be simple or compound. There are three types of statements in Java.
 
-A statement can be on multiple lines.
+A statement can be on multiple lines. Many statements may also share the same line.
 
 > Statements are stand alone units of work
 
