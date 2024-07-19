@@ -62,9 +62,12 @@ Behind the scence: Java has allocated a place in memory to store the information
 An  basic example is `Addition`, `Subtraction`, `Division`, & `Multiplication`.
 
 ### Compound Assignment Operator
-***+=***
+***+=*** 
+
 ***-=***
+
 ****=***
+
 ***/=***
 
 ## Primitive Data Types
