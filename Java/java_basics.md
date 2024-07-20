@@ -312,9 +312,6 @@ It is generally recommended to use the abreviated forms for the code is more con
 The `Ternary Operator` has three operands. The only operator currently in java that deos have three. Java officially calls it the `conditional operator`. It is a shortcut to assigning one of two values to a variable, depending on a given condition. It is quite literally the `if-then-else` statement in shorthand.
 
 Example One:
-```
-
-```
 
 ```
 String makeOfMotorcycle = "Ducati";
@@ -325,3 +322,23 @@ System.out.println(s);
 
 The `Ternary Operator` is a way to replace an `if statement` if you want a value back based on a condition.
 
+## The Method
+
+Javas description of the method:
+
+> A method decalres executable code that can be invoked, passing a fixed number of values as argumets.
+
+* `Methods` is a way of reducing code duplication. 
+
+A method can be executed amny times with potentially different results. By passing data to the method in the form of arguments/ parameters. Developers use the word arguments and parameters interchangably.
+
+`static` keyword means the method can be directly called using the calss name
+
+To execute a `method`, we can write a statemnt in code, which we is calling or invoking the method.
+
+EX: 1
+```
+calculateScore(true, 800, levelCompleted, bonus ); // This is calling a method called calculateScore and passing the required information 
+```
+
+To execute a method that's defined with aprameters, you have to pass variables, value, or expressions that match the type, order, and number of the parameters decalred in the method.
