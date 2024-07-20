@@ -330,7 +330,7 @@ Javas description of the method:
 
 * `Methods` is a way of reducing code duplication. 
 
-A method can be executed amny times with potentially different results. By passing data to the method in the form of arguments/ parameters. Developers use the word arguments and parameters interchangably.
+A method can be executed many times with potentially different results. By passing data to the method in the form of arguments/ parameters. Developers use the word arguments and parameters interchangably. **But** Technically, a parameter is the defination as shown in the method decleration, and the argiment will be the value that's passed to the method when we call it.
 
 `static` keyword means the method can be directly called using the calss name
 
