@@ -368,3 +368,4 @@ The method name is what's used to call the method and should be lower camel case
 
 The method parameters must be invoked in the same order and list as it comes with the same data type.
 
+Some programming languages call a mehtod that returns a value, a function, and a method that doesnt return a value, a procedure. Rarely used for Java but sometimes occcures.
