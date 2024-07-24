@@ -346,13 +346,13 @@ A few declerations are required to create a `Method`. The order is as listed: (D
 
 ### **Declaring Modifiers**
 
-public: The code is accessible for all classes
+`public`: The code is accessible for all classes
 
-private: The code is only accessible within the delcared class
+`private`: The code is only accessible within the delcared class
 
-*default* The code is only accessible within the declared class. Used when a modifier isn't specified
+*`default`* The code is only accessible within the declared class. Used when a modifier isn't specified
 
-protected: The code is accessible in the same package and subclasses
+`protected`: The code is accessible in the same package and subclasses
 
 ### **Declaring Return Type**
 
