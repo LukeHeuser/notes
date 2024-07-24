@@ -332,16 +332,23 @@ Javas description of the method:
 
 A method can be executed many times with potentially different results. By passing data to the method in the form of arguments/ parameters. Developers use the word arguments and parameters interchangably. **But** Technically, a parameter is the defination as shown in the method decleration, and the argiment will be the value that's passed to the method when we call it.
 
-A few declerations are required to create a `Method`. 
+A few declerations are required to create a `Method`. The order is as listed: (Declareing Modifiers), (Declaring Return Type), (Declaring the Method Name), & (Method Parameters).
 
 **Declaring Modifiers**
+
 public: The code is accessible for all classes
+
 private: The code is only accessible within the delcared class
+
 *default* The code is only accessible within the declared class. Used when a modifier isn't specified.
+
 protected: The code is accessible in the same package and subclasses
 
 **Declaring Return Type**
 
+`Void` means no value is returned
+
+`Primitive Data Typ` can be used to return a value. However, the return statement is required for a value to be given. Otherwise, an error will occur.
 
 **Declaring the Method Name**
 
