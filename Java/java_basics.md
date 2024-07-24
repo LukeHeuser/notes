@@ -358,7 +358,7 @@ A few declerations are required to create a `Method`. The order is as listed: (D
 
 `Void` means no value is returned
 
-`Primitive Data Typ` can be used to return a value. However, the return statement is required for a value to be given. Otherwise, an error will occur.
+`Primitive Data Type` can be used to return a value. However, the return statement is required for a value to be given. Otherwise, an error will occur.
 
 ### **Declaring the Method Name**
 
