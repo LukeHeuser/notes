@@ -331,31 +331,6 @@ Javas description of the method:
 * `Methods` is a way of reducing code duplication. 
 
 A method can be executed many times with potentially different results. By passing data to the method in the form of arguments/ parameters. Developers use the word arguments and parameters interchangably. **But** Technically, a parameter is the defination as shown in the method decleration, and the argiment will be the value that's passed to the method when we call it.
-
-A few declerations are required to create a `Method`. The order is as listed: (Declareing Modifiers), (Declaring Return Type), (Declaring the Method Name), & (Method Parameters).
-
-**Declaring Modifiers**
-
-public: The code is accessible for all classes
-
-private: The code is only accessible within the delcared class
-
-*default* The code is only accessible within the declared class. Used when a modifier isn't specified.
-
-protected: The code is accessible in the same package and subclasses
-
-**Declaring Return Type**
-
-`Void` means no value is returned
-
-`Primitive Data Typ` can be used to return a value. However, the return statement is required for a value to be given. Otherwise, an error will occur.
-
-**Declaring the Method Name**
-
-**Method Parameters** 
-
-`static` keyword means the method can be directly called using the calss name
-
 To execute a `method`, we can write a statemnt in code, which we is calling or invoking the method.
 
 EX: 1
@@ -363,4 +338,33 @@ EX: 1
 calculateScore(true, 800, levelCompleted, bonus ); // This is calling a method called calculateScore and passing the required information, in the required order
 ```
 
-To execute a method that's defined with aprameters, you have to pass variables, value, or expressions that match the type, order, and number of the parameters decalred in the method.
+To execute a method that's defined with parameters, you have to pass variables, values, or expressions that match the type, order, and number of the parameters decalred in the method. A method that returns a value can be used as an expression or as part of any expression. Any method can be executed as a statement.
+
+`static` keyword means the method can be directly called using the calss name
+
+A few declerations are required to create a `Method`. The order is as listed: (Declareing Modifiers), (Declaring Return Type), (Declaring the Method Name), & (Method Parameters).
+
+### **Declaring Modifiers**
+
+public: The code is accessible for all classes
+
+private: The code is only accessible within the delcared class
+
+*default* The code is only accessible within the declared class. Used when a modifier isn't specified
+
+protected: The code is accessible in the same package and subclasses
+
+### **Declaring Return Type**
+
+`Void` means no value is returned
+
+`Primitive Data Typ` can be used to return a value. However, the return statement is required for a value to be given. Otherwise, an error will occur.
+
+### **Declaring the Method Name**
+
+The method name is what's used to call the method and should be lower camel case.
+
+### **Method Parameters** 
+
+The method parameters must be invoked in the same order and list as it comes with the same data type.
+
