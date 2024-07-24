@@ -332,13 +332,28 @@ Javas description of the method:
 
 A method can be executed many times with potentially different results. By passing data to the method in the form of arguments/ parameters. Developers use the word arguments and parameters interchangably. **But** Technically, a parameter is the defination as shown in the method decleration, and the argiment will be the value that's passed to the method when we call it.
 
+A few declerations are required to create a `Method`. 
+
+**Declaring Modifiers**
+public: The code is accessible for all classes
+private: The code is only accessible within the delcared class
+*default* The code is only accessible within the declared class. Used when a modifier isn't specified.
+protected: The code is accessible in the same package and subclasses
+
+**Declaring Return Type**
+
+
+**Declaring the Method Name**
+
+**Method Parameters** 
+
 `static` keyword means the method can be directly called using the calss name
 
 To execute a `method`, we can write a statemnt in code, which we is calling or invoking the method.
 
 EX: 1
 ```
-calculateScore(true, 800, levelCompleted, bonus ); // This is calling a method called calculateScore and passing the required information 
+calculateScore(true, 800, levelCompleted, bonus ); // This is calling a method called calculateScore and passing the required information, in the required order
 ```
 
 To execute a method that's defined with aprameters, you have to pass variables, value, or expressions that match the type, order, and number of the parameters decalred in the method.
