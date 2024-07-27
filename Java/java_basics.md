@@ -102,9 +102,9 @@ Primitive data types are simply a place holder in memory for a value. For instan
 A Wrapper Class also provides simple operations including basic information about primitive data types which can't be stored on the primitive itself.
 EX.
 ```
-int myMinIntValue = Integer.MIN_VALUE;
+int myMinIntValue = Integer.MIN_VALUE; // Assigns the minimum intager value to the variable
 ```
-The wrapper class in this case is the keyword ***Integer***, shown as an expression. To isntatiate a wrapper class, you must use the full name of the primitive data type starting with a capital letter followed by the function you wish to use.
+The wrapper class in this case is the keyword ***Integer***, shown as an expression. To instantiate a wrapper class, you must use the full name of the primitive data type starting with a capital letter followed by the function you wish to use.
 
 ## Overflow & Underflow
 `Overflow` & `Underflow`; AKA `Wrap Arrounds`. Happens when the data type exceds it's bit-size (maximum or minimum value, AKA width) through an expression. Integer 'wrap around' events does not give an error because when using an expression that `overflows` or `underflows`; the java compilier doesn't attempt to evaluate the expression to determine its value. This causes the value to `Wrap Around` to a negative or positive value. However, when using a literal to assign an integer a larger or smaller allowed value, an error will be thrown.
