@@ -59,7 +59,7 @@ Behind the scence: Java has allocated a place in memory to store the information
 ## Operators
 `Operatores` perform an operation on a variable or value.
 
-An  basic example is `Addition`, `Subtraction`, `Division`, & `Multiplication`.
+A basic example is `Addition`, `Subtraction`, `Division`, & `Multiplication`.
 
 ### Compound Assignment Operator
 
@@ -72,6 +72,17 @@ Compound assignment operators are shortcuts that do a math operation and assignm
 ****=***
 
 ***/=***
+
+EX. 1
+```
+int firstInt = 25;
+firstInt += 25 - 20; // Result is 30
+```
+Ex. 2
+```
+int firstInt = 5;
+firstInt *= 25 - 20; // result is 25
+```
 
 ## Primitive Data Types
 
