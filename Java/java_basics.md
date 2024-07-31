@@ -163,7 +163,7 @@ To assign a `Float` to a declared float variable, the literal must be followed b
 **However** there is a class to use when absolute accuracy is required. `Big Decimal Class`. This class overcomes the limitations with how floating point numbers are stored. This is not a java problem specifically.
 
 ## Char Primitive Data Type
-The `Char` primitive Data type is different than that of a string. The Char data type can only store one `'character'`. There are three different ways to call a char
+The `Char` primitive Data type is different than that of a string. The Char data type can only store one `'character'`. There are three different ways to call a `Char`.
 
 * Literal Character = ***char myChar = 'D';***
 * Unicode Value = ***char myChar = '\u0044'; = 'D'*** 
@@ -349,7 +349,7 @@ EX: 1
 calculateScore(true, 800, levelCompleted, bonus ); // This is calling a method called calculateScore and passing the required information, in the required order
 ```
 
-To execute a method that's defined with parameters, you have to pass variables, values, or expressions that match the type, order, and number of the parameters decalred in the method. A method that returns a value can be used as an expression or as part of any expression. Any method can be executed as a statement.
+To execute a method that's defined with parameters, you have to pass variables, values, or expressions that match the type, order, and number of the parameters decalred in the method. A method that returns a value can be used as an expression or as part of any expression. Any method can be executed as a statement. 
 
 `static` keyword means the method can be directly called using the calss name
 
@@ -357,13 +357,10 @@ A few declerations are required to create a `Method`. The order is as listed: (D
 
 ### **Declaring Modifiers**
 
-`public`: The code is accessible for all classes
-
-`private`: The code is only accessible within the delcared class
-
-*`default`* The code is only accessible within the declared class. Used when a modifier isn't specified
-
-`protected`: The code is accessible in the same package and subclasses
+* `public`: The code is accessible for all classes
+* `private`: The code is only accessible within the delcared class
+* *`default`* The code is only accessible within the declared class. Used when a modifier isn't specified
+* `protected`: The code is accessible in the same package and subclasses
 
 ### **Declaring Return Type**
 
