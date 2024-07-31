@@ -367,9 +367,9 @@ A few declerations are required to create a `Method`. The order is as listed: (D
 
 ### **Declaring Return Type**
 
-`Void` means no value is returned
+`Void` = no value is returned
 
-`Primitive Data Type` can be used to return a value. However, the return statement is required for a value to be given. Otherwise, an error will occur.
+A `Primitive Data Type` can be used to return a value. However, the return statement is required for a value to be given. Otherwise, an error will occur. The `Return` statement can be used in clever ways, so think about reducing the code as much as possible for readability and compile time.
 
 ### **Declaring the Method Name**
 
@@ -379,4 +379,4 @@ The method name is what's used to call the method and should be lower camel case
 
 The method parameters must be invoked in the same order and list as it comes with the same data type.
 
-Some programming languages call a mehtod that returns a value, a function, and a method that doesnt return a value, a procedure. Rarely used for Java but sometimes occcures.
+Some programming languages call a mehtod that returns a value, a `Function`! And, a method that doesnt return a value, a `Procedure`. Rarely used for Java but can occur. 
