@@ -380,9 +380,26 @@ Some programming languages call a mehtod that returns a value, a `Function`! And
 
 ## Method Overloading
 
-`Method Overloading` occurs when a *class* has multiple methods with the *same name*, BUT the methods are delcared with different parameters.
+`Method Overloading` occurs when a **class** has multiple methods with the *same name*, BUT the methods are delcared with different **parameters**.
 
+This allows multiple methods to have the 'same' name, but called with different *arguments*.
 
+jave is able to resolve which method it needs to excecute based on the arguments being passed when the method is invoked!
+
+### Valid overloaded methods
+
+* The type, and number of parameters, in conjuction with the name, make a `Method Signature` unique.
+
+* A unique method signature is the key for the `Java Compiler`, to determine if a method is overloaded correctly.
+
+* The name of the parameter(s) is not part of this `unique signature`, and therefore it doesnt matter what they are called from java's point-of-view.
+
+* `Return types` are also *NOT* used in determining if a method signature is unique.
+
+### More on Method Signatures
+
+A `Method Signature` consists of the name of the method, and the uniqueness of the declartion of its paramters.
+-
 
 
 
