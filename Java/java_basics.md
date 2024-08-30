@@ -399,8 +399,12 @@ jave is able to resolve which method it needs to excecute based on the arguments
 ### More on Method Signatures
 
 A `Method Signature` consists of the name of the method, and the uniqueness of the declartion of its paramters.
--
 
+A signature is unique, not just by the `method name`, but in combination with the `number of Parameters`, their `Data Types`, and the `order` in which they are declared.
+
+* A methods retun type is not part of the signature.
+
+* A parameter name is not part of the signature.
 
 
 
