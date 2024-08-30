@@ -377,3 +377,20 @@ The method name is what's used to call the method and should be lower camel case
 The method parameters must be invoked in the same order and list as it comes with the same data type.
 
 Some programming languages call a mehtod that returns a value, a `Function`! And, a method that doesnt return a value, a `Procedure`. Rarely used for Java but can occur. 
+
+## Method Overloading
+
+`Method Overloading` occurs when a *class* has multiple methods with the *same name*, BUT the methods are delcared with different parameters.
+
+
+
+
+
+
+
+
+
+
+
+
+
