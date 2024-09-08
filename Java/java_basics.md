@@ -481,6 +481,8 @@ See the example below:
 
 ### Yield in a switch statement
 
+The key word `yield` was created specifically for enhanced switch statments because the term return does not work. 
+
 **When to use a yield**
 
 * The switch statement is being used as a switc hexpression returning a value
