@@ -410,7 +410,6 @@ A signature is unique, not just by the `method name`, but in combination with th
 
 A `Switch Statement` is similar to an If-else-then statement. A switch statement will check a value and test it against a `case`. If the `case` is true, then it will execute the code block within and the `break` will terminate the switch statement. A `default` in a switch statement is executed if none of the cases are true. 
 
-
 Example:
 
 ```
@@ -434,6 +433,23 @@ switch (switchValue) {
 ```
 
 The code above highlights the basics of a switch statement and it's use. It is particurly useful when testing a fixed variable when there are many possible outcomes.
+
+### Switch Case Value Data Types
+
+The following are allowed Data Types (including their wrapper classes):
+
+* byte
+* short
+* int
+* char
+* string
+* enum
+
+Not Allowed Data Types (including their wrapper classes):
+
+* long
+* double
+* boolean
 
 ### Fall Through Switch Statment
 
