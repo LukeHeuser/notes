@@ -457,7 +457,7 @@ A fall-through occurs when a case matches true, but there is no present break in
 
 ## Enhanced Switch Statement
 
-The `enhanced switch statement` is the updated version of switch statements in the JDK environemnt. The enhanced switch statment is more versital and easier to read, however, when working with environmetns before java 14.
+The `enhanced switch statement` is the updated version of switch statements in the JDK environemnt. The enhanced switch statment is more versital and easier to read. However, when working with environmetns before java 14, a traditional switch statment must be used.
 
 The `switch expression arrow` replaces the colon used in the older version of switch statments. The arrow token is also used in lambda expressions.
 
