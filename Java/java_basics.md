@@ -406,8 +406,27 @@ A signature is unique, not just by the `method name`, but in combination with th
 
 * A parameter name is not part of the signature.
 
+## Switch Statement
 
+A `Switch Statement` is similar to an If-else-then statement. A switch statement will check a value and test it against a `case`. If the `case` is true, then it will execute the code block within and the `break` will terminate the switch statement. A `default` in a switch statement is executed if none of the cases are true. 
 
+```
+switch (switchValue) {
+      case 1:
+                    System.out.println("Value was 1");
+                    break;
+                case 2:
+                    System.out.println("Value was 2");
+                    break;
+                case 3: case 4: case 5:
+                    System.out.println("Was a 3, a 4, or a 5");
+                    System.out.println("Actually it was a " + switchValue);
+                    break;
+                default:
+                    System.out.println("Value was neither 1, 2, 3, 4 , or 5");
+                    break;
+
+```
 
 
 
