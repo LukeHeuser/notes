@@ -455,7 +455,29 @@ Not Allowed Data Types (including their wrapper classes):
 
 A fall-through occurs when a case matches true, but there is no present break in that case. No more cases are checked after there is a match. As such, all code below the matched case will be executed until the switch statement is finished or until a break is encountered.
 
+## Enhanced Switch Statement
 
+The `enhanced switch statement` is the updated version of switch statements in the JDK environemnt. The enhanced switch statment is more versital and easier to read, however, when working with environmetns before JDK 14
+
+The `switch expression arrow` replaces the colon used in the older version of switch statments. The arrow token is also used in lambda expressions.
+
+The `enhanced switch statment` does not require any breaks as fall-through can not occur.
+
+See the example below:
+
+```
+  int switchValue = 3;
+
+  switch (switchValue) {
+      case 1 -> System.out.println("Value was 1");
+      case 2 -> System.out.println("Value was 2");
+      case 3, 4, 5 -> {
+          System.out.println("Was a 3, a 4, or a 5");
+          System.out.println("Actually it was a " + switchValue);
+      }
+      default -> System.out.println("Value was neither 1, 2, 3, 4 , or 5");
+  }
+```
 
 
 
