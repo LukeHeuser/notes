@@ -479,7 +479,30 @@ See the example below:
   }
 ```
 
+### Yield in a switch statement
 
+**When to use a yield**
+
+* The switch statement is being used as a switc hexpression returning a value
+
+* The case label uses a code block with opening and closing curly braces.
+
+See the example below showing the yield in a switch statement
+```
+public static String getQuarter(String month) {
+
+    return switch (month) {
+        case "January", "February", "March" -> { yield "1st"; }
+        case "April", "May", "June" -> "2nd";
+        case "July", "August", "September" -> "3rd";
+        case "October", "Novemeber", "December" -> "4th";
+        default -> {
+            String badResponse = month + " is bad";
+            yield badResponse;
+        }
+    };
+}
+```
 
 
 
