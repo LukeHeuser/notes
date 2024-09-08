@@ -437,7 +437,7 @@ The code above highlights the basics of a switch statement and it's use. It is p
 
 ### Fall Through Switch Statment
 
-A fall-through occurs when a case matches true, but there is no present break in that case. No more cases are checked, all code below the matched case will be executed until the switch statement is finished or until a break is encountered.
+A fall-through occurs when a case matches true, but there is no present break in that case. No more cases are checked after there is a match. As such, all code below the matched case will be executed until the switch statement is finished or until a break is encountered.
 
 
 
