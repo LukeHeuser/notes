@@ -508,4 +508,27 @@ public static String getQuarter(String month) {
 
 # Looping
 
+Looping allows us to execute the code a multiple number of times.
+
+## For Statment (For Loop)
+
+The `For Loop` is more complex to set up, but is commonly used when iterarting over a set of values.
+=
+
+
+
+
+## While Statement
+
+The `While Loop` executes until a specified condition becomes false.
+
+
+
+## Do While Statment
+
+The `Do While Loop` always executes the code block once, regardless if the loop condition is true or false. Then, continues looping until the expression is false.
+
+
+
+
 
