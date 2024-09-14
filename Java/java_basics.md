@@ -1,12 +1,12 @@
 # Java fundamentals & Basics
 
 
-## Expressions
+# Expressions
 An `expression` is a coding contruct made up of `variables`, `operators`, & `method invocations` that equate to a single value. The expression is the code segment found on the right side of the equals sign in an assignment or decleration statement.
 
 A `literal` is the SIMPLIST form of an expression. It can not be changed like a variable. 
 
-## Statements
+# Statements
 What is a statement? Java statements are fundamental building blocks in Java. A `statement` in Java is an instruction; a command for the programming language to execute. Statements can be simple or compound. There are three types of statements in Java.
 
 A statement can be on multiple lines. Many statements may also share the same line.
