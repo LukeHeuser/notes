@@ -512,9 +512,38 @@ Looping allows us to execute the code a multiple number of times.
 
 ## For Statment (For Loop)
 
-The `For Loop` is more complex to set up, but is commonly used when iterarting over a set of values.
-=
+The `For Loop` is more complex to set up, but is commonly used when iterarting over a set of values. The For Loop continuely loops something until a condition is satisfied.
 
+### Three Parts to the Basic `For Statement` Declaeration (All Parts are Optional)
+
+The initializaion, Expression, and Increment
+```
+// for (init; expression; increment) {
+//    code block;
+// }
+```
+
+* The `Initialization Section` declares or sets state, usually declaring and initializing a loop variable, before the loop begins processing.
+* The `Expression Section`, once it becomes false, will end the loop processing.
+* The `Increment Section` is executed after the expression is tested, and is generally the place where the loop variable is incremented.
+
+```
+  for (double rate = 2.0; rate <= 5.0; rate++) {
+      double interestAmount = calculateInterest(10000,rate);
+      System.out.println("$10,000.00 at "+ rate + "% interest = " + interestAmount);
+  }
+```
+
+A break statment transfers control out of an enclosing statement, usually used in an `if-statement`
+```
+  for (double i = 7.5; i <= 10; i += .25) {
+      double interestAmount = calculateInterest(100,i);
+      if (interestAmount > 8.5){
+          break;
+      }
+      System.out.println("$100.00 at "+ i + "% interest = " + interestAmount);
+  }
+```
 
 
 
