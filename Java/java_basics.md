@@ -129,7 +129,7 @@ Error:
 interger number too large
 ```
 
-## Casting 
+# Casting 
 Casting means to treat or convert a number from one type to another.
 ```
 Byte myMinByte = Byte.MIN_VALUE;
@@ -139,14 +139,14 @@ The code above will give an Error: *incompatible types: int cannot be converted 
 
 This is because the default data type in Java is an Integer. The Java compiler does not attempt to evalute the value in the expression to make sure the value fits in the allowable range of a `Byte`. However, if the expression were to use literals. the `Java Compiler` would be able to evalue the value at compile time and figure out whether or not it fits into the `variable`. 
 
-###There is a solution; casting:
+## There is a solution; casting:
 ```
 Byte myMinByte = Byte.MIN_VALUE;
 byte myFirstByte = (byte) (myMinByte / 2);
 ```
 The output above will be -64. The statement works because we have told the compiler what data type we are using through casting. To do this, we simply state the data type prior to the expression we wish to utilize. This is common practice and not special to Java.
 
-## Floating-Point Number Data Type
+# Floating-Point Number Data Type
 There are two floating point/ real world number data types; `Float`, and the more successful older brother, `Double`.
 
 
@@ -281,7 +281,7 @@ Class FirstClass                             // This is the Class
 }
 ```
 
-## If-then Statement
+# If-then Statement
 
 The `if-then` statement is the most basic of control flow statements. It tells the program to execute a certain seciton of code only if the test evaluates to true, AKA `Conditional Logic`.
 
@@ -319,7 +319,7 @@ The code above is testing if the value in 'isCar' is true. The previous line is 
 
 It is generally recommended to use the abreviated forms for the code is more concise and readable. Additionally, this can help prevent errors by accidentally using an assignment operator when testing booleans for true or false.
 
-## Ternary Operator
+# Ternary Operator
 The `Ternary Operator` has three operands. The only operator currently in java that deos have three. Java officially calls it the `conditional operator`. It is a shortcut to assigning one of two values to a variable, depending on a given condition. It is quite literally the `if-then-else` statement in shorthand.
 
 Example One:
@@ -333,7 +333,7 @@ System.out.println(s);
 
 The `Ternary Operator` is a way to replace an `if statement` if you want a value back based on a condition.
 
-## The Method
+# The Method
 
 Javas description of the method:
 
@@ -355,14 +355,14 @@ To execute a method that's defined with parameters, you have to pass variables, 
 
 A few declerations are required to create a `Method`. The order is as listed: (Declareing Modifiers), (Declaring Return Type), (Declaring the Method Name), & (Method Parameters).
 
-### **Declaring Modifiers**
+## **Declaring Modifiers**
 
 * `public`: The code is accessible for all classes
 * `private`: The code is only accessible within the delcared class
 * *`default`* The code is only accessible within the declared class. Used when a modifier isn't specified
 * `protected`: The code is accessible in the same package and subclasses
 
-### **Declaring Return Type**
+## **Declaring Return Type**
 
 `Void` = no value is returned
 
@@ -406,7 +406,7 @@ A signature is unique, not just by the `method name`, but in combination with th
 
 * A parameter name is not part of the signature.
 
-## Switch Statement
+# Switch Statement
 
 A `Switch Statement` is similar to an If-else-then statement. A switch statement will check a value and test it against a `case`. If the `case` is true, then it will execute the code block within and the `break` will terminate the switch statement. A `default` in a switch statement is executed if none of the cases are true. 
 
