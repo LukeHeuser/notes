@@ -29,7 +29,7 @@ This line of code has three expressions:
 2. (2 + 4)
 3. (15 * 8) What is assigned to myFirstNumber
 
-### Decleration Statment
+## Decleration Statment
 A Decleration Statment is used to declare/ define a variable by indicating the `Data Type` & `Name`. Optionally to set to a specific value.
 
 EX.
@@ -45,7 +45,7 @@ FOR REFERENCE: the value of `25` in the code above is an expression.
 ### Control-Flow Statements
 `Control Flow Statements` determine the order that statements are executed. A great example of a `Contorl Flow Statement` is an if/else statement. 
 
-## Variables
+# Variables
 A `Variable` needs a data type & name to be stored in the RAM. An expression is used to assign a single value to the variable. Variables are, as the name suggests, variable. Meaning, their value can change.
 
 Multiple variables can be assigned on the same line as long as the data type is first declared.
@@ -84,7 +84,7 @@ int firstInt = 5;
 firstInt *= 25 - 20; // result is 25
 ```
 
-## Primitive Data Types
+# Primitive Data Types
 
 There are 8 Primitive Data Types:
 
@@ -96,7 +96,7 @@ Below is a Sketch dividing the primitive and non-primitive data types.
 
 Primitive data types are simply a place holder in memory for a value. For instance, a number or a character. It's important to note that `Primitive Data Types` are ***NOT OBJECTS***. The value stored in primitives are called literals.
 
-### Wrapper Class
+## Wrapper Class
 `Wrapper Classes` are used to convert `Primitive data types` into an `object` and an `object` back into `primitive data types`. This is a very powerful tool as it allows a way for Primitive data types to be treated as objects. Great examples of this are `Generics`, `Data Structers`, and `Libraries`! Many only work with objects, not primitives.
 
 A Wrapper Class also provides simple operations including basic information about primitive data types which can't be stored on the primitive itself.
@@ -106,7 +106,7 @@ int myMinIntValue = Integer.MIN_VALUE; // Assigns the minimum intager value to t
 ```
 The wrapper class in this case is the keyword ***Integer***, shown as an expression. To instantiate a wrapper class, you must use the full name of the primitive data type starting with a capital letter followed by the function you wish to use.
 
-## Overflow & Underflow
+# Overflow & Underflow
 `Overflow` & `Underflow`; AKA `Wrap Arrounds`. Happens when the data type exceds it's bit-size (maximum or minimum value, AKA width) through an expression. Integer 'wrap around' events does not give an error because when using an expression that `overflows` or `underflows`; the java compilier doesn't attempt to evaluate the expression to determine its value. This causes the value to `Wrap Around` to a negative or positive value. However, when using a literal to assign an integer a larger or smaller allowed value, an error will be thrown.
 
 ### Example 1
