@@ -516,7 +516,7 @@ The `For Loop` is more complex to set up, but is commonly used when iterarting o
 
 ### Three Parts to the Basic `For Statement` Declaeration (All Parts are Optional)
 
-The initializaion, Expression, and Increment
+The `Initialization`, `Expression`, and `Increment` 
 ```
 // for (init; expression; increment) {
 //    code block;
