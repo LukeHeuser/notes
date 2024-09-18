@@ -557,7 +557,10 @@ The `While Loop` executes until a specified condition becomes false.
 
 The `Do While Loop` always executes the code block once, regardless if the loop condition is true or false. Then, continues looping until the expression is false.
 
+# Java Debugger
 
+
+[Debugger Info](https://www.jetbrains.com/help/idea/debugging-code.html)
 
 
 
