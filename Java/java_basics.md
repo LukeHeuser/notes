@@ -557,6 +557,7 @@ A break statment transfers control out of an enclosing statement, usually used i
 
 The `While Loop` executes until a specified condition becomes false.
 
+`below is a while loop`
 ```
 while (expression) {
 // code block
@@ -568,6 +569,7 @@ while (expression) {
 
 The `Do While Loop` always executes the code block once, regardless if the loop condition is true or false. Then, continues looping until the expression is false.
 
+Below is a `do while loop`
 ```
 do {
 // code block
