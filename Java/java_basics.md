@@ -601,8 +601,10 @@ A local variable is called local because it is avaialble for us by the code bloc
 
 Local variables are always out of scope for outer blokcs or the containing block they are declared in.
 
+### Scope Best Practice
 
-
+* To declare an initialize varaibles in the same place, if possible. And in a single statement
+* To declare variables in the narrowest scope possible
 
 
 
