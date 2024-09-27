@@ -595,7 +595,8 @@ A local variable is called local because it is avaialble for us by the code bloc
 
 `Scope` describes the accessibility of a variable.
 
-`In scope` means the variable can be used by an executing block or any nested blocks.
+`In scope` means the variable can be used by an executing block or any nested blocks. 
+
 `Out of Scope` means the variable is not available and cannot be used.
 
 Local variables are always out of scope for outer blokcs or the containing block they are declared in.
