@@ -510,6 +510,12 @@ public static String getQuarter(String month) {
 
 Looping allows us to execute the code a multiple number of times.
 
+## Looping Tips
+
+* `Continue` is a keyword to start a new iteration in a loop, it will jump to the expression of the loop and continue from there. 
+
+* `Break` is a keyword that terminates the code block and steps outside the loop statement.
+
 ## For Statment (For Loop)
 
 The `For Loop` is more complex to set up, but is commonly used when iterarting over a set of values. The For Loop continuely loops something until a condition is satisfied.
@@ -551,11 +557,23 @@ A break statment transfers control out of an enclosing statement, usually used i
 
 The `While Loop` executes until a specified condition becomes false.
 
+```
+while (expression) {
+// code block
+}
+```
 
 
 ## Do While Statment
 
 The `Do While Loop` always executes the code block once, regardless if the loop condition is true or false. Then, continues looping until the expression is false.
+
+```
+do {
+// code block
+} while (expression);
+```
+
 
 # Java Debugger
 
