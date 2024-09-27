@@ -593,7 +593,7 @@ A local variable is called local because it is avaialble for us by the code bloc
 }
 ```
 
-`Scope` describes the accessibility of a variable.
+## Scope describes the accessibility of a variable.
 
 `In scope` means the variable can be used by an executing block or any nested blocks. 
 
