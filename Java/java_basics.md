@@ -603,7 +603,7 @@ Local variables are always out of scope for outer blokcs or the containing block
 
 ### Scope Best Practice
 
-* To declare an initialize varaibles in the same place, if possible. And in a single statement
+* To declare and initialize varaibles in the same place, if possible. And in a single statement
 * To declare variables in the narrowest scope possible
 
 
