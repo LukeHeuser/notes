@@ -551,8 +551,6 @@ A break statment transfers control out of an enclosing statement, usually used i
   }
 ```
 
-
-
 ## While Statement
 
 The `While Loop` executes until a specified condition becomes false.
@@ -563,7 +561,6 @@ while (expression) {
 // code block
 }
 ```
-
 
 ## Do While Statment
 
@@ -578,11 +575,44 @@ do {
 } while (expression);
 ```
 
-
 # Java Debugger
 
-
 [Debugger Info](https://www.jetbrains.com/help/idea/debugging-code.html)
+
+# Local Variables and Scope
+
+A local variable is called local because it is avaialble for us by the code block in which it was declared. It is also available to code blocks that are contained by a declaring block
+```
+{ // method code block
+  int firstVariable = 5;
+
+  if (firstVariable > 0) { // Flow statement block starts inner block
+    // Inner block has access to outer blocks variables
+    System.out.println(firstVarable);
+  }
+}
+```
+
+`Scope` describes the accessibility of a variable.
+
+`In scope` means the variable can be used by an executing block or any nested blocks.
+`Out of Scope` means the variable is not available and cannot be used.
+
+Local variables are always out of scope for outer blokcs or the containing block they are declared in.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
