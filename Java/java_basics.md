@@ -581,7 +581,7 @@ do {
 
 # Local Variables and Scope
 
-A local variable is called local because it is avaialble for us by the code block in which it was declared. It is also available to code blocks that are contained by a declaring block
+A local variable is called local because it is avaialble for use by the code block in which it was declared. It is also available to code blocks that are contained by a declaring block
 ```
 { // method code block
   int firstVariable = 5;
