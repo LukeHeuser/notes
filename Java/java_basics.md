@@ -679,7 +679,7 @@ A method called *parseInt* is called directly from the class, *Integer*.
 
 An `Instance Method` requires an instance to exist first & the method to be called on that instance. To use an instance method, an instance or object MUST be created first.
 
-`ObjectValue.methodNmae`
+`ObjectValue.methodName`
 
 Example:
 ```
