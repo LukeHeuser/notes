@@ -606,7 +606,22 @@ Local variables are always out of scope for outer blokcs or the containing block
 * To declare and initialize varaibles in the same place, if possible. And in a single statement
 * To declare variables in the narrowest scope possible
 
+# Objects 
 
+An object is called an instance of a particular class. "Insance" can be used interchangably with "object".
+
+## Class is a template
+
+The class is a template for creating objects! A class be described as:
+
+* A custome data type
+* A special codeblock that contains methods
+
+A class is like an emplty form, it describes information/ place holders for data that will be filled in when the form is given to an `object`.
+
+* The `Class` is the template for the data to be **collected**
+
+This data that is collectd each time is determined by the class.
 
 
 
