@@ -614,6 +614,13 @@ An `Object` is created by instantiating a class and there are many ways to do th
 
 The `new` keyword creates an instance of a class, and you can optionally pass data when creating that instance to set up data on that Object
 
+Looking at the examples Below; String is a special data type that is actually a Class, but 
+```
+String s = "Hello!";
+
+String s = new String("Hello!");
+```
+
 ## Class is a template
 
 The class is a template for creating objects! A class be described as:
