@@ -660,6 +660,14 @@ myObject.myFieldName
 // and myFieldName is an attribute on the class
 ```
 
+## Static and Instance Methods
+
+### Static Method
+
+
+
+### Instance Method
+
 
 
 
