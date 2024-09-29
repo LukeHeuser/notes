@@ -665,7 +665,7 @@ The `Static` keyword is used to differentiate between these two types of methods
 
 ### Static Method
 
-Static method can be called directing using the class name & dot notation. This type of method does not require an instance/ object to use this method. 
+A `Static Method` can be called directing using the class name & dot notation. This type of method does not require an instance/ object to use this method. 
 
 `ClassName.methodName`
 
