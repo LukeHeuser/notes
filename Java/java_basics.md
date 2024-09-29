@@ -661,14 +661,32 @@ myObject.myFieldName
 ```
 
 ## Static and Instance Methods
+The `Static` keyword is used to differentiate between these two types of methods
 
 ### Static Method
 
+Static method can be called directing using the class name & dot notation. This type of method does not require an instance/ object to use this method. 
 
+`ClassName.methodName`
+
+Example:
+```
+Integer.parseInt("123");
+```
+A method called *parseInt* is called directly from the class, *Integer*.
 
 ### Instance Method
 
+An `Instance Method` requires an instance to exist first & the method to be called on that instance. To use an instance method, an instance or object MUST be created first.
 
+`ObjectValue.methodNmae`
+
+Example:
+```
+"hello".toUpperCase();
+```
+
+A method called *toUpperCase* is called on the instance of a string with value *"hello"*. *"hello"* is really an `object` with type string.
 
 
 
