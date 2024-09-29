@@ -630,13 +630,20 @@ The class is a template for creating objects! A class be described as:
 
 A class is like an emplty form, it describes information/ place holders for data that will be filled in when the form is given to an `object`.
 
-* The `Class` is the template for the data to be **collected**
+The `Class` is the template for the data to be **collected**. This data that is collected each time is determined by the class.
 
-This data that is collectd each time is determined by the class.
+## Static and Instance Fields
 
+### Static Field
 
+The `Static Field` requires the `Static` keyword when declared on the class. This means the value of that field always stays with that class. It's stored in a special memory location for values that aren't constantly changing. Unlike local variables & Objects.
 
-![Alt Text](file:///C:/Users/MckCl/Desktop/Screenshot%202024-09-29%20124843.png)
+In the *form analogy*, this would be a firld that is pre-populated on the form and would not change for any of the copied forms (objects). But unlike the form, this type of field in a class doesn't really get copied down to the object. It maintains its single value on the *master copy*, the class. This informaiton can be accessed by "Classname.fieldname"
+
+EX:
+```
+Integer.MAX_VALUE
+```
 
 
 
