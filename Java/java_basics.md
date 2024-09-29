@@ -645,6 +645,40 @@ EX:
 Integer.MAX_VALUE
 ```
 
+### Instance Field
+
+When the static keyword isn't used, it's called an `Instance Field`.
+
+Until the class is instantiated and an object created, the instance field has no place in memory. The instance field can have different values for every instance/ object created.
+
+This value is accessed using the variable name for the object and the dot notation used with the field name
+
+Example:
+```
+myObject.myFieldName
+// myObject is our variable name for an object we create
+// and myFieldName is an attribute on the class
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
