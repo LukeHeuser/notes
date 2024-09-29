@@ -610,6 +610,10 @@ Local variables are always out of scope for outer blokcs or the containing block
 
 An object is called an instance of a particular class. "Insance" can be used interchangably with "object".
 
+An `Object` is created by instantiating a class and there are many ways to do this. The most common way to create an object is to use the *new* keyword.
+
+The `new` keyword creates an instance of a class, and you can optionally pass data when creating that instance to set up data on that Object
+
 ## Class is a template
 
 The class is a template for creating objects! A class be described as:
