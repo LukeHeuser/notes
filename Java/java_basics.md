@@ -522,7 +522,6 @@ The `For Loop` is more complex to set up, but is commonly used when iterarting o
 
 ### Three Parts to the Basic `For Statement` Declaeration (All Parts are Optional)
 
-
 The `Initialization`, `Expression`, and `Increment` 
 ```
 // for (init; expression; increment) {
@@ -533,6 +532,13 @@ The `Initialization`, `Expression`, and `Increment`
 * The `Initialization Section` declares or sets state, usually declaring and initializing a loop variable, before the loop begins processing.
 * The `Expression Section`, once it becomes false, will end the loop processing.
 * The `Increment Section` is executed after the expression is tested, and is generally the place where the loop variable is incremented.
+
+```
+  for (double rate = 2.0; rate <= 5.0; rate++) {
+      double interestAmount = calculateInterest(10000,rate);
+      System.out.println("$10,000.00 at "+ rate + "% interest = " + interestAmount);
+  }
+```
 
 To use a `For statement` without any of the parts, there must be a `;` seperating the parts. 
 
@@ -547,13 +553,6 @@ IE:
       for (;;i++) {
         // code block
       }  
-```
-
-```
-  for (double rate = 2.0; rate <= 5.0; rate++) {
-      double interestAmount = calculateInterest(10000,rate);
-      System.out.println("$10,000.00 at "+ rate + "% interest = " + interestAmount);
-  }
 ```
 
 A break statment transfers control out of an enclosing statement, usually used in an `if-statement`
