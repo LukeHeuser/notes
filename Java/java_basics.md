@@ -522,6 +522,18 @@ The `For Loop` is more complex to set up, but is commonly used when iterarting o
 
 ### Three Parts to the Basic `For Statement` Declaeration (All Parts are Optional)
 
+
+The `Initialization`, `Expression`, and `Increment` 
+```
+// for (init; expression; increment) {
+//    code block;
+// }
+```
+
+* The `Initialization Section` declares or sets state, usually declaring and initializing a loop variable, before the loop begins processing.
+* The `Expression Section`, once it becomes false, will end the loop processing.
+* The `Increment Section` is executed after the expression is tested, and is generally the place where the loop variable is incremented.
+
 To use a `For statement` without any of the parts, there must be a `;` seperating the parts. 
 
 IE:
@@ -536,17 +548,6 @@ IE:
         // code block
       }  
 ```
-
-The `Initialization`, `Expression`, and `Increment` 
-```
-// for (init; expression; increment) {
-//    code block;
-// }
-```
-
-* The `Initialization Section` declares or sets state, usually declaring and initializing a loop variable, before the loop begins processing.
-* The `Expression Section`, once it becomes false, will end the loop processing.
-* The `Increment Section` is executed after the expression is tested, and is generally the place where the loop variable is incremented.
 
 ```
   for (double rate = 2.0; rate <= 5.0; rate++) {
