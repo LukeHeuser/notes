@@ -522,6 +522,20 @@ The `For Loop` is more complex to set up, but is commonly used when iterarting o
 
 ### Three Parts to the Basic `For Statement` Declaeration (All Parts are Optional)
 
+To use a `For statement` without any of the parts, there must be a `;` seperating the parts. IE:
+```
+      for (;i <= number;) {
+        // code block
+      }
+      for (i = 5;;) {
+        // code block
+      }
+      for (;;i++) {
+        // code block
+      }
+  
+```
+
 The `Initialization`, `Expression`, and `Increment` 
 ```
 // for (init; expression; increment) {
