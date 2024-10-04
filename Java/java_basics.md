@@ -339,7 +339,7 @@ Javas description of the method:
 
 > A method decalres executable code that can be invoked, passing a fixed number of values as argumets.
 
-* `Methods` is a way of reducing code duplication. 
+* `Methods` is a way of reducing code duplication.
 
 A method can be executed many times with potentially different results. By passing data to the method in the form of arguments/ parameters. Developers use the word arguments and parameters interchangably. **But** Technically, a parameter is the defination as shown in the method decleration, and the argiment will be the value that's passed to the method when we call it.
 To execute a `method`, we can write a statemnt in code, which we is calling or invoking the method.
