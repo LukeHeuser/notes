@@ -732,7 +732,7 @@ Simialr to System.out, Java provides System.in which can read input from the con
 
 ### System.console()
 
-This is Java's solution for easier support for reading a single line and prompting the user for information. While easy to use, it does not work with IDE's because the environments disable it.
+This is Java's solution for easier support for reading a single line and prompting the user for information. While easy to use, it does not work with IDE's because the environments disable the console.
 
 ### Command Line Arguments
 
