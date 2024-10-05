@@ -742,17 +742,54 @@ This is calling the Java program and specifying data in the call. This is very c
 
 The Scanner class was built to be a common way to read input, either using System.in or a file. 
 
+# New Key word
+
+The new keyword is used in what Java calls a `Class Instance Creation Expression`.
+```
+ClassName variableName = new ClassName();
+```
+Can optionally pass arguments in the parentheses, similar to methods
+```
+ClassName variableName = new ClassName(argument1, argument2);
+```
+
 # The Scanner Class
 
-The scanner class is described as a simple text scanner, which can parse primitive types and strings. 
+The `Scanner` class is described as a simple text scanner, which can parse primitive types and strings. 
 
-* To use the scanner class we have to create an instance of scanner. This means to create an object of type `Scanner`.
+* To use the scanner class we have to create an *instance* of Scanner. This means to create an object of type `Scanner`.
 
 ### ClassName variableName = new ClassName(); 
 IE.
 ```
 Scanner scanner = new Scanner(System.in);
 ```
+
+# Instantiating Scanner
+
+For reading input from the console or terminal, we instatiate a scanner object using `new`, followed be the Scanner class name, and passing System.in, as an argument in the parentheses.
+
+```
+Scanner sc = new Scanner(System.in);
+```
+
+For reading input from a file, we instatiate a `Scanner` object using *new*, again with the Scanner class name, but pass a *file object*, as an argument in the parentheses.
+
+```
+Scanner sc = new Scanner(new File("nameOfFileOnFileSystem"));
+```
+
+It is Common practice to use a variable name which has the same name as the class
+```
+Scanner scanner = new Scanner(System.in);
+```
+The above statement creates a local Variable named scanner that can be used to execute instance methods on.
+E.G
+```
+String name = scanner.nextLine();
+```
+The `nextLine` method is an `instance method` on scanner.
+
 
 
 
