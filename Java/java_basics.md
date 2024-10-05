@@ -709,11 +709,10 @@ A method called *toUpperCase* is called on the instance of a string with value *
 
 # Parsing Data to Numberic Values
 
-Wrapper | Wrapper Method
------------------------
-Integer | parseInt(String)
-        |
-Double  | parseDouble(String)
+  Wrapper | Wrapper Method
+* Integer | parseInt(String)
+* Double  | parseDouble(String)
+
 
 ```
   String usersDateOfBirth = "1999";
