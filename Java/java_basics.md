@@ -738,17 +738,26 @@ This is Java's solution for easier support for reading a single line and prompti
 
 This is calling the Java program and specifying data in the call. This is very commonly used but doesn't allow the creation of an interactive application in a loop in Java
 
-### Scarnner
+### Scanner
 
-The Scanner class was built to be a common way to read input, either using System.in or a file. 
+The `Scanner Class` was built to be a common way to read input, either using System.in or a file. 
 
-# New Key word
+# Using Import Statement
+
+The Import Statement allows us to use classes from other peoples code
+
+Java provides a library of code, which includes the `Scanner` class in a library called java.util.
+```
+import java.util.Scanner;
+```
+
+# New Key Word
 
 The new keyword is used in what Java calls a `Class Instance Creation Expression`.
 ```
 ClassName variableName = new ClassName();
 ```
-Can optionally pass arguments in the parentheses, similar to methods
+Can optionally pass arguments in the parentheses, similar to methods.
 ```
 ClassName variableName = new ClassName(argument1, argument2);
 ```
@@ -779,7 +788,7 @@ For reading input from a file, we instatiate a `Scanner` object using *new*, aga
 Scanner sc = new Scanner(new File("nameOfFileOnFileSystem"));
 ```
 
-It is Common practice to use a variable name which has the same name as the class
+It is Common practice to use a variable name which has the same name as the class.
 ```
 Scanner scanner = new Scanner(System.in);
 ```
@@ -790,12 +799,24 @@ String name = scanner.nextLine();
 ```
 The `nextLine` method is an `instance method` on scanner.
 
+# What's an Exceptionn?
 
+An exception is an error that happens in code. Some types of errors can be predicted and named. An exception is caught first by creating a code block around the code that gets the error. This is done with the `Try Statement` code block.
 
+### The Try Statement
 
+The Try Statement has two code blocks.
 
+```
+try {
+  // statements that might get errors
+} catch (Exception e) {
+  // code to react or handle the error
+}
+```
+The catch keyword includes the decleration of variables in parentheses, and then has it's own code block.
 
-
+The `Decleration` includes the type of the exception and a variable name.
 
 
 
