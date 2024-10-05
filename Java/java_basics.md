@@ -742,6 +742,28 @@ This is calling the Java program and specifying data in the call. This is very c
 
 The Scanner class was built to be a common way to read input, either using System.in or a file. 
 
+# The Scanner Class
+
+The scanner class is described as a simple text scanner, which can parse primitive types and strings. 
+
+* To use the scanner class we have to create an instance of scanner. This means to create an object of type `Scanner`.
+
+### ClassName variableName = new ClassName(); 
+IE.
+```
+Scanner scanner = new Scanner(System.in);
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
