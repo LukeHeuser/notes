@@ -707,13 +707,15 @@ A method called *toUpperCase* is called on the instance of a string with value *
 
 
 
+# Parsing Data to Numberic Values
 
 
+```
+  String usersDateOfBirth = "1999";
 
-
-
-
-
+  // static method called on the class Integer.
+  int dateOfBirth = Integer.parseInt(usersDateOfBirth);
+```
 
 
 
