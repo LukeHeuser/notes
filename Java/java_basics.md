@@ -709,6 +709,11 @@ A method called *toUpperCase* is called on the instance of a string with value *
 
 # Parsing Data to Numberic Values
 
+Wrapper | Wrapper Method
+-----------------------
+Integer | parseInt(String)
+        |
+Double  | parseDouble(String)
 
 ```
   String usersDateOfBirth = "1999";
@@ -716,7 +721,7 @@ A method called *toUpperCase* is called on the instance of a string with value *
   // static method called on the class Integer.
   int dateOfBirth = Integer.parseInt(usersDateOfBirth);
 ```
-
+Integer is a class, not an object. On this class, there is a 'static' method called parseInt and it is being called on its class. This is only for a static Method. An Instance Method would require an object.
 
 
 
