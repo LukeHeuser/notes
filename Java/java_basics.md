@@ -709,7 +709,8 @@ A method called *toUpperCase* is called on the instance of a string with value *
 
 # Parsing Data to Numberic Values
 
-  Wrapper | Wrapper Method
+The below `Wrapper` and `Wrapper Methods` are the most commonly used.
+ 
 * Integer | parseInt(String)
 * Double  | parseDouble(String)
 
@@ -723,9 +724,23 @@ A method called *toUpperCase* is called on the instance of a string with value *
 Integer is a class, not an object. On this class, there is a 'static' method called parseInt and it is being called on its class. This is only for a static Method. An Instance Method would require an object.
 
 
+## Reading Data from the Console:
 
+### System.in
 
+Simialr to System.out, Java provides System.in which can read input from the console or terminal.
 
+### System.console()
+
+This is Java's solution for easier support for reading a single line and prompting the user for information. While easy to use, it does not work with IDE's because the environments disable it.
+
+### Command Line Arguments
+
+This is calling the Java program and specifying data in the call. This is very commonly used but doesn't allow the creation of an interactive application in a loop in Java
+
+### Scarnner
+
+The Scanner class was built to be a common way to read input, either using System.in or a file. 
 
 
 
