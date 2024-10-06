@@ -882,7 +882,7 @@ If a field is `Static`, there is only one copy in memory, and the value is assoc
 
 If a field is not static, its called an `Instance Field`, and each object may have a different value stored for this field.
 
-A `Static Method` **can't** be *dependent* on any one `Objects` state, so it **can't** reference **ANY** `Instance Members`.
+A `Static Method` **CAN'T** be *dependent* on any one `Objects` state, so it **CAN'T** reference **ANY** `Instance Members`.
 
 In other words-
 -
