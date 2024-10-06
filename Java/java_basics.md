@@ -908,7 +908,8 @@ A `Top-Level Class` has only two valid access modifiers options: `Public` or `"n
 Public means any other class in any package can access this class.
 
 ### "nothing"
-Null: When the modifier is omitted. This has a special meaning, called `Package Access`. This means that the class is accessible *only* to classes in the same `Package`.
+Null: When the modifier is omitted. This has a special meaning, called `Package Access`. This means that the class is accessible *only* to classes in the same `Package`. Java, by default, implicitly allows package-private access. Essentially, this means that classes grouped into the same package can access the class.
+
 
 
 
