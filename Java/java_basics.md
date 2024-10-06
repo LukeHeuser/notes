@@ -864,8 +864,29 @@ Behavior for a person:
 * Fighting
 * Walking
 
+## State & Behaviour
 
+Modelling real-world objects as software objects is a fundamental part of `OOP`.
 
+A software object stores its state in `Fields`, which can also be called `Attributes` (or variables). Objects expose their `Behavior` with methods. Then, the `Class` fits in as a template or a blueprint for creating `Objects`.
+
+## The Class as A Blueprint
+
+The class describes the data *(AKA fields)*, and the behavior *(AKA methods)*, that are relevant to the real-world object we want to describe.
+
+These are called `Class Members`!
+
+A `Class Member` can be a field or a method, or some other type of dependent element. 
+
+If a field is `Static`, there is only one copy in memory, and the value is associated with the class or template itself. In 
+
+If a field is not static, its called an `Instance Field`, and each object may have a different value stored for this field.
+
+A `Static Method` **can't** be *dependent* on any one `Objects` state, so it **can't** reference **ANY** `Instance Members`.
+
+In other words-
+-
+Any method that operates on `Instance Fields` needs to be non-static. The class or member fields needs to be non-static. 
 
 
 
