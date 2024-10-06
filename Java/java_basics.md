@@ -888,11 +888,27 @@ In other words-
 -
 Any method that operates on `Instance Fields` needs to be non-static. The `Class` or `Member Fields` must be non-static. These class or member fields can be thought of as variables, but are called `Fields` or `Attributes`.
 
+## Organizing Classes
 
+Classes can be organized into logical groupings called packages.
 
+You declare a `Package Name` in the class using the `Package Statement`. if a package is *NOT* declared, the class *implicitly* belongs to the `default package`.
 
+### So what does this mean?
 
+The Bottom line is that `Classes` are grouped into `Packages`. This is necessary to understand in order to understand `Access Modifiers`.
 
+## Access Modifiers for the Class
+
+A `Class` is said to be a `top-level` class if it is defined in the source code file and not enclosed in the code block of another class, type, or method.
+
+A `Top-Level Class` has only two valid access modifiers options: `Public` or `"nothing/ null"`
+
+### Public
+Public means any other class in any package can access this class.
+
+### "nothing"
+Null: When the modifier is omitted. This has a special meaning, called `Package Access`. This means that the class is accessible *only* to classes in the same `Package`.
 
 
 
