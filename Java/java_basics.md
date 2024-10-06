@@ -886,7 +886,7 @@ A `Static Method` **CAN'T** be *dependent* on any one `Objects` state, so it **C
 
 In other words-
 -
-Any method that operates on `Instance Fields` needs to be non-static. The class or member fields needs to be non-static. 
+Any method that operates on `Instance Fields` needs to be non-static. The class or member fields needs to be non-static. These class or member fields can be thought of as variables, but are called `Fields` or `Attributes`.
 
 
 
