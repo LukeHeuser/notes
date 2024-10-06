@@ -818,6 +818,58 @@ The catch keyword includes the decleration of variables in parentheses, and then
 
 The `Decleration` includes the type of the exception and a variable name.
 
+# Object Oriented Programming
+
+## What is OOP?
+
+Object-Oriented Programming is a way to model real-world objects as software objects which contain both data and code. Sometimes OOP is called class-based programming
+
+### Class-Based programming
+
+Class-based programming starts with classes which become the blueprints for objects. But what even is an `Object`?
+
+Real world objects have two major compnents: ***State*** & ***Behaviour***. Below are a few examples highlighting these.
+
+State in terms of a Computer object:
+-
+* Amount of RAM
+* Operating System
+* HDD or SSD size
+* Size of the monitor
+
+These are characteristics about the item that can describe it.
+
+State for a person (animate objects)
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
