@@ -938,7 +938,9 @@ When we make our *attributes* `private`, we can then create methods to access th
 
 * Fields are defined in the classes code block/ body of the class and not in a method.
 
-When an `object` is created from a `class`, the values are then assiged to these `fields` which represent the `state` of the object.
+When an `object` is created from a `class`, the values are then assiged to these `privatge fields` which represent the `state` of the object.
+
+Unlike local variables, class variables should have some type of access modifier declared for it. If one is not declared, java declares the default, `Package Private`, implicitly.
 
 
 
