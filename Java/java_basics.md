@@ -910,6 +910,31 @@ Public means any other class in any package can access this class.
 ### "nothing"
 Null: When the modifier is omitted. This has a special meaning, called `Package Access`. This means that the class is accessible *only* to classes in the same `Package`. Java, by default, implicitly allows package-private access. Essentially, this means that classes grouped into the same package can access the class.
 
+## Access Modifiers for Class Members
+An access modifier at the member level allows granular control over class members.
+
+The valid access modifiers below are from least restrictive to most restrictive:
+
+### Public
+This means there is unrestricted access to the member.
+
+### Protected 
+Protected allows classes in the same package, and any subclasses in other packages to access this member
+
+### NULL
+When there is no modifier, this means package or package-private by default. So that any class in the same package can access this member.
+
+### Private
+Private means that no class/ code can use this field or method. The general rule is to make all fields private. This is because of `Encapsulation`.
+
+## Encapsulation
+
+`Encapsulation` in Object Orientated Programming has two meanings.
+
+* One is the bundling of `Behavior` and `Attributes` on a single object
+* The other is the practice of *hiding* fields and some methods from public access
+
+
 
 
 
