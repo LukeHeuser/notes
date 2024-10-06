@@ -828,7 +828,7 @@ Object-Oriented Programming is a way to model real-world objects as software obj
 
 Class-based programming starts with classes which become the blueprints for objects. But what even is an `Object`?
 
-Real world objects have two major compnents: ***State*** & ***Behaviour***. Below are a few examples highlighting these.
+Real world objects have two major compnents: ***State*** & ***Behavior***. Below are a few examples highlighting these.
 
 State in terms of a Computer object:
 -
@@ -841,6 +841,28 @@ These are characteristics about the item that can describe it.
 
 State for a person (animate objects)
 -
+* The age
+* The number of fingers
+* The conscious state
+* Wheather they are awake or sleeping
+
+In addition to state, objects may also have behavior or actions that can be *performed* by the object, or upon the object.
+
+Behavior for a computer:
+-
+* Booting up
+* Shutting down
+* Outputting a sound
+* Drawing something on screen
+
+All can be described as behaviors for a computer.
+
+Behavior for a person:
+-
+* Eating
+* Talking
+* Fighting
+* Walking
 
 
 
