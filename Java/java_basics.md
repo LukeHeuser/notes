@@ -942,6 +942,16 @@ When an `object` is created from a `class`, the values are then assiged to these
 
 Unlike local variables, class variables should have some type of access modifier declared for it. If one is not declared, java declares the default, `Package Private`, implicitly.
 
+### Default Values for Fields on Classes
+
+* Fields on classes are assigned default values automatically by Java if they aren't assigned values.
+
+* Boolean = false
+* byte, short, int, long, char = 0
+* double, float = 0.0
+* Any other type will be null
+
+
 ## Getters and Setters
 
 A `getter` is a method on a class that retrieves the value of a *private* field and returns it.
@@ -957,7 +967,6 @@ This means we can change things interally like the name or type of a field. As l
 A getter method usually just returns the value of a `private` field. There can be getter methods for fields that are not really declared on the class, but that are derived in someway.
 
 A setter method may simply just assign the argument passed to the method, then, to the field. But, it can also contain code to validate data, check additional security requirements, ensure immutability of the field value, or any other code required to protect and validate an objects state.
-
 
 
 
