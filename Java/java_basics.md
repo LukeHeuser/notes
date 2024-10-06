@@ -934,7 +934,11 @@ Private means that no class/ code can use this field or method. The general rule
 * One is the bundling of `Behavior` and `Attributes` on a single object
 * The other is the practice of *hiding* fields and some methods from public access
 
+When we make our *attributes* `private`, we can then create methods to access the data. Each with different degrees of access allowed as needed.
 
+*Fields are defined in the classes code block/ body of the class and not in a method.
+
+When an `object` is created from a `class`, the values are then assiged to these `fields` which represent the `state` of the object.
 
 
 
