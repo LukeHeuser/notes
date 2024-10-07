@@ -972,7 +972,7 @@ Setter
 -
 A setter method may simply just assign the argument passed to the method, then, to the field. But, it can also contain code to **validate data**, **check additional security requirements**, **ensure immutability of the field value**, or any **other code required to protect and validate an objects state**.
 
-What you can do with a setter method is set up all the rules related to that class, what is valid, and what is not valid.
+What you can do with a setter method is set up all the rules related to that class, what is valid, and what is not valid. This functionality can be set up within the class itself, so that any rules are in place when *instantiating an Object`
 
 
 
