@@ -964,9 +964,15 @@ An important aspect is that the `getter` and `setter` method signatures are a pa
 
 This means we can change things interally like the name or type of a field. As long as we use the same getter and setter method, these changes shouldn't affect external code that uses our class.
 
+Getter
+-
 A getter method usually just returns the value of a `private` field. There can be getter methods for fields that are not really declared on the class, but that are derived in someway.
 
-A setter method may simply just assign the argument passed to the method, then, to the field. But, it can also contain code to validate data, check additional security requirements, ensure immutability of the field value, or any other code required to protect and validate an objects state.
+Setter
+-
+A setter method may simply just assign the argument passed to the method, then, to the field. But, it can also contain code to **validate data**, **check additional security requirements**, **ensure immutability of the field value**, or any **other code required to protect and validate an objects state**.
+
+What you can do with a setter method is set up all the rules related to that class, what is valid, and what is not valid.
 
 
 
