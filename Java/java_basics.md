@@ -936,6 +936,8 @@ Private means that no class/ code can use this field or method. The general rule
 
 When we make our *attributes* `private`, we can then create methods to access the data. Each with different degrees of access allowed as needed.
 
+The whole reason behind Encapsulation is not allowing people to access fields directly. We force them to go through a controlled way of setting up the data on the object. Using the setter method, we can make sure the data in our objects is valid data.
+
 * Fields are defined in the classes code block/ body of the class and not in a method.
 
 When an `object` is created from a `class`, the values are then assiged to these `privatge fields` which represent the `state` of the object.
