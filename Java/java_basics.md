@@ -753,7 +753,7 @@ import java.util.Scanner;
 
 # New Key Word
 
-The new keyword is used in what Java calls a `Class Instance Creation Expression`. The New keyword is used to create a new instance of a class! When we use new, it allocates a memory for a new object in the heap and returns a reference to that memory. This is essential for the managment of dynamic memory in Java
+The new keyword is used in what Java calls a `Class Instance Creation Expression`. The New keyword is used to create a new instance of a class! When we use new, it allocates a memory for a new object in the heap and returns a reference to that memory. This is essential for the managment of dynamic memory in Java.
 ```
 ClassName variableName = new ClassName();
 ```
