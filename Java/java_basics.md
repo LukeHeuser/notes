@@ -976,7 +976,19 @@ A setter method may simply just assign the argument passed to the method, then, 
 
 What you can do with a setter method is set up all the rules related to that class, what is valid, and what is not valid. This functionality can be set up within the class itself, so that any rules are in place when *instantiating an Object`
 
+## This
 
+`'this'` is a special keyword in java. What this really refers to is the *instance* that was created when the object was instatiated. So, `'this'` is a special reference name for the object or instance, which it can use to describe itself! We can then use `'this'` to access fields on the class.
+
+EG.
+```
+private String make;
+
+public void setMake(String make){
+  this.make = make; // Tells java it wants to update the field 'private String make'
+                    // with the contents of the parameter `make` that was passed to the method
+}
+```
 
 
 
