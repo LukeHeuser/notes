@@ -958,7 +958,20 @@ Unlike local variables, class variables should have some type of access modifier
 
 A `getter` is a method on a class that retrieves the value of a *private* field and returns it.
 
+```
+private String model;
+public String getModel() {
+    return model;
+}
+```
+
 A `setter` is a method on a class that sets the value of a private field. 
+
+```
+public void setModel(String model){
+  this.model = model;
+}
+```
 
 * The purpose of theses methods is to control and protect access to private fields
 
