@@ -1003,6 +1003,35 @@ public void setMake(String make){
 }
 ```
 
+## Constructer
+
+* A `Constructor` is used in the creation of an objcet! This is a special type of code block that has a specific name and parameters, much like a method.
+
+### Rules
+
+A `Constructor` has the same name as the *class* itself, and it doesnt return any values but has an access modifier. There is never a return type from a constructor, not even void.
+
+There can, and should be an appropriately specified access modfier that controls who should be able to create new instances of the class, using *this* `constructor`.
+```
+public Class Account { // Class decleration
+  public Account () { // Constructor decleration
+    // Constructor code is code to be executed as the object is created
+  }
+}
+```
+
+### What Does A Constructor Do?
+
+Essentially, a constructor sets the values of the fields in an instance of a class. In addition, there can also be other initialization code to be performered in the constructor.
+
+* A constructor is implicitly created in Java
+
+When a new object is initialized using the new keyword, *= new Account();*. This calls that implicit constructor. This is called the default constructor (or no args constructor).
+
+### Default Constructor
+
+If a class contains no constructor declerations, then a default constructor is implicitly declared.
+
 
 
 
