@@ -1030,11 +1030,22 @@ When a new object is initialized using the new keyword, *= new Account();*. This
 
 ### Default Constructor
 
-If a class contains no constructor declerations, then a default constructor is implicitly declared.
+If a class contains no constructor declerations, then a default constructor is implicitly declared. This constructor has no parameters and is often called the no-args constructor.
 
+If a class contains any other constructor declerations, then a default constructor is not declared.
 
+A constructor exists whether on is explicitly decalred or not. This is why creating a new object with the *'new'* keyword and passing no arguments is supported in almost all cases.
 
+### More on the Constructor
 
+When a new object/ instance is created, this is Javas cue to call the constructor. The purpose of the constructor is to initialize the object that we're creating and do anything else while the object is being instatiated.
+
+* A constructor is only called once at the beginning/ creation of an object
+* A Class can have one or many constructors
+
+### Constructor Overloading
+
+Constructor overloading is declaring multiple constructors with different parameters. The number of parameters can be different between constructors. Or, if the number of parameters is the same between two constructors, their types or order of types must differ.
 
 
 
