@@ -1007,7 +1007,7 @@ public void setMake(String make){
 
 * A `Constructor` is used in the creation of an objcet! This is a special type of code block that has a specific name and parameters, much like a method.
 
-### Rules
+## Rules of A Constructor 
 
 A `Constructor` has the same name as the *class* itself, and it doesnt return any values but has an access modifier. There is never a return type from a constructor, not even void.
 
@@ -1020,21 +1020,13 @@ public Class Account { // Class decleration
 }
 ```
 
-### What Does A Constructor Do?
+## What Does A Constructor Do?
 
 Essentially, a constructor sets the values of the fields in an instance of a class. In addition, there can also be other initialization code to be performered in the constructor.
 
 * A constructor is implicitly created in Java
 
 When a new object is initialized using the new keyword, *= new Account();*. This calls that implicit constructor. This is called the default constructor (or no args constructor).
-
-### Default Constructor
-
-If a class contains no constructor declerations, then a default constructor is implicitly declared. This constructor has no parameters and is often called the no-args constructor.
-
-If a class contains any other constructor declerations, then a default constructor is not declared.
-
-A constructor exists whether on is explicitly decalred or not. This is why creating a new object with the *'new'* keyword and passing no arguments is supported in almost all cases.
 
 ### More on the Constructor
 
@@ -1043,7 +1035,15 @@ When a new object/ instance is created, this is Javas cue to call the constructo
 * A constructor is only called once at the beginning/ creation of an object
 * A Class can have one or many constructors
 
-### Constructor Overloading
+## Default Constructor
+
+If a class contains no constructor declerations, then a default constructor is implicitly declared. This constructor has no parameters and is often called the no-args constructor.
+
+If a class contains any other constructor declerations, then a default constructor is not declared.
+
+A constructor exists whether on is explicitly decalred or not. This is why creating a new object with the *'new'* keyword and passing no arguments is supported in almost all cases.
+
+## Constructor Overloading
 
 Constructor overloading is declaring multiple constructors with different parameters. The number of parameters can be different between constructors. Or, if the number of parameters is the same between two constructors, their types or order of types must differ.
 
