@@ -1047,8 +1047,19 @@ A constructor exists whether on is explicitly decalred or not. This is why creat
 
 Constructor overloading is declaring multiple constructors with different parameters. The number of parameters can be different between constructors. Or, if the number of parameters is the same between two constructors, their types or order of types must differ.
 
+## Constructor Chaining With this()
 
+`Constructor Chaining` is when one contructor expliciitly ca;;s another overloaded constructor. Constructor Chaining only works within constructors, hence the name! The special statement `this(//arg1, arg2, etc.)` must be used to execute another constructor, passing arguments if required. Additionally `this()` must be the FIRST executable statment if it's used from another constructor.
+```
+public Customer () {
+    this("Person", "person@emailaddress.com");
+}
+```
+## Additional info on Constructors
 
+Generally it's always better to assign the values directly to the field, rather than calling the setting in a constructor. There scenarios where these calls to setter methods for validation code or another functionality, may not work. Such as inheritance and creating subclasses.
+
+* General rule with constructos is don't call any other method other than another constructor with those constructors
 
 
 
