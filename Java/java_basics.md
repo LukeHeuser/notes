@@ -1074,6 +1074,25 @@ house anotherHouse = blueHouse;
 
 There's no way to access an object directly, everything is done using that reference. A reference (the variable the object is assigned to) allows ut ohave access to the object.
 
+# More on Static and Instance Variables & Methods
+
+## Instance Methods
+
+Instance methods belong to a specific instance of a class. To use an instance method, the class must first be instantiated, usually by using the 'new' keyword.
+
+* `Instance Methods` can access instance methods and instance variables direclty
+
+* Instance methods can *ALSO* access static methods and static variables directly
+
+Directly means we do not have to use the keyword `this` with dot notation to use them. And, we don't have to use the class name with dot notation to access static variables or methods, if the static variable or method is in the same class.
+
+## How to determine if a method should be static?
+
+Does the method use any fields?
+
+* `YES:` It should likely be an instance method.
+* `NO:` It should likely be a static method.
+
 
 
 
