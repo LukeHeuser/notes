@@ -1076,6 +1076,44 @@ There's no way to access an object directly, everything is done using that refer
 
 # More on Static and Instance Variables & Methods
 
+## Static Variables
+
+A static variable is declared by using the keyword static
+
+* Static variables are also known as `static member variables`
+
+Every instance of a class, shares the *SAME* static variable. If changes are made to that variables, all other instances of that calss will see the effect of that change.
+
+It is considered best practice to use the class name and not a reference varaible to access a static variable. This makes it clearer that the variable is assocaited with the class and therefore, not stored with the instance.
+
+An instance isn't required to exist to access the value of a static variable. Static variables aren't used very often, but can sometimes be very useful. \
+
+They can be used for:
+* Storing Counters
+* Generating unique IDs
+* Storing a constant value that doesn't change, like PI
+* Creating and controlling access to a shared resource (a log file, database, or a different type of input or output stream).
+
+## Instance Variables
+
+Instance variables don't use the static keyword when defining them. They are also known as Fields or member variables.
+
+Instance variables belong to a specific instance of a class, unlike a static variable.
+
+Every instance has its own copy of an instance variable. Every instance can also have a different value. Instance variables represent the state of a specific instance of a class.
+
+## Static Methods
+
+`Static methods` are declared using a static modifier. Static methods can't access instance methods and instant variables directly. 
+
+They're usually used for operations that don't require any data from an instance of the calss (from *this.*). The this keyword is teh current instance of a class.
+
+Inside a static method, we can't use the *this* keyword.
+
+Whenever there is a method that doesn't use instance variables, that method should likely be declared as a static method. For example, main is a static method and it's called by the Java Cirtual Machine (JVM), when it starts the Java application.
+
+* Static methods are called as, *ClassName.methodName();* or/ *methodName();* (However, this is only if the static method is in the same class)
+
 ## Instance Methods
 
 Instance methods belong to a specific instance of a class. To use an instance method, the class must first be instantiated, usually by using the 'new' keyword.
