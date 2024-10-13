@@ -1003,7 +1003,7 @@ public void setMake(String make){
 }
 ```
 
-## Constructer
+# Constructer
 
 * A `Constructor` is used in the creation of an objcet! This is a special type of code block that has a specific name and parameters, much like a method.
 
@@ -1060,6 +1060,19 @@ public Customer () {
 Generally it's always better to assign the values directly to the field, rather than calling the setting in a constructor. There scenarios where these calls to setter methods for validation code or another functionality, may not work. Such as inheritance and creating subclasses.
 
 * General rule with constructos is don't call any other method other than another constructor with those constructors
+
+# What is a Reference?
+A reference is a variable name that points to the memory location of an object!
+
+We can pass references as parameters to constructors and methods.
+
+A referemce points to an object in memory. If there are many references to the same object, changing one changes all.
+```
+House blueHouse = new House("blue");
+house anotherHouse = blueHouse;
+```
+
+There's no way to access an object directly, everything is done using that reference. A reference (the variable the object is assigned to) allows ut ohave access to the object.
 
 
 
