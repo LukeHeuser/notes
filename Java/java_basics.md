@@ -1137,7 +1137,13 @@ A `Plain Old Java Object (POJO)` is a class that generally only has instance fie
 
 Many database frameworks use POJO's to read data from, or to write data to data bases, files, or streams.
 
-* A `POJO` may also be called a `bean` or `Java bean`.
+* A `POJO` may also be called a `bean` or `Java bean`
+
+A `Java Bean` is just a POJO with a few extra rules applied to it. There rules are in place so that `Java framworks` have a standard way to manipulate and manage these objects.
+
+A POJO is somtimes call an `entity` because it mirrors database entities.
+
+Another acronym is `DTO` for `Data Transfer Object`. It's a description of an object that can be modeled as just data.
 
 
 
