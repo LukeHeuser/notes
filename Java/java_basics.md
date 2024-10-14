@@ -1131,6 +1131,15 @@ Does the method use any fields?
 * `YES:` It should likely be an instance method.
 * `NO:` It should likely be a static method.
 
+# Plain Old Java Object (POJO)
+
+A `Plain Old Java Object (POJO)` is a class that generally only has instance fields. It's used to house data and pass data between functional classes. Usually, it has no other, or very few methods other than geteters and setters for the instance fields.
+
+Many database frameworks use POJO's to read data from, or to write data to data bases, files, or streams.
+
+* A `POJO` may also be called a `bean` or `Java bean`.
+
+
 
 
 
