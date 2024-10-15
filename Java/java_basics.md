@@ -1145,6 +1145,26 @@ A POJO is somtimes call an `entity` because it mirrors database entities.
 
 Another acronym is `DTO` for `Data Transfer Object`. It's a description of an object that can be modeled as just data.
 
+## Annotation
+
+`Annotations` are a type of `metadata`. Metadata is a way to formally describe additional information about our code. Annotations are more structed with more meaning than comments. This is because they can be used by compiler or other types of pre-processing functions to get information about the code.
+
+* Metadata doesn't affect how the code runs.
+
+## Overridden Method
+
+An overridden method is not the same as an overloaded method.
+
+An overridden method is a special method in java that other classes can implement if they use a specified method signature. Similar to how we create the main method, we have to create the `toString` method a certain way.
+
+* Every object passed to `println` will have the `toString` method implicitly executed if the method has been created on the class.
+
+# The Record Type
+
+THe purpose of the `Record type` is to replace boilerplate code of the `POJO` but to be more restrictive
+
+* Boilerplate code is the code that is repetative and follows certain rules
+
 
 
 
