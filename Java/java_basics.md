@@ -1161,15 +1161,56 @@ An overridden method is a special method in java that other classes can implemen
 
 # The Record Type
 
-THe purpose of the `Record type` is to replace boilerplate code of the `POJO` but to be more restrictive
+The purpose of the `Record type` is to replace boilerplate code of the `POJO` but to be more restrictive. Java calls them, "Plain data carriers." 
 
 * Boilerplate code is the code that is repetative and follows certain rules
 
+The record is a special class that contains data that's not meant to be altered. In other words, it seeks to achieve immutability for the data in its members. It contains only the most fundamental methods, such as `constructors` and `accessors`.
 
+* The devloper doesn't have to write or generate any of this code
 
+## Implicit or Generated Code that Java Provides
 
+```
+public record LPAStudent(String id, String name, String dateOfBirth, String classList) {
+}
+```
 
+The arguments passed to the record above is called the `record header`. The record header consists of record components, a comma-deliminated list of components.
 
+For each component in the header, java generates
+
+* A field with the same name and declared type as the record component
+* The field is declared `private` and `final`
+* The field is sometimes referred to as a component field
+
+Java generates a `toString` method that prints out each attribute in a formatted string.
+
+EG.
+```
+public String toString() {
+    return "Student{" +
+            "id='" + id + '\'' +
+            ", name='" + name + '\'' +
+            ", dateOfBirth='" + dateOfBirth + '\'' +
+            ", classList='" + classList + '\'' +
+            '}';
+}
+```
+
+In addition to *creating* a `private final field` for each component, java generates a public accessor method for each component. This method has the same name and type of the component, but it doesn't have any kind of special prefix like *get* or *is*, for example. To call information from a record, simply use dot notation on the object and call the field name.
+
+There's no way to set any information or value in a record other than passing the value in on the record header or through the use of constructors. This is by design because the records goal is to be `immutable`.
+
+### Why have an Immutable Record?
+
+There are more use cases for immutable data transfer objects and keeping them well encapsulated. We want to protect the data from unintended mutations.
+
+## POJO vs Record
+
+If we want to modify data on our class, we won't be using the `record`. 
+
+However, if theres a lot of records from a database or file source and we're simply passing this data around, then the record would be a large improvement over the boilercode found in the POJO.
 
 
 
