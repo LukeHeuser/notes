@@ -1106,7 +1106,7 @@ Every instance has its own copy of an instance variable. Every instance can also
 
 `Static methods` are declared using a static modifier. Static methods can't access instance methods and instant variables directly. 
 
-They're usually used for operations that don't require any data from an instance of the calss (from *this.*). The this keyword is teh current instance of a class.
+They're usually used for operations that don't require any data from an instance of the class (from *this.*). The this keyword is the current instance of a class.
 
 Inside a static method, we can't use the *this* keyword.
 
