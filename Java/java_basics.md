@@ -1198,7 +1198,7 @@ public String toString() {
 }
 ```
 
-In addition to *creating* a `private final field` for each component, java generates a public accessor method for each component. This method has the same name and type of the component, but it doesn't have any kind of special prefix like *get* or *is*, for example. To call information from a record, simply use dot notation on the object and call the field name.
+In addition to *creating* a `private final field` for each component, java generates a `public accessor method` for each component. This method has the same name and type of the component, but it doesn't have any kind of special prefix like *get* or *is*, for example. To call information from a record, simply use dot notation on the object and call the field name.
 
 There's no way to set any information or value in a record other than passing the value in on the record header or through the use of constructors. This is by design because the records goal is to be `immutable`.
 
