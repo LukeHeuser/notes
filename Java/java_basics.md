@@ -940,9 +940,11 @@ The whole reason behind Encapsulation is not allowing people to access fields di
 
 * Fields are defined in the classes code block/ body of the class and not in a method.
 
-When an `object` is created from a `class`, the values are then assiged to these `privatge fields` which represent the `state` of the object.
+When an `object` is created from a `class`, the values are then assiged to these `private fields` which represent the `state` of the object.
 
 Unlike local variables, class variables should have some type of access modifier declared for it. If one is not declared, java declares the default, `Package Private`, implicitly.
+
+A `protected` access modifier on a super class is conditional encapsulation. It allows all subclasses and any classes in the same package to have access to this internal field.
 
 ### Default Values for Fields on Classes
 
