@@ -1215,6 +1215,51 @@ If we want to modify data on our class, we won't be using the `record`.
 However, if theres a lot of records from a database or file source and we're simply passing this data around, then the record would be a large improvement over the boilercode found in the POJO.
 
 
+## Inheritance
+
+What is `Inhertance` and why is it so powerful? Inheritance can be viewed as a form of `code reuse`. It's a way to organize classes into a  parent-child hierchy, which lets the child `inherit` (reuse) fields and methods from it's parent. A parent class can have multiple children classes. A child class can only have *ONE* direct parent in Java. The most generic/ base class starts at the top of the hierchy. Every class below is a `Subclass`.
+
+### Extends
+
+Using the `Extends` keyword specifies the `Superclass` of the class we're declaring. 
+
+* A class can specify one and only one class in it's extends clause
+
+### Super()
+
+`super()` is very similar to `this()`. It's a way to chain a constructor on the `Superclass` directly from the Subclasses constructor. 
+
+Like *this()*, it has to be the first statement of the constructor. Because of this rule, *this()* and *super()* can never be called from the same constructor.
+
+If you don't make a call to *super()*, then Java makes it for you using the Superclasses default constructor. If the superclass DOESN'T have a default constructor, then you must explicitly call *super()* in all of your constructos, passing the right arguments to that constructor.
+
+## A Class Diagram
+
+* A class diagram allows us to design our calsses before we build them. This makes designing `Superclasses` and `Subclasses` much easier.
+
+## Code Reuse
+
+All subclasses can execute methods even though the code is decalred on the parent class. The code doesn't have to be duplicated in each subclass.
+
+We can use code from the parent. Or, we can change that code for the subclass. This is known as overriding a method.
+
+### Overriding a Method 
+
+`Overriding a method` is when you create a method on a subclass which has the SAME *signature* as a method on a superclass. You override a parent class method when you want the *child class* to show a different behavior for that method.
+
+The overridden method can do one of the three things:
+* It can implement completely different behavior, overriding the behavior of the parent
+* It can simply call the parent classes method (Which is redundent as this is the default)
+* Or, the method can call the parent classes method and include other code to run so it can extend the functionality for that behavior
+
+## Polymorphism
+
+Polymorphism simply means "Many Forms".
+
+Some advantages of Polymorphism are:
+* It makes code simpler
+* It encourages code extensibility
+
 
 
 
