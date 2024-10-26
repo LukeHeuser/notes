@@ -1260,7 +1260,13 @@ Some advantages of Polymorphism are:
 * It makes code simpler
 * It encourages code extensibility
 
+# java.lang.Object
 
+Every class in java extends a special java class names: `Object`. It's located in the java.lang package.
+
+* Class object is the root of the `calss hierarchy`
+
+Every Class has object as a superclass. All objects, inblcuding `Arrays`, implement the methods of this class. A has code is created everytime an instance is created.
 
 
 
