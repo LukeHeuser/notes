@@ -204,9 +204,9 @@ The String has over 60 methods
 
 The String methods can be split into three basic categories
 
-* String Inspection methods (like length, etc.)
-* Methods for comparing String Values (usually return a boolean value)
-* String Manipulation Methods
+* `String Inspection Methods` (like length, etc.)
+* `Methods for Comparing String Values` (usually return a boolean value)
+* `String Manipulation Methods`
 
 ### String Inspection Methods
 
