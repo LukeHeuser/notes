@@ -198,6 +198,32 @@ The, `String Builder` class is mutable. Meaning it can be changed. However, it d
 
 The `+` operator means concatenation for strings.
 
+## More on the String
+
+The String has over 60 methods
+
+The String methods can be split into three basic categories
+
+* String Inspection methods (like length, etc.)
+* Methods for comparing String Values (usually return a boolean value)
+* String Manipulation Methods
+
+### String Inspection Methods
+
+`Length` = Returns the length, in number of characters, of a specified string. The length is returned excluding any trailing blank characters.
+
+`charAt` = Returns the char value at the specified index.
+
+`indexOf` = Returns the index within this string of the first occurrence of the specified character.
+
+`lastIndexOf` = Returns the index within this string of the last occurrence of the specified character.
+
+`isEmpty` = Returns true if, and only if, length() is 0.
+
+`isBlank` = Returns true if the string is empty or contains only white space codepoints, otherwise false.
+
+
+
 ## Operators , Operands, and Expressions
 
 `Operators` are the special symbols that perform operations on one, two, or three operands and return a result. 
