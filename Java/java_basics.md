@@ -222,7 +222,21 @@ The String methods can be split into three basic categories
 
 `isBlank` = Returns true if the string is empty or contains only white space codepoints, otherwise false.
 
+### Methods for comparing String Values 
 
+`contentEquals` = Compares this string to the specified CharSequence.
+
+`equals` = Compares this string to the specified object.
+
+`eaualsIgnoreCase` = Compares this String to another String, ignoring case considerations.
+
+`contains` = Returns true if and only if this string contains the specified sequence of char values.
+
+`endsWith` = Tests if this string ends with the specified suffix.
+
+`starts with` = Tests if this string starts with the specified prefix.
+
+`regionMatchs` = Tests if two string regions are equal.
 
 ## Operators , Operands, and Expressions
 
