@@ -238,6 +238,27 @@ The String methods can be split into three basic categories
 
 `regionMatchs` = Tests if two string regions are equal.
 
+## Escape Sequences
+
+`\t` = Insert a tab character
+
+`\n` = omsert a new line character
+
+`\"` = Insert a double quote character
+
+`\/` = Inset a backslash character
+
+`%d` = used for a decimal interger value 
+
+`%f` = used for a decimal number 
+
+## Format Specifiers
+
+Format specifiers take the form shown here
+```
+%[argument_index$][flags][width][.precision]conversion
+```
+
 ## Operators , Operands, and Expressions
 
 `Operators` are the special symbols that perform operations on one, two, or three operands and return a result. 
