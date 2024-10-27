@@ -1268,6 +1268,68 @@ Every class in java extends a special java class names: `Object`. It's located i
 
 Every Class has object as a superclass. All objects, inblcuding `Arrays`, implement the methods of this class. A has code is created everytime an instance is created.
 
+# this() vs super()
+
+The keyword `super` is used to access or call the parent class members (both variables and methods)
+
+The jeyword `this` is used to call the current class members (both variables and methods)
+
+`this` is required when we have a parameter with the same name as an instance variable or field
+
+```
+public Rectangle(int x, int y) {
+this.x = x;
+this.y = y;
+}
+```
+
+Note: We can use either of these two keywords ANYWHERE in a class EXCEPT for static elements such as a static method. Any attempt to do so will lead to compile time errors.
+
+The keyword `this` is commonly used within constructos and setters and is optionally used within getters.
+
+The keyword `super` is commonly used with method overriding when we call a method with the same name from the parent class.
+
+## this() vs super() call
+
+In Java there is the `this()` and `super()` calls.
+
+There are known as calls since they look like regular method calls although we're calling certain constructors.
+
+use `this()` to call a constructor from another overloaded contructor in the same class.
+
+the call to `this()` can only be used in a conTructor, and it must be the FIRST STATEMENT in a constructor. It is used with `constructor chaining`, in other words, when one constructor calls another constructor. This helps to reduce code.
+
+The only way to call a parent constructor is by calling `super()`, which calls the parent constructor and again, this must be the FIRST call.
+
+Constructor chaining makes sure the last constructor has the responsibility to initialize the variables. Ultimately, we end up in the final constructor. The other constructors call eachother. Constructor chaining can, and does avoid code duplication.
+```
+// Class Worker
+public Worker(String name, String birthDate){
+    this.name = name;
+    this.birthDate = birthDate;
+}
+
+// Class Employee
+public Employee(String name, String birthDate, String hireDate) {
+    super(name, birthDate);
+    this.employeeId = Employee.employeeNo++; // Post increment number
+    this.hireDate = hireDate;
+}
+
+// Class SalariedEmployee
+public SalariedEmployee(String name, String birthDate, String hireDate, Double annualSalary) {
+    super(name, birthDate, hireDate);
+    this.annualSalary = annualSalary;
+}
+
+```
+
+
+
+
+
+
+
 
 
 
