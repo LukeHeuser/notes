@@ -1385,9 +1385,9 @@ public SalariedEmployee(String name, String birthDate, String hireDate, Double a
 
 ```
 
+# Method Overloading vs Overriding
 
-
-
+`Method Overloading` means providing two or more seperate methods in a class with the same name but different parameters
 
 
 
