@@ -280,7 +280,7 @@ join(CharSequence delimiter, CharSequence... elements)
 substring(int beginIndex, int endIndex)
 ```
 
-`subSequence` = Returns a character sequence that is a subsequence of this sequence.
+`subSequence` = Returns a character sequence that is a subsequence of this sequence
 
 ```
 subSequence(int beginIndex, int endIndex)
@@ -302,6 +302,31 @@ subSequence(int beginIndex, int endIndex)
 
 ## String vs String Builder
 
+Because String is *immutable*, each method call returns a new instance of a string. Java provides a mutable calss that lets us change its text value, the String Builder Class!!!
+
+```
+StringBuilder emptyStart = new StringBuilder();
+emptyStart.append("a".repeat(57));
+StringBuilder emptyStart32 = new StringBuilder(32);
+emptyStart32.append("a".repeat(17));
+```
+
+The `string builder` has 4 overloaded constructors:
+
+* pass a String
+* pass no arguments at all
+* pass an integer value (this is the capacity value)
+* pass some other type of character sequence (like string builder
+
+String methods create a new object in `memory` and return a reference to this new object. `StringBuilder` methods return a StringBuilder reference, but it's really a self-reference.
+
+A StringBuilder is `mutable`, which means it can grow or shrink in size. By default, an empty StringBuilder starts out with a capacity of 16. Meaning, it can contain up to 16 characters before it needs to *request more memory*.
+
+Evertime a SttringBuilder needs to increase capacity, the data stored in the *original storage* needs to get copied over to the *larger storage* area. The new allocation size is determined by the JVM.
+
+If a lot of text is **intended** for a StringBuilder object, it's recommended to start with a larger capacity.
+
+The `StringBuilder` has many similar methods to Strings
 
 
 ## Format Specifiers
