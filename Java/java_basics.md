@@ -222,7 +222,7 @@ The String methods can be split into three basic categories
 
 `isBlank` = Returns true if the string is empty or contains only white space codepoints, otherwise false.
 
-### Methods for comparing String Values 
+### String Methods for comparing Values 
 
 `contentEquals` = Compares this string to the specified CharSequence.
 
@@ -237,6 +237,29 @@ The String methods can be split into three basic categories
 `starts with` = Tests if this string starts with the specified prefix.
 
 `regionMatchs` = Tests if two string regions are equal.
+
+### String Methods for Manipulation
+
+This first set of methods don't actually change the underlying meaning of the text value, but perform some kind of clean up.
+
+`indent` = Adjusts the indentation of each line of this string based on the value of n, and normalizes line termination characters.
+
+`strip` = Returns a string whose value is this string, with all leading and trailing white space removed
+
+`stripLeading` = Returns a string whose value is this string, with all leading white space removed
+
+`stripTrailing` = Returns a string whose value is this string, with all trailing white space removed
+
+`trim` = Returns a string whose value is this string, with all leading and trailing space removed, where space is defined as any character whose codepoint is less than or equal to 'U+0020' (the space character)
+
+`toLowerCase` = Converts all of the characters in this String to lower case using the rules of the default locale
+
+`toUpperCase` = Converts all of the characters in this String to upper case using the rules of the default locale
+
+This second set of `String Manipulation` methods transforms the string value and returns a string with a different meaning than the original String.
+
+
+
 
 ## Escape Sequences
 
