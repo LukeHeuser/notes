@@ -1432,8 +1432,21 @@ A method will be considered overriden following these rules.
 
 * Constructors and private methods cannot be overridden
 * Methods that are final can not be overridden
-* A subclass can use `super.methodName()` to call the superclass version of an overridden method.
-* 
+* A subclass can use `super.methodName()` to call the superclass version of an overridden method
+
+## Covariant Return Type
+
+The return type of an overridden method can be the same type as the parent method'd decleration. But, it can also be a subclass.
+
+In general when cloning an instance, we want to return an object thats the same type as the object that is being cloned.
+
+I.E:
+
+All classes, ultimately have object as a base class, so every class can be said to be a `covvariant` of Object.
+
+# String Comparison methods
+
+
 
 
 
