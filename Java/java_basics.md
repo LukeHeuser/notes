@@ -326,8 +326,21 @@ Evertime a SttringBuilder needs to increase capacity, the data stored in the *or
 
 If a lot of text is **intended** for a StringBuilder object, it's recommended to start with a larger capacity.
 
-The `StringBuilder` has many similar methods to Strings
+The `StringBuilder` has many similar methods to Strings, but it also has methods to btoh *remove* and *insert* Characters or Strings. In addation, you can truncate the StringBuilder's size.
 
+`delete` = Removes the characters in a substring of this sequence
+
+```
+delete(int start, int end)
+```
+
+`deleteCharAt` = Removes the char at the specified position in this sequence
+
+`insert` = Inserts the string into this character sequence
+
+`reverse` = Causes this character sequence to be replaced by the reverse of the sequence
+
+`setLength` = Sets the length of the character sequence
 
 ## Format Specifiers
 
