@@ -1424,6 +1424,16 @@ In short, `Method overriding` is used to override a behavior which the class has
 ## Method Override Rules
 
 A method will be considered overriden following these rules.
+* It must have the same name and arguments
+* The return type can be a subclass of the return type in the parent class.
+* It can't have a lower access modifier, meaning, it can't have a more restrictive access privilege
+
+**Only** *inherited* methods can be overridden. This means that we can only override a method in a subclass/ child class.
+
+* Constructors and private methods cannot be overridden
+* Methods that are final can not be overridden
+* A subclass can use `super.methodName()` to call the superclass version of an overridden method.
+* 
 
 
 
