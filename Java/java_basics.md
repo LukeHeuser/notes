@@ -258,8 +258,33 @@ This first set of methods don't actually change the underlying meaning of the te
 
 This second set of `String Manipulation` methods transforms the string value and returns a string with a different meaning than the original String.
 
+`concat` = Concatenates the specified string to the end of this string
 
+`join` = Returns a new String composed of copies of the CharSequence elements joined together with a copy of the specified delimiter
 
+```
+join(CharSequence delimiter, CharSequence... elements)
+```
+
+`repeat` = Returns a string whose value is the concatenation of this string repeated count times
+
+`replace` = Replaces each substring of this string that matches the literal target sequence with the specified literal replacement sequence
+
+`replaceAll` = Replaces each substring of this string that matches the given regular expression with the given replacement.
+
+`replaceFirst` = Replaces the first substring of this string that matches the given regular expression with the given replacement*
+
+`subString` = Returns a string that is a substring of this string
+
+```
+substring(int beginIndex, int endIndex)
+```
+
+`subSequence` = Returns a character sequence that is a subsequence of this sequence.
+
+```
+subSequence(int beginIndex, int endIndex)
+```
 
 ## Escape Sequences
 
@@ -274,6 +299,10 @@ This second set of `String Manipulation` methods transforms the string value and
 `%d` = used for a decimal interger value 
 
 `%f` = used for a decimal number 
+
+## String vs String Builder
+
+
 
 ## Format Specifiers
 
