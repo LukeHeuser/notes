@@ -1407,8 +1407,23 @@ public static crosswalk(int timeOut, string direction) {
 
 Java developers often refer to method overloading as `Compile-Time Polymorphism`. This means the compiler is determining the right method to call, based on the method name and argument list.
 
+Usually, `method overloading` happens within a single class, but methods can also be overloaded by `subclasses`. That's because a subclass *inherits* one version of the method from the parent class and the subclasss can have another overloaded version of that method.
+
 ## Method Overriding
 
+`Method Overriding`, means defning a method in a child class that already exists in the parent calss with the SAME *signature*. This means, they share the same **name** and **parameters**.
+
+By extending the parent class, the chald class gets all the methods defined in the parent class. Those methods are also known as `Derived Methods`
+
+Method overriding is also knwon as `Runtime Polymorphism` or `Dynamic method dispatch` because the method that is going to be called is decided at runtime by the `JVM`.
+
+Static methods CAN't be overrided, only instance methods.
+
+In short, `Method overriding` is used to override a behavior which the class has `inherited` from the parent class.
+
+## Method Override Rules
+
+A method will be considered overriden following these rules.
 
 
 
