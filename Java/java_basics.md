@@ -1387,7 +1387,28 @@ public SalariedEmployee(String name, String birthDate, String hireDate, Double a
 
 # Method Overloading vs Overriding
 
-`Method Overloading` means providing two or more seperate methods in a class with the same name but different parameters
+`Method Overloading` means providing two or more seperate methods in a class with the same name but different parameters.
+
+```
+public static crossWalk(int timeOut) {
+// method body
+}
+
+public static crosswalk(int timeOut, string direction) {
+// method body
+}
+```
+
+### Overloading is very handy, it recued duplicated code, and there is no need to remember multiple method names.
+
+`Static` or `Instance methods`, can be overloaded.
+
+`Method overloading` provides *functionality* to reuse a method name with different parameters. To the code calling an overloaded method, it looks like a single method can be called with different sets of arguments. In actuality, each call that's made with a different set of arguments is calling a seperate method.
+
+Java developers often refer to method overloading as `Compile-Time Polymorphism`. This means the compiler is determining the right method to call, based on the method name and argument list.
+
+## Method Overriding
+
 
 
 
