@@ -1534,8 +1534,6 @@ I.E:
 
 All classes, ultimately have object as a base class, so every class can be said to be a `covvariant` of Object.
 
-# String Comparison methods
-
 
 
 
