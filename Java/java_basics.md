@@ -1534,6 +1534,25 @@ I.E:
 
 All classes, ultimately have object as a base class, so every class can be said to be a `covvariant` of Object.
 
+# Composition
+
+`Composition` is another component of OOP. 
+
+Inheritance defines a `"Is A"` relationship. Composition defines a `"Has A"` relationship.
+
+`Composition` is actually *modelling* parts, and those parts make up a *greater* whole. `Composition` is a way to make the combination of classes act like a single coherent object. `Composition` is creating *objects* in *objects*. In a sense, it's like creating a master object.
+
+As a general rule, when you're designing your programs in jav, you may want to look at *Composition* first. Most experts will say that as a rule, look at using composition before implementing inheritance.
+
+The calling code doesn't have to know anything about the parts to get the master object to do something.
+
+
+
+
+
+
+
+
 
 
 
