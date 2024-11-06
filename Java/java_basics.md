@@ -1547,7 +1547,7 @@ As a general rule, when you're designing your programs in jav, you may want to l
 The calling code doesn't have to know anything about the parts to get the master object to do something.
 
 
-Click this [Link](https://github.com/LukeHeuser/composition-through-a-computer/blob/master/src/PersonalComputer.java) to see an Example of Composition
+[Click this textto see an Example of Composition, through a computer](https://github.com/LukeHeuser/composition-through-a-computer/blob/master/src/PersonalComputer.java) 
 
 
 
