@@ -1566,7 +1566,7 @@ The calling code doesn't have to know anything about the parts to get the master
 
 * A new subclass may not need all the *functionality* or *attributes* of its parent class
 
-## Encapsulation Principles
+# Encapsulation Principles
 
 * Create constructors for object initialization, which enforces that any objects with valid data will get created.
 
@@ -1578,7 +1578,45 @@ The calling code doesn't have to know anything about the parts to get the master
 
 ### Benefits of Encapsulation
 
-Changes made *do not* affect any other code!! Restricting access to an objects data *protects* the members of the class and some methods from external access. This *prevents* calling code from *bypassing* the rules and *contraints* built into the class.
+Changes made *do not* affect any other code!! 
+
+Restricting access to an objects data *protects* the members of the class and some methods from external access. 
+
+This *prevents* calling code from *bypassing* the rules and *contraints* built into the class.
+
+## Encapsulation: Why Hide Things?
+
+Why would we want to hide things in Java?
+
+* To make the interface simpler, we maay want to hide unnecessary details
+
+* To protect the integrity of data on an object, we may hide or restrict access to some of the data and operations.
+
+* To Decouple the publicshed *interface* from the internal details of the class, we may hide *actual names* and *types* of class members. This gives us more *flexibility* if we have to change the class in the future.
+
+#### What does Interface mean in Encapsulation?
+
+This describes the *class members* that are exposed to or can be accessed by the calling code. Everything else in the class is *internal* or *private* to it.
+
+An application programming interface or API is the public contract that tells others hot to use the class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
