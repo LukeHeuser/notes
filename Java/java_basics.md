@@ -1618,13 +1618,15 @@ We want the ability to ensure *certain conditions* are met before running and th
 
 This means that *behavior* that occurs during program execution *depends* on the *runtime type* of the *object*, which might differ from it's *declared type* in the code.
 
+For Polymorphism to work, the declared type must have a *relationship* with the *runtime type*. **Inheritance**, is one way to establish this relationship, where a subclass can override a method from its superclass, enabling polymorphic behavior. However, there are many mechanisms to achieve polymorphism.
+
  [The below code can be found here]([https://github.com/LukeHeuser/polymorphism-in-movies/blob/master/src/Movie.java](https://github.com/LukeHeuser/polymorphism-in-movies))
 ```
 Main {
     public static void Main(String[] args) {
 
         // The static method on class Movie, is calling the getMovie method on the class 'Racing'.
-        // This is because the switch statement in class Movie created a new runtime of type `Racing`
+        // This is because the switch statement in class Movie created a new runtime type of type `Racing`
         // and executed the method found on class `Racing`
         // Cool stuff!!!
         Movie theFastAndFurious = Movie.getMovie("Racing", "The Fast & Furious");
@@ -1674,14 +1676,81 @@ class Racing extends Movie {
                 "Someone Crashes");
     }
 }
-
-
 ```
 
+# Polymorphism
 
+The method that gets run is determined by the JVM basesd on `runtime object` and not the variable type
 
+```
+  Movie theMovie = new Adventure("Starwars");
+```
 
+Method calls to the *Movie* will use the overridden methods on the subclass, *Adventure* in this case.
 
+The calling code doesn't really need to know anything about any of movies subclasses. It can just pass in the type and get a different type of movie subclass. This kind of method that returns a new instance object is known as a fractory method in software programming design patterns.
+
+`Factory methods` give us a way to obtain an object without having to know the details of how to create one.
+
+## SUPER IMPORTANT 
+
+* Java uses the `Runtime Object Type` to see if that object has got its own *version* of the calling method. 
+
+* `Polymorphism` is the ability to execute *different behavior*, for different *types*, which are determined at *Runtime*.
+
+* Polymorphism enables you to write generic code based on the base class or a parent class. This code in the main method is extedable, meaning, it doesn't have to change as new subclasses become available.
+
+# What is var?
+
+`var` is a special contextual keyword in Java that lets our code take advantage of `Local Variable Type Inference`
+
+By using `var` as a type, we're telling Java to figure out the compile time type for us.
+
+## Local Variable Type Inference (LVTI)
+
+Benefits:
+
+* Readable Code
+* Reduce Boilerplate Code
+
+It's called `Local Variable Type Inference` for a reason, because:
+* It can't be used in `field declerations` on a class
+* It can't be used in `method signatures`, either as a parameter type or a return type
+* It can't be used without an assignment because the type can't be inferred in that case
+* It can't be assigned a `null literal`, again, because a type can't be inferred in that case
+
+# Run Time vs Compile Time Typing
+
+You can think of the `Compile Time Type` as the decalred Type.
+
+This type (Compile Time Type) is decalred as a `varaibale reference`, a `Method Return Type`, or a `Method Parameter`, for example..
+
+In the case of `Local Variable Type Inference` (LVTI), we don't explicitly declare a type for the *compiled reference type*. Instead, it gets inferred by the *compiler*, but the byte code generated is the same as if we had decalred the type.
+
+In many cases, the `compile time type` is the *decalred type* to the *left* of the `assignment operator`.
+
+What is returned on the right side of the assignment operator, (from whatever expression or method is executed,) sometimes can *only* be determined at `runtime`, when the code is *executing* conditionally through the statements in the code. In other words, the behavior of the code determines what the `Runtime Type` will be! Seriously, Fascinating stuff!
+
+```
+// The compile time type is Movie, but the Runtime type is Adventure, a subclass of movie.
+// This is the beauty of Polymorphic behavior 
+Movie movie = Movie.getMovie("A","Frogger");
+
+public static Movie getMovie(String type, String title) {
+    return switch (type.toUpperCase().charAt(0)) {
+
+        case 'A' -> new Adventure(title);
+        case 'R' -> new Racing(title);
+        case 'S' -> new ScienceFiction(title);
+        default -> new Movie(title);
+
+    };
+}
+```
+
+You can assign a `runtime instance` to a different *compile time type*, only if certain rules are followed.
+
+We can assign an instance to a variable of the same type, or a parent type, or a parent's parent type, including java.lang.Object, the bse class of Java.
 
 
 
