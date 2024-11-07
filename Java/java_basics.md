@@ -1618,12 +1618,15 @@ We want the ability to ensure *certain conditions* are met before running and th
 
 This means that *behavior* that occurs during program execution *depends* on the *runtime type* of the *object*, which might differ from it's *declared type* in the code.
 
- [The below code can be found here](https://github.com/LukeHeuser/polymorphism-in-movies/blob/master/src/Movie.java)
+ [The below code can be found here]([https://github.com/LukeHeuser/polymorphism-in-movies/blob/master/src/Movie.java](https://github.com/LukeHeuser/polymorphism-in-movies))
 ```
 Main {
     public static void Main(String[] args) {
 
-        // The static method on class Movie, is calling the getMovie method on the class 'Racing'
+        // The static method on class Movie, is calling the getMovie method on the class 'Racing'.
+        // This is because the switch statement in class Movie created a new runtime of type `Racing`
+        // and executed the method found on class `Racing`
+        // Cool stuff!!!
         Movie theFastAndFurious = Movie.getMovie("Racing", "The Fast & Furious");
         theFastAndFurious.watchMovie();
 
@@ -1634,10 +1637,16 @@ Public class Movie {
 
     private String title;
 
+    // Constructor initializing the Title
+    public Movie(String title) {
+        this.title = title;
+    }
+
     public void watchMovie() {
         String instanceType = this.getClass().getSimpleName();
         System.out.println(title + " is a " + instanceType + " film");
     }
+
     public static Movie getMovie(String type, String title) {
         return switch (type.toUpperCase().charAt(0)) {
 
