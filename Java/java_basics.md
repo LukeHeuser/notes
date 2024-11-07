@@ -1735,6 +1735,7 @@ What is returned on the right side of the assignment operator, (from whatever ex
 // The compile time type is Movie, but the Runtime type is Adventure, a subclass of movie.
 // This is the beauty of Polymorphic behavior 
 Movie movie = Movie.getMovie("A","Frogger");
+movie.watchMovie();
 
 public static Movie getMovie(String type, String title) {
     return switch (type.toUpperCase().charAt(0)) {
@@ -1750,13 +1751,19 @@ public static Movie getMovie(String type, String title) {
 
 You can assign a `runtime instance` to a different *compile time type*, only if certain rules are followed.
 
-We can assign an instance to a variable of the same type, or a parent type, or a parent's parent type, including java.lang.Object, the bse class of Java.
+We can assign an instance to a variable of the same type, or a parent type, or a parent's parent type, including java.lang.Object, the base class of Java.
 
+### Why are Runtime Types different than Compile Time types?
 
+Because of `Polymorphism`! Polymorphism lets us write code once, in a more generic fashion.
 
+We can see that those two lines of code, using a single `Compile Time Type` of *movie*, actually supported four different runtime types. `Type Movie`, `Type Adventure`, `Type Racing`, and `Type ScienceFiction`. All classes with overloaded methods.
 
-
-
+Eacah type was able to execute behavior unique to the class.
+```
+Movie movie = Movie.getMovie("A","Frogger");
+movie.watchMovie();
+```
 
 
 
