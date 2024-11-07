@@ -1547,8 +1547,38 @@ As a general rule, when you're designing your programs in jav, you may want to l
 The calling code doesn't have to know anything about the parts to get the master object to do something.
 
 
-[Click this textto see an Example of Composition, through a computer](https://github.com/LukeHeuser/composition-through-a-computer/blob/master/src/PersonalComputer.java) 
+[Click this text to see an Example of Composition, through a computer](https://github.com/LukeHeuser/composition-through-a-computer/blob/master/src/PersonalComputer.java) 
 
+
+## Why Composition is Preferred Over Inheritance
+
+* Composition is more *flexible*. You can add parts in or remove them, and these changed are less likely to have a downstream effect. 
+
+* Compositoin provides functional reuse outside of the class hirerarchy, meaning classes can share attributes & behavior by having similar components, instead of inheriting functionality from a parent or base class.
+
+* Java's inheritance breaks `Encapsulation` because subclasses may need direct access to a parent's *state* or *behavior*.
+
+## Problems with Inheritance 
+
+* Inheritance is less flexible
+
+* Adding a class to or removing a class from a class hierarchy may impact all subclasses from that point.
+
+* A new subclass may not need all the *functionality* or *attributes* of its parent class
+
+## Encapsulation Principles
+
+* Create constructors for object initialization, which enforces that any objects with valid data will get created.
+
+* Use the private access modifier for the fields
+
+* Use setter methods sparringly and only as needed
+
+* Use access modifiers that aren't private, only for the methods that the calling code needs to use
+
+### Benefits of Encapsulation
+
+Changes made *do not* affect any other code!! Restricting access to an objects data *protects* the members of the class and some methods from external access. This *prevents* calling code from *bypassing* the rules and *contraints* built into the class.
 
 
 
