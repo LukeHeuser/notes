@@ -1765,6 +1765,24 @@ Movie movie = Movie.getMovie("A","Frogger");
 movie.watchMovie();
 ```
 
+# Evalulating What Runtime type is
+
+We can determine the `runtime type` of an object in several ways.
+
+## instanceof Operator
+
+the `instanceof` operator lets you test the type of an object or instance.
+
+The reference variable you are testing is the *left operand*. The type you are *testing for* is the *right operand*.
+
+The below code tests if *unknownObject* is an instance of *Adventure* and if true, returns true.
+```
+Object unknownObject = Movie.getMovie("R", "Twist of The Wrist");
+if(unknownObject instanceof Adventure) {
+  ((Adventure) unknwonObject).watchAdventure();
+}
+```
+
 
 
 
