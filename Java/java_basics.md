@@ -1783,6 +1783,17 @@ if(unknownObject instanceof Adventure) {
 }
 ```
 
+## Pattern Matching for the instanceof Operator
+
+If the *JVM* can identify that an object matches the *type*, then, it can extract data from the object without casting!
+
+For this operator, the object can be assigned to a variable. If this instanceof operator returns true, then *syfy* is already type ScienceFiction and can be used to execute methods on the ScienceFiction class/ instance.
+```
+if(unknwonObject innstanceof ScienceFiction syfy) {
+    syfy.watchScienceFiction();
+}
+```
+
 
 
 
