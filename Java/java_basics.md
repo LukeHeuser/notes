@@ -1600,8 +1600,74 @@ This describes the *class members* that are exposed to or can be accessed by the
 
 An application programming interface or API is the public contract that tells others hot to use the class.
 
+## Problems with not Encapsulating
+
+Allowing direct access to data on an object can *potentially* bypass checks and *additional processing*, your class has in place to manage the data .
+
+Allowing direct access to fields means calling code would need tochange when you edit any of the fields.
+
+Omitting a constructor that would accept initialization data means the calling code is responsible for setting up this data on the new object.
+
+### WHY WE DO NOT CODE LIKE THIS
+
+We want the ability to ensure *certain conditions* are met before running and that access to the *state of an object* durring the program is controlled and protected.
+
+# Polymorphism
+
+`Polymorphism` in Java allows us to write code that can call a method, but the actual *method* that gets executed can be different for *different objects* at *runtime*.
+
+This means that *behavior* that occurs during program execution *depends* on the *runtime type* of the *object*, which might differ from it's *declared type* in the code.
+
+ [The below code can be found here](https://github.com/LukeHeuser/polymorphism-in-movies/blob/master/src/Movie.java)
+```
+Main {
+    public static void Main(String[] args) {
+
+        // The static method on class Movie, is calling the getMovie method on the class 'Racing'
+        Movie theFastAndFurious = Movie.getMovie("Racing", "The Fast & Furious");
+        theFastAndFurious.watchMovie();
+
+    }
+}
+
+Public class Movie {
+
+    private String title;
+
+    public void watchMovie() {
+        String instanceType = this.getClass().getSimpleName();
+        System.out.println(title + " is a " + instanceType + " film");
+    }
+    public static Movie getMovie(String type, String title) {
+        return switch (type.toUpperCase().charAt(0)) {
+
+            case 'A' -> new Adventure(title);
+            case 'R' -> new Racing(title);
+            case 'S' -> new ScienceFiction(title);
+            default -> new Movie(title);
+
+        };
+    }
+}
+
+class Racing extends Movie {
+
+    public Racing(String title) {
+        super(title);
+    }
+
+    @Override
+    public void watchMovie() {
+        super.watchMovie();
+        System.out.printf(".. %s%n".repeat(3),
+                "Racing Scene",
+                "Suspenseful Music",
+                "Someone Crashes");
+    }
+}
 
 
+```
 
 
 
