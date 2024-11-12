@@ -1795,7 +1795,7 @@ if(unknwonObject innstanceof ScienceFiction syfy) {
 ```
 
 
-## Packages
+# Packages
 
 A `pacakage` is a namespace that organizes a set of related types. 
 
@@ -1803,6 +1803,17 @@ In general, a package corresponds to a folder or directory on the operating syst
 
 The Package structure is hierarchical, meaning we group types in a tree-like fashion. 
 
+You can use any legal Java identifier for your package names, but common practice has package names in all lowercase. The preiod separates the hierarchical levels of the package. An import statement must be after any Package Statement.
+
+`Packages` let us reuse common class names across different libraries or applications and provide a way to identify the correct calss, either with an import statement or a qualifying name. Packages also let us organize our calsses by *functionality* or *relationships*.
+
+Packages also let us encapsulate our classes from classes in other packages.
+
+**Naming**: It is common practice to use the reverse domain name to start your own pacakge naming conventions.
+
+The `Package Statment` needs to be the first statement in the code. There can only be one package statement because a class or type can only be in a single package. A classes `Fully Qualified Name (FQCN)` is the package name and then the `.class` name.
+
+## Using a Package Statment
 
 
 
