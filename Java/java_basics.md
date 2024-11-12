@@ -1795,6 +1795,16 @@ if(unknwonObject innstanceof ScienceFiction syfy) {
 ```
 
 
+## Packages
+
+A `pacakage` is a namespace that organizes a set of related types. 
+
+In general, a package corresponds to a folder or directory on the operating system, but this isn't a requirement. Using IDE's (like intelliJ), there is no need to worry about how packages and classes are stored on the file system. 
+
+The Package structure is hierarchical, meaning we group types in a tree-like fashion. 
+
+
+
 
 
 
