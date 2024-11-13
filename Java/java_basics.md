@@ -1887,7 +1887,7 @@ for (decleration : collection) {
 
 * The second component is the array or some other *collection variable*
 ```
-int[] newArray = new int[] {5, 4, 3, 2, 1} {
+int[] newArray = new int[] {5, 4, 3, 2, 1}
 
 for(int element : newArray) {
     System.out.print(element + " ");
@@ -1910,7 +1910,16 @@ The toString method in this helper class prints out all the array elements, comm
 
 You can assign any array to an object variable. You can craete an array of Objects that support any type in java. Because `Array` is an `Object`, we can assign an array to be an element of type array!
 
+```
+// Array Initializer
+int[] newArray = new int[] {5, 4, 3, 2, 1}
 
+// In this code: we are assigning an integer Array referenced to an object reference.
+ Object objectVariable = newArray;
+ if (objectVariable instanceof int[]) {
+     System.out.println("objectVariable is really an int array");
+ }
+```
 
 
 
