@@ -1815,6 +1815,83 @@ The `Package Statment` needs to be the first statement in the code. There can on
 
 ## Using a Package Statment
 
+It is always best to use/ specify a package statement and avoid using the default or unnamed package.
+
+The main disadvantage is that you can't import types from the default package into other classes outside fo the default package.
+- In other words, you can't qualify the name if it's in the default package, and you can't import classes from the default pacakge.
+
+# Arrays 
+
+An `array` is a data structure that allows you to store a sequence of values, all of the same type.
+
+There can be an `array` for any of the `8 primitive types`, or any class!
+
+* Elements in an array start at 0
+
+When declaring an arrayt, we first specify the **type** of the elements, then include square `[]` brackets in the decleration. This is the key for Java to identify the variable as an array.
+
+One way to instatiate the array is with the `new keyword`.
+
+```
+// This code instantiates an array with 10 values
+int[] intergerArray = new int[10]
+```
+
+The left of the assignment operator is the `Array decleration` and the right of the assignment operator is the `Array Creating Expression`.
+
+* An array instantiation doesn't have a set of parenthese, meaning we can't pass data ot a constructor for an array
+
+Underneath, the Java array is just a specialized class, which is why the new keyword is used.
+
+The size of an array, once created, is fixed.
+- The size of an array can't be changed once instsatiated. Elements can only be assigned values, they can't be added or deleted.
+
+## The Array Initializer
+
+An array initializer makes instatiating an array easier.
+```
+int[] arrayInitializer = new int[] {1, 2, 3, 4, 5};
+```
+We sepcify the values the array is to be initializezd to, in a comma-delimited list, with curly braces. Since the values of the array are specified on initialization, the length of the array can be determined by Java. We do not need to specify the size because of this.
+
+### Array Initializer: Anonymous Array
+
+We can drop the `new keyword` with brackets in the expression. This is called an anynymous array.
+
+```
+int[] anynymousArray = {1, 2, 3, 4, 5};
+```
+
+An anonymous array initializer can only be used in a decleration statement.
+
+## What is an Array, Really?
+
+An array is a special *class* in Java.
+
+When an array initializer statment isn't used, all array elements are initilized to the default value for that type
+
+##  The Enhanced For Loop (OR)/ The For Each Loop
+
+The loop was designed to walk through *elements in an array* or other collection types.
+
+It processes `one element at a time`, from the `first` elememt to the `last`. 
+
+```
+for (decleration: collection) {
+// code block
+}
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
