@@ -1877,12 +1877,38 @@ The loop was designed to walk through *elements in an array* or other collection
 It processes `one element at a time`, from the `first` elememt to the `last`. 
 
 ```
-for (decleration: collection) {
+for (decleration : collection) {
 // code block
 }
 ```
 
+* The first part is a `Decleration Expression`. Which includes the type and a *variable name*
+- This is usually a local variable with the same type as an element in the array
 
+* The second component is the array or some other *collection variable*
+```
+int[] newArray = new int[] {5, 4, 3, 2, 1} {
+
+for(int element : newArray) {
+    System.out.print(element + " ");
+}
+
+// output = 5 4 3 2 1 
+```
+
+## java.util.Arrays
+
+Java's array type is very basic. It comes with very little built-in functionality.
+
+It has a *single property of field*, named *length*, and it inheritys java.util.Objects functionality
+
+Java provides a *helper class* named `java.util.Arrays`, providing the common functionality you'd want for many array operations.
+
+All the methods on `java.util.Arrays` are static methods, not instance methods.
+
+The toString method in this helper class prints out all the array elements, comma delimited, and contained in square brackets.
+
+You can assign any array to an object variable. You can craete an array of Objects that support any type in java. Because `Array` is an `Object`, we can assign an array to be an element of type array!
 
 
 
