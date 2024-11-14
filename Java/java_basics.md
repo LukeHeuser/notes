@@ -1921,9 +1921,19 @@ int[] newArray = new int[] {5, 4, 3, 2, 1}
  }
 ```
 
+## Why Use Arrays
 
+We use arrays to manage many items of the same type. Common behaviors for arrays include sorting, initializing values, copying the array, an finding an element.
 
+This behavior isn't on the array instance itself, but rather on a helper class `java.util.Arrays`.
 
+The enhanced for loop is not suitable for setting values of an array.
+
+`Arrays.sort();` = Sorts lowest to highest, this is called the natural 
+
+`Arrays.fill('arrayVariable', 'value');` = Fills the entire array with the declared value.
+
+`int[] = Arrays.copyOf('arrayVariable', 'length');` An array copy creates a new array. A new instance of an array, and copies the array elemnts to new array.
 
 
 
