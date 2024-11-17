@@ -1908,7 +1908,7 @@ All the methods on `java.util.Arrays` are static methods, not instance methods.
 
 The toString method in this helper class prints out all the array elements, comma delimited, and contained in square brackets.
 
-You can assign any array to an object variable. You can craete an array of Objects that support any type in java. Because `Array` is an `Object`, we can assign an array to be an element of type array!
+You can assign any array to an object variable. You can create an array of Objects that support any type in java. Because `Array` is an `Object`, we can assign an array to be an element of type array!
 
 ```
 // Array Initializer
@@ -1933,7 +1933,7 @@ The enhanced for loop is not suitable for setting values of an array.
 
 `Arrays.fill('arrayVariable', 'value');` = Fills the entire array with the declared value.
 
-`int[] = Arrays.copyOf('arrayVariable', 'length');` An array copy creates a new array. A new instance of an array, and copies the array elemnts to new array.
+`int[] = Arrays.copyOf('arrayVariable', 'length');` An Arrays copy creates a new instance of array and copies the array elements to this new array.
 
 
 
