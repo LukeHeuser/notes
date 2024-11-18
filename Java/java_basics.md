@@ -1935,6 +1935,78 @@ The enhanced for loop is not suitable for setting values of an array.
 
 `int[] = Arrays.copyOf('arrayVariable', 'length');` An Arrays copy creates a new instance of array and copies the array elements to this new array.
 
+## Finding a Match with Arrays
+
+There are different algorithms for searching and matching elements in arrays
+
+### Searching Sequentially
+
+This is called a linear or sequential search because you're stepping through the elements one after another.
+
+If the elements are `sorted`, usnig this type of linear search is unnecessarily inefficient.
+```
+public static int linearSearch(int[] arr, int target) {
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i] == target) {
+            return i; // Return the index if the target is found
+        }
+    }
+    return -1; // Return -1 if the target is not found
+}
+```
+
+### Using Intervals to Search
+
+We split each section up testing the values at the bounderies, and based on that, split again into smaller sections, narrowing the number of elements to test each time. This type of searching in software is called `Interval Searching`.
+
+Within these two categories, `sequential` and `interval`, there are numerous existing algorithms.
+
+One of the most common interval searches is the `binary search`, which is why Java provides this search on so many of its collection classes.
+
+In this search, intervals are continually split into two, hence the word `binary`.
+
+## Arrays.binarySearch
+
+The static method, `binarySearch`, is in the `Arrays` class.
+
+We can use this method to test if a value is already in our array, but there are some `important` things to remember.
+
+* The array has to be sorted!!!
+* If there are duplicate values in the array, theres no guarantee which one it'll match on.
+* Elements must be comparable. Trying to compare instances of different types will lead to errors and invalid results
+
+```
+String[] sArray = {"Mike", "Luke", "Doug", "Preston", "Chevy"};
+Arrays.sort(sArray);
+System.out.println(Arrays.toString(sArray));
+
+if (Arrays.binarySearch(sArray, "Mike") >= 0) {
+    System.out.println("Found Mike in the list");
+}
+```
+
+This method returns:
+* The position of a match, if found
+* It returns a `-1` when no match was found.
+
+It's important to remember that a positive number may not be the position of the `first match`.
+
+If your array has duplicate values and you need to find the first element, OTHER METHODS should be used.
+
+Binary Search can do interval searching successfully because the elements are sorted.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
