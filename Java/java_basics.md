@@ -1996,6 +1996,36 @@ If your array has duplicate values and you need to find the first element, OTHER
 Binary Search can do interval searching successfully because the elements are sorted.
 
 
+# Variable Arguments (varargs)
+
+We replace the brackets after the String type, which we know tells us this method will take an array of String, and we can instead replace that with 3 periods.
+
+
+```
+public static void main(String[] args) {
+        // main mthod body
+    }
+```
+
+The above can be replaced with:
+
+```
+public static void main(String... args) {
+        // main mthod body
+    }
+```
+
+`...` is a special designation for Java that means java will take *zero, one, or many* Strings as arguments to this method and create an array with which to process them in the method.
+
+* This `Array` will be called args and be of type String
+
+## When Can You Use Variable Arguments (varargs)?
+
+### The Rules
+
+- There can be only one variable argument in a method
+- The variable Argument MUST be the *last* argument 
+
 
 
 
