@@ -2024,11 +2024,11 @@ public static void main(String... args) {
 ### The Rules
 
 - There can be only one variable argument in a method
-- The variable Argument MUST be the *last* argument 
+- The variable Argument MUST be the *last* argument
 
+## Java's Nested Arrays
 
-
-
+An array element can actually itself be an array. It's known as a `nested array`
 
 
 
