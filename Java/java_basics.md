@@ -2028,13 +2028,66 @@ public static void main(String... args) {
 
 ## Java's Nested Arrays
 
-An array element can actually itself be an array. It's known as a `nested array`
+An array element can actually itself be an array. It's known as a `nested array`. or an array assigned to an outer array;s element.
 
+* This is how Java supports two and three dimensional arrays of varying dimensions.
 
+A `two-dimensional arryay` can be thought of as a table or matrix of values with ros and columns.
 
+```
+int[][] array = {  {1, 2, 3},
+                   {11, 12, 13},
+                   {21, 22, 23}
+                };
+```
+This type of decleration tells Java we want a two dimnsional array of integers.
 
+A `two-dimensional array` doesn't have to be a uniform matrix though. The nested arrays can be different sizes.
 
+The above array is an array with 3 elements, each element is an array of integers (a nested array).
 
+* Each nested array is a different length.
+
+* You can initialize a two-dimensional array and define the size of the nested arrays as shown here:
+```
+// the first set of brackets states there are 3 nested arrays
+// the second set of brackets states each nested array will have 3 ints
+int[][] array = new int[3][3];
+```
+This statement says we have an array of 3 nested arrays, and each nested array will have 3 ints.
+
+The result of this initialization is a 3 x 3 matrix, where `X` is titled `INDEX`: and `Y` is titled `ARRAY`.
+
+* The first set of square brackets says there are 3 rows, and the second set of square brackets says there are 3 columbs for each row.
+
+Java knows we want a 3 x 3 matrix of ints and defaults the values of the nested arrays to zeros as it does for any array.
+
+* We can initialize a two-dimensional array without specifying the size of the nested arrays.
+
+```
+// The outer array size is specified to 3
+int [][] array = new int[3][];
+```
+
+Here, we're specifying only the outer array size by specifying the length, only in the first set of square brackets.
+
+* The second set of square brackets is left empty
+
+The result of this initialization is an array of 3 null elements.
+
+* We are limited to assigning integer arrays to these elements, but they can be any length.
+
+## Two-Dimensional Array
+
+There are a lot of wats to declare a `two-dimensional Array`.
+
+```
+int[][] myDoubleArray;
+int[] myDoubleArray[];
+```
+* The first is much clearer
+
+When using arrays we should stick to more strictly 'typed' arrays as a general rule. This prevents any calling code from inserting object types taht we don't expect and can't handle.
 
 
 
