@@ -2089,7 +2089,15 @@ int[] myDoubleArray[];
 
 When using arrays we should stick to more strictly 'typed' arrays as a general rule. This prevents any calling code from inserting object types taht we don't expect and can't handle.
 
+# ArrayList
 
+The ArrayList is effectively a resizable-array.
+
+An ArrayList implements the lists interface methods.
+
+The ArrayList is a class that maintains an array in memory that's actually bigger than what we need, in most cases.
+
+It keeps track of the capacity or maximum size of the array in memory
 
 
 
