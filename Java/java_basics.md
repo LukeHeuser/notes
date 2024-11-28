@@ -2095,8 +2095,13 @@ An array is mutable, and while we can set or change values in the array, we can'
 
 * Java gives us *several classes* that let us `add` and `remove` items and resize a sequence of elements
 
-### These classes are said to implement a lists behavior 
+### These classes are said to implement a lists behavior; so what is a list?
 
+## What is a List
+
+A list is a special type in java, called an `interface`. A `List Interface` describes a set of *method signatures* that all list classes are expected to have.
+
+![Alt Text](https://miro.medium.com/v2/resize:fit:1400/1*B8xo5RQHKIKWI7udk85-jQ.png)
 
 
 
