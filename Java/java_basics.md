@@ -2089,6 +2089,17 @@ int[] myDoubleArray[];
 
 When using arrays we should stick to more strictly 'typed' arrays as a general rule. This prevents any calling code from inserting object types taht we don't expect and can't handle.
 
+# Java Array vx Java List
+
+An array is mutable, and while we can set or change values in the array, we can't `resize` the *array* (AH man!).
+
+* Java gives us *several classes* that let us `add` and `remove` items and resize a sequence of elements
+
+### These classes are said to implement a lists behavior 
+
+
+
+
 # ArrayList
 
 The ArrayList is effectively a resizable-array.
