@@ -2103,18 +2103,35 @@ A list is a special type in java, called an `interface`. A `List Interface` desc
 
 ![Alt Text](https://miro.medium.com/v2/resize:fit:1400/1*B8xo5RQHKIKWI7udk85-jQ.png)
 
+The List interface inherits several methods from the Collection interface, such as: 
+* add()
+* remove()
+* contains()
+* isEmpty()
+* size()
+* and more...
 
+A class can use or implement an interface, which means it agrees to have the methods that the interface describes
 
 # ArrayList
 
-The ArrayList is effectively a resizable-array.
+The `ArrayList` is effectively a resizable-array. An `ArrayList`, implements the lists interface methods. See the beautiful diagram above!
 
-An ArrayList implements the lists interface methods.
+The `ArrayList` is a `class` that `maintains` an `array in memory` that's actually `bigger` than what we need, in most cases. 
 
-The ArrayList is a class that maintains an array in memory that's actually bigger than what we need, in most cases.
+* It keeps track of the capacity or maximum size of the array in memory
 
-It keeps track of the capacity or maximum size of the array in memory
+However, it also keeps track of the `elements` that've been assigned or set, which is the size of the ArrayList. As elements are added to an ArrayList its capacity may need to grow. This occurs automatically - This is why the ArrayList is resizeable.
 
+Declaring our arrays with a specific type allows `compile-time type checking`. Type checking at compile time prevents runtime exceptions when instances assigned to arrays aren't what they are expected to be. If we don't specify a type with an ArrayList, it's going to use the Object class by defauly: this is called the `raw use of a type`.
+
+### How to specify the type for an ArrayList
+```
+// The Type is not required in the second diamond operator
+ArrayList<GroceryItem> groceryList = new ArrayList<GroceryItem>();
+```
+
+* `<>` = Diamond operator 
 
 
 
