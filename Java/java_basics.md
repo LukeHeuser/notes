@@ -2202,7 +2202,69 @@ First occurence of bananas = 1
 Last occurence of bananas = 4
 ```
 
+### Removing Values
 
+We can remove by `index` if we know it, or we can remove by the elements `value` itself. The `remove` method only removes a single element from a list.
+
+See below for an example of this method.
+
+```
+ArrayList groceries = new ArrayList<>(List.of("apples", "bananas", "milk", "eggs"));
+ 
+System.out.println(groceries);
+groceries.remove(1);
+System.out.println(groceries);
+groceries.remove("milk");
+System.out.println(groceries);
+
+Expected:
+[apples, bananas, milk, eggs]
+[apples, milk, eggs]
+[apples, eggs]
+```
+
+### Removing multiple elements
+
+The removeAll can remove more than one element at a time.
+```
+ArrayList groceries = new ArrayList<>(List.of("apples", "bananas", "milk", "eggs"));
+
+groceries.removeAll(List.of("apples", "eggs"));
+
+Expected:
+[bananas, milk]
+```
+Using the static method `List.of` to crteate a temporary list from a variable arguments list of elements.
+
+#### RetainAll();
+
+Another method that might remove methods, is the `.retainAll()` method. The method removes every element that isn't one of the items *PASSED* in the argument.
+
+```
+ArrayList groceries = new ArrayList<>(List.of("apples", "bananas", "milk", "eggs"));
+
+groceries.retainAll(List.of("apples", "cheese", "milk");
+System.out.println(groceries);
+
+Expected:
+[apples, milk]
+```
+
+#### Remove all elements
+
+the `.clear()` method removes all elements from an ArrayList.
+
+```
+ArrayList groceries = new ArrayList<>(List.of("apples", "bananas", "milk", "eggs"));
+
+groceries.clear();
+System.out.println(groceries);
+System.out.println("isEmpty = " + groceries.isEmpty());
+
+Expected:
+[]
+isEmpty = true
+```
 
 
 
