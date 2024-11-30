@@ -2267,6 +2267,50 @@ isEmpty = true
 ```
 
 
+### Sorting ArrayLists
+
+We can use the sorting method found on ArrayList. 
+```
+ArrayList groceries = new ArrayList<>(List.of("apples", "bananas", "milk", "eggs"));
+
+groceries.sort(Comparator.naturalOrder());
+System.out.println(groceries);
+
+Expected:
+[apples, bananas, eggs, milk]
+```
+This method has *ONE* argument which is a type called `Comparator`. This special type allows instances to be *COMPARED* to one another. A `comparator` is needed and Java provides the one needed here with a static factory method on the `Comparator` type called naturalOrder. We call it an pass he result directs as an argument to the sort method.
+
+This object allows ArrayLists with types that have a natural order to be sorted.
+
+We canalso sort in reverse.
+
+```
+ArrayList groceries = new ArrayList<>(List.of("apples", "bananas", "milk", "eggs"));
+
+groceries.sort(Comparator.reverseOrder());
+System.out.println(groceries);
+
+Expected:
+[milk, eggs, bananas, apples]
+```
+
+## Converting an ArrayList to a regular Array
+
+This is an overloaded method called `.toArray()`. This method will return an `array`, the same size as the array passed and of the same type.
+```
+ArrayList groceries = new ArrayList<>(List.of("apples", "bananas", "milk", "eggs"));
+
+var groceryArray = groceries.toArray(new String[groceries.size()]);
+System.out.println(Arrays.toString(groceryArray));
+
+Expected:
+[apples, bananas, milk, eggs]
+```
+
+There may be times we'll want to *pass* our data as an array to methods that acccept these arrays rather than Lists.
+
+
 
 
 
