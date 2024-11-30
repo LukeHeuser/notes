@@ -2104,11 +2104,11 @@ A list is a special type in java, called an `interface`. A `List Interface` desc
 ![Alt Text](https://miro.medium.com/v2/resize:fit:1400/1*B8xo5RQHKIKWI7udk85-jQ.png)
 
 The List interface inherits several methods from the Collection interface, such as: 
-* add()
-* remove()
-* contains()
-* isEmpty()
-* size()
+* .add()
+* .remove()
+* .contains()
+* .isEmpty()
+* .size()
 * and more...
 
 A class can use or implement an interface, which means it agrees to have the methods that the interface describes
@@ -2126,14 +2126,81 @@ However, it also keeps track of the `elements` that've been assigned or set, whi
 Declaring our arrays with a specific type allows `compile-time type checking`. Type checking at compile time prevents runtime exceptions when instances assigned to arrays aren't what they are expected to be. If we don't specify a type with an ArrayList, it's going to use the Object class by defauly: this is called the `raw use of a type`.
 
 ### How to specify the type for an ArrayList
-```
-// The Type is not required in the second diamond operator
-ArrayList<GroceryItem> groceryList = new ArrayList<GroceryItem>();
-```
 
 * `<>` = Diamond operator 
 
+```
+// The Type is not required in the second diamond operator
+// it is implicitly implied by Java
+ArrayList<GroceryItem> groceryList = new ArrayList<GroceryItem>();
+```
 
+### The below two code segments accomplish the same task
+
+```
+String[] items = {"apples", "bananas", "milk", "eggs"};
+List<String> list = list.of(items);
+ArrayList<String> groceries = ArrayList<>(list);
+
+System.out.println(groceries);
+
+Expected:
+[apples, bananas, milk, eggs]
+```
+
+```
+ArrayList<String> groceries = new ArrayList<>(List.of("apples", "bananas", "milk", "eggs"));
+
+Exptected:
+[apples, bananas, milk, eggs]
+```
+
+## ArrayList Retrieval 
+
+We can retrieve an element in an `ArrayList` by its index, much like the way we reference an array element by its position. For an ArrayList, we use the `get` method *instead* of *square brackets*.
+
+```
+ArrayList groceries = new ArrayList<>(List.of("apples", "bananas", "milk", "eggs"));
+
+System.out.println("Third item = " + groceries.get(2));
+
+Expected:
+Third Item = milk
+```
+
+## ArrayList Search
+
+### ArrayList contains
+
+Searching for an item in the list? The ArrayList provides several methods to help do this. There is the `contains method` that returns a boolean. *True* meaning a match was found
+
+```
+ArrayList groceries = new ArrayList<>(List.of("apples", "bananas", "milk", "eggs"));
+
+if(groceries.contains("milk")) {
+  System.out.println("Milk was found!");
+}
+
+Expected:
+Milk was found!
+```
+##### How does this work?
+This method will work for MANY of javas built in classes like `String` because it calls the classes overridden equals method.
+
+### ArrayList IndexOf
+
+There is also the `indexOf` & `lastIndexOf` method. If the method finds the element it returns the actual index position, instead of just returning true or false. These methods will `return -1` if the element was not found. ArrayLists can have duplicate elements.
+
+```
+ArrayList groceries = new ArrayList<>(List.of("apples", "bananas", "milk", "eggs", " bananas", "cookies"));
+
+System.out.println("First occurence of bananas = " + groceries.indexOf("bananas"));
+System.out.println("Last occurence of bananas = " + groceries.LastIndexOf("bananas"));
+
+Expected:
+First occurence of bananas = 1
+Last occurence of bananas = 4
+```
 
 
 
