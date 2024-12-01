@@ -2310,6 +2310,24 @@ Expected:
 
 There may be times we'll want to *pass* our data as an array to methods that acccept these arrays rather than Lists.
 
+## Converting an Array to an ArrayList
+
+We can also convert a standard array, to an ArrayList using the `Arrays.asList()` method found on the Arrays Class.
+
+```
+String [] stringArray = {"first", "second", "third"};
+
+var stringArrayList = Arrays.asList(stringArray);
+
+if(stringArrayList.contains("first")) {
+  System.out.println("First was found at position: " +  stringArrayList.indexOf("first"));
+}
+
+```
+
+
+
+
 
 
 
