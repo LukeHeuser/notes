@@ -2330,6 +2330,20 @@ First was found at index: 0
 
 Any change made to the List is a change to the *array* that BACKS it. This also means that an `ArrayList` created by this method is *not* resizable.
 
+The code below highlights this exampling how an ArrayList created with the `Arrays.asList()` method is backed by the orignal array.
+
+```
+String[] stringArray = new String[] {"First", "second", "third"};
+var stringArrayList = Arrays.asList(stringArray);
+
+stringArrayList.set(0, "one");
+System.out.println("list: " + stringArrayList);
+System.out.println("array: " + Arrays.toString(stringArray));
+
+Expected:
+list: [one, second, third]
+array: [one, second, third]
+```
 
 
 
