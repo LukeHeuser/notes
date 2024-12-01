@@ -2345,9 +2345,21 @@ list: [one, second, third]
 array: [one, second, third]
 ```
 
+#### Why would we want to do this?
 
+We want to do this to manipulate the underlying array with `list` functionality. Such as *sorting*; if we wanted to use the `Lists` method rather than the `Arrays` method of sorting.
 
+#### How to Declare a Fixed Size List
 
+```
+List<String> newList = Arrays.asList("Sunday", "Monday", "Tuesday");
+System.out.println(newList);
+
+Expected:
+[Sunday, Monday, Tuesday]
+```
+
+The code does not have an array backing this list because the array is creted within the method. This can be craeted if we need to create a fixed size list.
 
 
 
