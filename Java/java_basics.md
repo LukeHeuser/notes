@@ -2326,6 +2326,9 @@ Expected:
 First was found at index: 0
 ```
 
+*This can be thought of as conceptually putting an ArrayList wrapper around an existing array.
+
+Any change made to the List is a change to the *array* that BACKS it. This also means that an `ArrayList` created by this method is *not* resizable.
 
 
 
