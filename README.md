@@ -2,7 +2,7 @@
 
 # Java
 *  [What is Java?](https://github.com/LukeHeuser/notes/blob/main/Java/what_is_java.md)
-*  [Java Basics](https://github.com/LukeHeuser/notes/blob/main/Java/java_basics.md)
+*  [Java Fundamentals (ALL NOTES)](https://github.com/LukeHeuser/notes/blob/main/Java/java_basics.md)
 *  Spring Boot
 *  [Kafka](https://github.com/LukeHeuser/notes/blob/main/kafka.md)
 
