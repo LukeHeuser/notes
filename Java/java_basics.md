@@ -2442,6 +2442,11 @@ if(ArrayListInteger.containsAll(newIntArrayList)){
 Expected:
 True!
 ```
+In addition, like the String and StringBuilder, we have the methods, `indexOf` and `lastIndexOf`, which will return the index of the first or lastMatch. When a -1 is returned from these methods, no matching entry was found.
+
+
+
+
 
 
 
