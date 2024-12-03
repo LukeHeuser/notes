@@ -2383,15 +2383,65 @@ ArrayList <String> arrayList = new ArrayList<>();
 
 Setting an element:
 ```
-ArrayList <String> arrayList = new ArrayList<>();
+ArrayList <String> arrayList = new ArrayList<>(List.of("One", "Two", "Three"));
+arrayList.set(0,"1");
+System.out.println(arrayList);
 
-arrayList.set(0,"one");
+Expected:
+[1, Two, Three]
+```
 
+Getting an element:
+```
+ArrayList <String> arrayList = new ArrayList<>(List.of("One", "Two", "Three"));
+String element = arrayList.get(1);
+System.out.println(element);
+
+Expected:
+Two
 ```
 
 
+### Arrays Methods for Finding Elements
 
+`binarySearch` returns the index from the search. The array MUST be sorted, if there are duplicate values, then the search is not guaranteed to be the position of the first element.
+```
+int[] intArray = new int[] {1,2,3,4,5};
+int search = Arrays.binarySearch(intArray, 5);
+System.out.println(search);
 
+Expected:
+4
+```
+
+### ArrayLists Methods for Finding Elements
+
+Can use the contains or contains All, which simply returns a boolean if a match or matches were found.
+
+Contains Example:
+```
+ArrayList<Integer> ArrayListInteger = new ArrayList<>(List.of(1,2,3,4,5));
+
+if(ArrayListInteger.contains(1)) {
+    System.out.println("There is a 1!");
+}
+
+Expected:
+There is a 1!
+```
+
+Contains all example:
+```
+ArrayList<Integer> ArrayListInteger = new ArrayList<>(List.of(1,2,3,4,5));
+ArrayList<Integer> newIntArrayList = new ArrayList<>(ArrayListInteger);
+
+if(ArrayListInteger.containsAll(newIntArrayList)){
+    System.out.println("True!");
+}
+
+Expected:
+True!
+```
 
 
 
