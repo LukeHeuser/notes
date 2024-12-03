@@ -2361,6 +2361,35 @@ Expected:
 
 The code does not have an array backing this list because the array is creted within the method. This can be craeted if we need to create a fixed size list.
 
+## Arrays vs ArrayLists
+
+Arrays support primitive types, but ArrayLists don't. ArrayLists supports `primitive wrappers`.
+
+* Both are ordered by Index
+* Both allow duplicate values and null values
+* Both inherit from java.util.Object and are mutable
+* An array is not sizable but the ArrayList is.
+
+### Array vs ArrayList Instantiation (without values)
+```
+String[] array = new String[10];
+```
+```
+ArrayList <String> arrayList = new ArrayList<>();
+```
+*Important Note* - The compiler will check that only strings are added to the `ArrayList`. This is why We SHOULD use a `specific type` rather than just the Object Class because Java can then perform compile-time type checking.
+
+`ArrayList elements`: are accessed with `get` and `set` *METHODS*, also using an index ranging from *0* to 1 less than the number of elements.
+
+Setting an element:
+```
+ArrayList <String> arrayList = new ArrayList<>();
+
+arrayList.set(0,"one");
+
+```
+
+
 
 
 
