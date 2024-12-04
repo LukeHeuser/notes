@@ -2444,9 +2444,90 @@ True!
 ```
 In addition, like the String and StringBuilder, we have the methods, `indexOf` and `lastIndexOf`, which will return the index of the first or lastMatch. When a -1 is returned from these methods, no matching entry was found.
 
+## HashMaps
+Similar to how an `ArrayList` stores a value with an index number. A `HashMap` stores objects in `key/ value` pairs, and can be accessed by an index of another type, such as an *Integer* or a *String*.
 
+- One `Object` is used as a `Key` *(index)* to another `Object` *(value)*. It can store different types: *String keys* with *Integer values*, or the same type. *String keys* with *String Values*.
 
+### Instantiate a HashMap
 
+To instantiate a HashMap, we must decalre what Object type the Key/Value pair is going to be. 
+
+This HashMap declares that the Key will be an *Object of String*, and the Value will be an *Object of String*. And that no values will be instantiated.
+```
+HashMap<String, String> capitalCities = new HashMap<>();
+```
+
+### Add Items to a HashMap
+The HashMap class has many useful methods. To add items, use the `.put()` method.
+
+```
+HashMap<String, String> capitalCities = new HashMap<>();
+capitalCities.put("England", "London");
+capitalCities.put("Germany", "Berlin");
+capitalCities.put("Norway", "Oslo");
+capitalCities.put("USA", "Washington DC");
+
+System.out.println(capitalCities);
+
+Expected:
+{USA=Washington DC, Norway=Oslo, England=London, Germany=Berlin}
+```
+
+### Access an Item on a HashMap
+To access a value in the HashMap, use the `.get()` method and refer to its key.
+```
+HashMap<String, String> capitalCities = new HashMap<>();
+capitalCities.get("England");
+
+System.out.println(capitalCities.get("England"));
+
+Expected:
+London
+```
+
+### Remove an Item on a HashMap
+To remove an item. Use the `.remove()` method and refer to the key
+
+```
+HashMap<String, String> capitalCities = new HashMap<>();
+capitalCities.put("England", "London");
+capitalCities.put("Germany", "Berlin");
+capitalCities.remove("England");
+
+System.out.println(capitalCities);
+
+Expected:
+{Germany=Berlin}
+```
+
+To remove *ALL* items, use the `.clear()` method found on the List interface. The .clear() method is used to remove all the elements from the `List Container`.
+
+```
+HashMap<String, String> capitalCities = new HashMap<>();
+capitalCities.put("England", "London");
+capitalCities.put("Germany", "Berlin");
+capitalCities.clear();
+
+Expected:
+{}
+```
+
+### HashMap Size
+To find out how many items there are in a hashmap, use the size() method.
+```
+HashMap<String, String> capitalCities = new HashMap<>();
+capitalCities.put("England", "London");
+capitalCities.put("Germany", "Berlin");
+
+System.out.println(capitalCities.size());
+
+Expected:
+2
+```
+
+### Loop through a HashMap
+Loop throug hthe items of a HashMap with a `for-each` loop. Use the `.keySet()` method if you only want the keys, and use the `.values()` method if you only want the values.
 
 
 
