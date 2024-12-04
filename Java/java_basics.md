@@ -2458,6 +2458,8 @@ This HashMap declares that the Key will be an *Object of String*, and the Value 
 HashMap<String, String> capitalCities = new HashMap<>();
 ```
 
+`Keys` and `Values` in a HashMap are actually `objects`. The example above uses objects of type *String*. To use other types, such as int, we must specify an equivalent wrapper class. IE, *Integer*, *Boolean*, *Double*, *etc...*
+
 ### Add Items to a HashMap
 The HashMap class has many useful methods. To add items, use the `.put()` method.
 
@@ -2529,11 +2531,50 @@ Expected:
 ### Loop through a HashMap
 Loop throug hthe items of a HashMap with a `for-each` loop. Use the `.keySet()` method if you only want the keys, and use the `.values()` method if you only want the values.
 
+This is looping with `.keySet()`
 
+```
+HashMap<String, String> capitalCities = new HashMap<>();
+capitalCities.put("England", "London");
+capitalCities.put("Germany", "Berlin");
 
+for(String i : capitalCities.keySet()) {
+  System.out.println("Country (key): " + i);
+}
+Expected:
+Country (key): England
+Country (key): Germany
+```
 
+This is looping with `.values()`
 
+```
+HashMap<String, String> capitalCities = new HashMap<>();
+capitalCities.put("England", "London");
+capitalCities.put("Germany", "Berlin");
 
+for(String i : capitalCities.values()) {
+  System.out.println("City (Value): " + i);
+}
+Expectd:
+City (Value): London
+City (Value): Berlin
+```
+
+This is looping with the `.keySet()` to get the value and use both Key & Value.
+```
+HashMap<String, Integer> people = new HashMap<>();
+people.put("Luke", 25);
+people.put("Hannah", 20);
+
+for (String i : people.keySet()) {
+    System.out.printf("%s is %d years old!%n", i, people.get(i));
+}
+
+Expected:
+Luke is 25 years old!
+Hannah is 20 years old!
+```
 
 
 
