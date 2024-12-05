@@ -299,6 +299,16 @@ subSequence(int beginIndex, int endIndex)
 `%d` = used for a decimal interger value 
 
 `%f` = used for a decimal number 
+* To adjust the decimal place use `%.(declare decimal place)f`
+
+EX:
+```
+double number = 0.123456789;
+System.out.printf("%.5f%n", number);
+
+Expected:
+0.12346
+```
 
 ## String vs String Builder
 
