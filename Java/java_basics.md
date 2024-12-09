@@ -2601,7 +2601,27 @@ In a perfect world, an operations time and complexity would never change. This i
 
 In many situations, an operatios cost is in direct to the number of elements, `n`. In `Big O Notation`, this is `O(n)`, called *linear time*. `O(n)` is generally the worst case scenario for list operations, but there are `Big O Notations`, for worse performers.
 
-###
+## Constant Amortized Time Cost
+
+Another scenario is the Java docs declared for the growth of the ArrayList that adding an element has constant amortized time cost.
+
+In our case, we'll designate this constant amortized time as `o(1)`. This means that in the majority of cases, the cost is close to `o(1)`, but at certain intervals, the cost is `o(n)`. If we add an element to an ArrayList where the capacity of the list is already allocated and space is available. The cost is the same each time, regardless of how many elements we add. But as soon as we reach the capacity and all the elements *(all n elements)* need to be copied in memory. THis single ad would have a maxmimum cost of *o(n)*.
+
+## LinkedList
+
+The `LinkedList` is not idexed at all. There is no array storing the addresses in a neat, ordered way, like the *ArrayList*. Instead, each element that's added to a linked list forms a chain and the chain has links to the `previous element`, and the the `next element`
+
+This architectyre is called a `Doubly LinkedList`. Meaning, an element is linked to the next element, but it's also linked to a previous element, in this chain of elements. 
+
+The beginning of the chain is called the `head` of the list, and the end is called the `tail`. This can also be considered a queue. In this case, a double ended queue because we can traverse both backwards and forwards through these elements.
+
+* Getting an element from the list or setting a value of elements, isn't just simple math any more with the `LinkedList` type
+
+To find an element you'd need to start at the head or tail and check if the element matches or/ keep track of the number of elements traversed if we are mathching by an index because the index isn't stored as part of the list. I.E. even if you want to find the 5th element, you'd still have to traverse the chain this way to get the fifth element.
+
+This type of retrieval is considered expensive which is processing time and memory usage.
+
+On the `otherhand`, inserting and removing an element is much simpler for this type of collection.
 
 
 
