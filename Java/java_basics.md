@@ -2587,4 +2587,29 @@ Hannah is 20 years old!
 ```
 
 
+# Big O Notation
+
+`Big O Notation` is a way to express how well the operation performs when applied to more and more elements. Big O approximates the cost of an operation for a certain number of elements, called `n`
+
+Cost is usually determined by a the time it takes, but it can include memory usage and complexity, for example.
+
+As `n` (the number of elements) gets bigger an operations cost can stay the same. But cost often grows as the number of elements grow.
+
+Costs can grow *linearly*, meaning the cost stays in step with the *magnitude* of the number of elements. Or costs can grow exponentially or by some other non-linear fashion.
+
+In a perfect world, an operations time and complexity would never change. This ideal world in `Big O Notation` is `o(1)`, also called constant time.
+
+In many situations, an operatios cost is in direct to the number of elements, `n`. In `Big O Notation`, this is `O(n)`, called *linear time*. `O(n)` is generally the worst case scenario for list operations, but there are `Big O Notations`, for worse performers.
+
+###
+
+
+
+
+
+
+
+
+
+
 
