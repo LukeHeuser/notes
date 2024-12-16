@@ -1827,6 +1827,7 @@ The `Package Statment` needs to be the first statement in the code. There can on
 
 It is always best to use/ specify a package statement and avoid using the default or unnamed package.
 
+
 The main disadvantage is that you can't import types from the default package into other classes outside fo the default package.
 - In other words, you can't qualify the name if it's in the default package, and you can't import classes from the default pacakge.
 
@@ -2134,6 +2135,14 @@ The `ArrayList` is a `class` that `maintains` an `array in memory` that's actual
 However, it also keeps track of the `elements` that've been assigned or set, which is the size of the ArrayList. As elements are added to an ArrayList its capacity may need to grow. This occurs automatically - This is why the ArrayList is resizeable.
 
 Declaring our arrays with a specific type allows `compile-time type checking`. Type checking at compile time prevents runtime exceptions when instances assigned to arrays aren't what they are expected to be. If we don't specify a type with an ArrayList, it's going to use the Object class by defauly: this is called the `raw use of a type`.
+
+## ArrayList Facts:
+
+* The `ArrayList` is usually a better default choice for a list, especially if the list is used predominantly for storing and reading data.
+
+* If you know the maximum number of possible items, then its probably better to us an ArrayList but set it's capacity
+
+* An ArrayList *index* is an int type. Meaning, the *capcity* is limited to `Integer.MAX_VALUE`
 
 ### How to specify the type for an ArrayList
 
@@ -2619,9 +2628,17 @@ The beginning of the chain is called the `head` of the list, and the end is call
 
 To find an element you'd need to start at the head or tail and check if the element matches or/ keep track of the number of elements traversed if we are mathching by an index because the index isn't stored as part of the list. I.E. even if you want to find the 5th element, you'd still have to traverse the chain this way to get the fifth element.
 
-This type of retrieval is considered expensive which is processing time and memory usage.
+This type of retrieval is considered expensive which is processing time and memory usage. On the `otherhand`, inserting and removing an element is much simpler for this type of collection.
 
-On the `otherhand`, inserting and removing an element is much simpler for this type of collection.
+In contrast to an `ArrayList`, *inserting* or *removing* an item in a `LinkedList` is just a matter of *breaking two links* in the chain, and re-establishing two different links. No new array needs to be created, and elements don't need to be shifted into different positions.
+
+A reallocation of memory to accommodate all existing elements is never required. For a LinkedList, inserting and removing elements is generally considered *cheap* in computer currency, compared to doing these functions in an ArrayList.
+
+## Why use a LinkedList?
+
+You may want to consider using a linkedList if you're *adding* and *processing* or *manipulated* a large amount of elements, and the maximum elements isn't known. A `LinkedList` can be more efficient when items are being processed predominantly from either the head or tail of the List.
+
+
 
 
 
