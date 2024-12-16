@@ -2638,6 +2638,33 @@ A reallocation of memory to accommodate all existing elements is never required.
 
 You may want to consider using a linkedList if you're *adding* and *processing* or *manipulated* a large amount of elements, and the maximum elements isn't known. A `LinkedList` can be more efficient when items are being processed predominantly from either the head or tail of the List.
 
+# A Queue, First In First Out (FIFO)
+
+When you get in a line or a queue, you expect that you'll bne processed in relationship to the first person in line. We call this a `first-in first-out` OR `FIFO` data collection.
+
+If you want to `remove` an item, you poll the queue, getting the first element or person in line.
+
+If you want to `add` an item, you offer it into the queue, sending it to the back of the line.
+
+## Single-ended queues
+
+Single-ended queues always process elements from the start of the queue.
+
+## Double-ended queues
+
+A double-ended queue allows access to both the `start` and `end` of the queue.
+
+A `LinkedList` can be used as a double ended queue. But, it can also be used as different types of `data collections`: `A List`, `A queue`, `A double-ended Queue`, and a `Stack`.
+
+## A Stack: Last-in, First-out (LIFO) Data Collection
+
+When you think of a stack, you can think of a vertical pile or elements, one on top of another. When you add an item, you push it onto the stack. If you want to get an item, you'll take the top item, or `pop` it from the stack.
+
+This is a last-In First-Out or LIFO data collection.
+
+A LinkedList can be used as a stack as well. The LinkedList implements methods on the `Deque` interface.
+
+
 
 
 
