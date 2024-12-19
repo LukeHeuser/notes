@@ -12,4 +12,4 @@ A note about modules: Spring Framework’s jars allow for deployment to the modu
 
 Spring Framework 6.0 is fully compatible with Tomcat 10.1, Jetty 11 and Undertow 2.3 as web servers, and also with Hibernate ORM 6.1.
 
-
+Today, with the help of Spring Boot, applications are created in a devops- and cloud-friendly way, with the Servlet container embedded and trivial to change. 
