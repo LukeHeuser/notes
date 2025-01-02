@@ -32,5 +32,30 @@ Spring Boot Makes using the Spring Frame work *MUCH* easier.
 * Autowiring
 * Component Scan
 
+# Group ID & Artifact ID
+
+Group ID & Aritifact ID are very similar to `Package Name` & `Class Name`
+
+Maven is a dependency managment tool. Maven downloads the Spring framework and makes it available to us
+
+# What is Tight Coupling?
+
+Coupling is a measure of how much work is involved in changing something.
+
+Tightly Coupled Eample: *An engine is tighlty coupled to a car*
+
+Losely Coupled: *A wheel is losely coupled to a car*
+
+We want to have loose coupling as much as possible. This allows us to make changes to our program without affecting other methods and accidentally breaking it. This also allows us to make changes more easily.
+
+
+
+
+
+
+
+
+
+
 
 
