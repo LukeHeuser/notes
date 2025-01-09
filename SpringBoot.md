@@ -49,9 +49,24 @@ Losely Coupled: *A wheel is losely coupled to a car*
 We want to have loose coupling as much as possible. This allows us to make changes to our program without affecting other methods and accidentally breaking it. This also allows us to make changes more easily.
 
 
+# @Configuration
 
+The `@Configuration` annotation indicates that a class declares one or more `Bean Methods`. They may be *processed* by the `Spring Container` to generate `Bean Definitions` and service requests for those `@Beans` at runtime.
 
+In a @Configuration class, we can define Spring Beans. The objects which are managed by Spring are what are called, `Spring Beans` and we can define the methods to create these Spring Beans in our `configuration class`.
 
+The underlying purpose of the Configuration annotation in a Spring application is to mark a class as a source of `Bean Definitions`, allowing the Spring container to manage the beans defined within it!
+
+# @Bean
+`@Bean`: Indicates that a method produces a bean to be managed by the `Spring Container`.
+
+# Creating a Spring Context
+
+The below is creating a `Spring Context` with a `Configuration Class`. Our Configuration Class needs to be launched and that's where the Spring Context comes in!
+
+```
+var context = new AnnotationConfigApplicationContext(*ConfigurationClassName*.class);
+```
 
 
 
