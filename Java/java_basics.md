@@ -2664,7 +2664,9 @@ This is a last-In First-Out or LIFO data collection.
 
 A LinkedList can be used as a stack as well. The LinkedList implements methods on the `Deque` interface.
 
+# Big O between ArrayList & LinkedList
 
+The `.get()` method is on both the LinkedList & ArrayList, however, on the ArrayList. The big O Notation is `O(1)` at it's worst. Whereas for a LinkedList, the worst case is `O(n)`. Typically, it's not as bad as that with a Linked List. This is because a LinkedList is a double ended queue. Java will decide where to start searching. The retrieval will move from one link to the next either from the start or end. Which ever is closer to the defind index. 
 
 
 
