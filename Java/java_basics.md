@@ -2668,6 +2668,29 @@ A LinkedList can be used as a stack as well. The LinkedList implements methods o
 
 The `.get()` method is on both the LinkedList & ArrayList, however, on the ArrayList. The big O Notation is `O(1)` at it's worst. Whereas for a LinkedList, the worst case is `O(n)`. Typically, it's not as bad as that with a Linked List. This is because a LinkedList is a double ended queue. Java will decide where to start searching. The retrieval will move from one link to the next either from the start or end. Which ever is closer to the defind index. 
 
+# Iterators; What are they?
+
+In a nutshell, an iterator is another way to `traverse lists`. An `Iterator` can be thought of as something similar to a database cursor. Specifically, an iterator is an *object* that allows traversal over records in a `collection`.
+
+The iterator is simple:
+
+When you get an instance of an iterator, you can call the `.next()` method to get the next element in the list
+```
+var list = new LinkedList<String>(List.of("Delaware", "Columbus", "Marion"));
+var iterator = list.iterator();
+var nextPlaceToVisit = iterator.next();
+
+EXPECTED:
+Delaware
+```
+
+
+
+
+
+
+
+
 
 
 
