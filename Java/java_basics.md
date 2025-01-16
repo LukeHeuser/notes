@@ -2674,7 +2674,7 @@ In a nutshell, an iterator is another way to `traverse lists`. An `Iterator` can
 
 The iterator is simple:
 
-When you get an instance of an iterator, you can call the `.next()` method to get the next element in the list
+When you get an instance of an iterator, you can call the `.next()` method to get the next element in the list.
 ```
 var list = new LinkedList<String>(List.of("Delaware", "Columbus", "Marion"));
 var iterator = list.iterator();
@@ -2683,7 +2683,15 @@ var nextPlaceToVisit = iterator.next();
 EXPECTED:
 Delaware
 ```
+The `.next()` method on an iterator does two things. It returns the *next element* then it advances to a positon just *before* the next entry if there is one.
 
+You can also use the `.hasNext()` method to check if any elements remain to be processed. This method returns a boolean.
+
+## Why Use an Iterator?
+
+The benefit of an iterator is you can use it to modify the list, while iterating through it. However, you can ONLY move forawrd in an iterator. The only method available for mutating or changing elements in this iterator is the remove method.
+
+# Iterator vs. ListIterator
 
 
 
