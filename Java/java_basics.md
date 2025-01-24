@@ -2693,8 +2693,13 @@ The benefit of an iterator is you can use it to modify the list, while iterating
 
 # Iterator vs. ListIterator
 
+An `iterator` can only move forwards and also only supports the remove method.
 
+A `ListIterator` allows you to navigate both forwards and backwards. Besides the remove method, it also supports the add and set methods.
 
+## Iterator Positions vs Element Positions
+
+It's highly imparative to understand that the iterators cursor positions are between elements. Once this is understood, operating an *Iterator* or *ListIterator* becomes second nature.
 
 
 
