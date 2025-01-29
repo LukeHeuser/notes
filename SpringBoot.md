@@ -68,6 +68,41 @@ The below is creating a `Spring Context` with a `Configuration Class`. Our Confi
 var context = new AnnotationConfigApplicationContext(*ConfigurationClassName*.class);
 ```
 
+# What is the Spring Container?
+
+* `Spring Container`: Manages Spring beans & their life cycle
+
+* `IOC Container` = Inversion of Control Container 
+
+```
+|POJO|   |CONFIG|
+    \     /
+|IOC CONTAINER|
+      ||
+|READY SYSTEM|
+```
+
+* Our Java classes & Config file are passed as inputs to the `Spring Container`
+
+* The IOC Container creates the runtime system. This is whats creating the Spring contest and managing the beans for us
+
+## Two Types of IOC Containers
+
+1. Bean Factory: Basic Spring Container
+2. Application Context: Advanced Spring Container with enterprise specific features such AS:
+* Building a web application
+* Internationalization features
+* Integration with Spring AOP (Aspect Orineted Programming)
+
+NOTE: Application context is the most frequently used
+Most enterprise applications use application context which is recommended for: web apps, web servises - REST API and micro services.
+
+
+
+
+
+
+
 
 
 
