@@ -94,10 +94,9 @@ var context = new AnnotationConfigApplicationContext(*ConfigurationClassName*.cl
 * Internationalization features
 * Integration with Spring AOP (Aspect Orineted Programming)
 
-NOTE: Application context is the most frequently used
+NOTE: Application context is the most frequently used.
+
 Most enterprise applications use application context which is recommended for: web apps, web servises - REST API and micro services.
-
-
 
 
 
