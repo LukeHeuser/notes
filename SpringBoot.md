@@ -98,6 +98,36 @@ NOTE: Application context is the most frequently used.
 
 Most enterprise applications use application context which is recommended for: web apps, web servises - REST API and micro services.
 
+# POJO vs JavaBean vs SpringBean
+
+EJB = Enterprise Java Beans (These are rarely used or seen)
+
+There are 3 constraints to EJB's:
+1. It has a public no-arg constructor
+2. uses getters and setters
+3. must impliment the interface serializable
+
+### SpringBean
+
+Any java object that is managed by the spring framework is called a spring bean. 
+
+Spring uses the IOC Container (`Bean Factory` or more likely, `Application Context`) to manage these Objects
+
+### POJO
+
+POJO = Plain Old Java Object 
+
+Any Java Object is a POJO
+
+
+
+
+
+
+
+
+
+
 
 
 
