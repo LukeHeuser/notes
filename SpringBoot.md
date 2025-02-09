@@ -137,9 +137,22 @@ public Person person3Parameters(String name, int age, Address address3){
 }
 ```
 
+Another option to handling this exception if you do not want a primary, is to use `@Qualifier`.
 
+```
+@Bean
+public Person person5Qualifier(String name, int age, @Qualifier("address3Qualifier") Address adress){
+    return new Person(name, age, adress);
+}
 
+@Bean(name = "address3")
+@Qualifier("address3Qualifier")
+public Address address3() {
+    return new Address("William St.", "Delaware");
+}
+```
 
+The `@Qualifier` works by auto injecting a designated bean into the Spring beans parameter.
 
 
 
