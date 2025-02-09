@@ -1,5 +1,10 @@
 # Java fundamentals & Basics
 
+# OOP Vs FP
+
+`Object Oriented Programming`: Makes code understandable by encapsulating moving parts.
+
+`Function Programming`: Makes code understandable by minimizing moving parts.
 
 # Expressions
 An `expression` is a coding contruct made up of `variables`, `operators`, & `method invocations` that equate to a single value. The expression is the code segment found on the right side of the equals sign in an assignment or decleration statement.
