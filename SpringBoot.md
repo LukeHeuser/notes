@@ -119,8 +119,23 @@ POJO = Plain Old Java Object
 
 Any Java Object is a POJO
 
+# What To Do With Multiple Matching Beans
+When there are multiple matching beans, these are called candidatess. Spring will throw an exception if one of the beans (candidates) is not `@Primary`.
 
+Below is an example of setting a bean as a primary over another candidate. Remember, that when calling `context.getBean(Person.class)`, there would be an exception if one of the spring beans isn't set as the primary.
 
+```
+@Bean
+@Primary
+public Person person4Parameters(String name, int age, Address address){
+    return new Person(name, age, address);
+}
+
+@Bean
+public Person person3Parameters(String name, int age, Address address3){
+    return new Person(name, age, address3);
+}
+```
 
 
 
