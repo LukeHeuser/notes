@@ -27,7 +27,7 @@ Spring Boot Makes using the Spring Frame work *MUCH* easier.
 * Loose Coupling
 * Dependency Injection
 * IOC Container
-* Application Context
+* ApplicationContext
 * Spring Beans
 * Autowiring
 * Component Scan
@@ -89,14 +89,31 @@ var context = new AnnotationConfigApplicationContext(*ConfigurationClassName*.cl
 ## Two Types of IOC Containers
 
 1. Bean Factory: Basic Spring Container
-2. Application Context: Advanced Spring Container with enterprise specific features such AS:
+2. ApplicationContext: Advanced Spring Container with enterprise specific features such AS:
 * Building a web application
 * Internationalization features
 * Integration with Spring AOP (Aspect Orineted Programming)
 
-NOTE: Application context is the most frequently used.
+NOTE: ApplicationContext is the most frequently used.
 
-Most enterprise applications use application context which is recommended for: web apps, web servises - REST API and micro services.
+Most enterprise applications use ApplicationContext which is recommended for: web apps, web servises - REST API and micro services.
+
+# How is the ApplicationContext an IOC Container?
+
+1. Bean Management:The ApplicationContext maintains and manages the lifecycle of beans, ensuring the dependencies are injected where needed.
+
+2. Dependency Injection: Automatically injects required dependencies, following the IoC principle.
+
+3. Enhancements Over BeanFactory The BeanFactory is the basic IoC container, ApplicationContext provides additional Feaetures like:
+
+*ClassPathXmlApplicationContext
+
+*FileSystemXmlApplicationContext
+
+*AnnotationConfigApplicationContext
+
+*GenericWebApplicationContext
+
 
 # POJO vs JavaBean vs SpringBean
 
@@ -111,7 +128,7 @@ There are 3 constraints to EJB's:
 
 Any java object that is managed by the spring framework is called a spring bean. 
 
-Spring uses the IOC Container (`Bean Factory` or more likely, `Application Context`) to manage these Objects
+Spring uses the IOC Container (`BeanFactory` or more likely, `ApplicationContext`) to manage these Objects
 
 ### POJO
 
@@ -153,6 +170,13 @@ public Address address3() {
 ```
 
 The `@Qualifier` works by auto injecting a designated bean into the Spring beans parameter.
+
+# How to Wire Spring to Create and Manage Spring Beans
+
+Firstly, we will use the annotation `@Configuration`, on our class that contains the `Spring Context`. Typically, the Spring `Application Context` which is an `IOC (Inversion of Control) Container`. 
+
+
+
 
 
 
