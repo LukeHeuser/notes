@@ -209,7 +209,9 @@ public class GameRunner {
 }
 ```
 
-We then need to use the annatation `@ComponentScan("name.of.package")`
+We then need to use the annatation `@ComponentScan("name.of.package")`. This tells the IoC Where to look to create spring beans from.
+
+`@Component` indicates that an annotated class is a *component*. Such classes are considered as coandidates for auto-detection when suing annotation-based configuration and class path scanning.
 
 
 ```
