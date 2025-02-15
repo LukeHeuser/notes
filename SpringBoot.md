@@ -100,19 +100,25 @@ Most enterprise applications use ApplicationContext which is recommended for: we
 
 # How is the ApplicationContext an IOC Container?
 
-1. Bean Management:The ApplicationContext maintains and manages the lifecycle of beans, ensuring the dependencies are injected where needed.
+1. Bean Management: 
 
-2. Dependency Injection: Automatically injects required dependencies, following the IoC principle.
+The ApplicationContext maintains and manages the lifecycle of beans, ensuring the dependencies are injected where needed.
 
-3. Enhancements Over BeanFactory The BeanFactory is the basic IoC container, ApplicationContext provides additional Feaetures like:
+2. Dependency Injection:
 
-*ClassPathXmlApplicationContext
+ Automatically injects required dependencies, following the IoC principle.
 
-*FileSystemXmlApplicationContext
+3. Enhancements Over BeanFactory: 
 
-*AnnotationConfigApplicationContext
+The BeanFactory is the basic IoC container, ApplicationContext provides additional Feaetures like:
 
-*GenericWebApplicationContext
+* ClassPathXmlApplicationContext
+
+* FileSystemXmlApplicationContext
+
+* AnnotationConfigApplicationContext
+
+* GenericWebApplicationContext
 
 
 # POJO vs JavaBean vs SpringBean
