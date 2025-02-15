@@ -184,9 +184,67 @@ The `@Qualifier` works by auto injecting a designated bean into the Spring beans
 
 Firstly, we will use the annotation `@Configuration`, on our class that contains the `Spring Context`. Typically, the Spring `ApplicationContext`, which is an `IoC (Inversion of Control) Container`. 
 
+We would then use the `@Conponent` Annotation on the classes that we intent for the spring context to manage. 
+
+I.E.
+```
+package com.heuser.learn_spring_framwork.game;
+import org.springframework.stereotype.Component;
+
+@Component
+public class GameRunner {
+    private GameConsole game;
+
+    public GameRunner(GameConsole game){
+        this.game = game;
+    }
+
+    public void run() {
+        System.out.println("Running game: " + game);
+        game.right();
+        game.left();
+        game.up();
+        game.down();
+    }
+}
+```
+
+We then need to use the annatation `@ComponentScan("name.of.package")`
 
 
+```
+@Configuration
+@ComponentScan("com.heuser.learn_spring_framwork.game")
+@ComponentScan("com.heuser.learn_spring_framwork.game")
+public class App03GamingSpringBeans {
 
+    // The below beans shows what Spring is creating for us.
+    // The above component scans is responsible for this implementation.
+    // Each package is declared and the appropriate annotation
+    // @Component is used at that package location
+
+//    @Bean
+//    public GameConsole game() {
+//        var game = new RideFive();
+//        return game;
+//    }
+//    @Bean
+//    public GameRunner gameRunner(GameConsole game) {
+//        System.out.println(game);
+//        return new GameRunner(game);
+//    }
+
+    public static void main(String[] args) {
+
+        var context =  new AnnotationConfigApplicationContext
+                (App03GamingSpringBeans.class);
+
+        context.getBean(GameConsole.class).up();
+        context.getBean(GameRunner.class).run();
+
+    }
+}
+```
 
 
 
