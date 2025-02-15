@@ -112,14 +112,17 @@ The ApplicationContext maintains and manages the lifecycle of beans, ensuring th
 
 The BeanFactory is the basic IoC container, ApplicationContext provides additional Feaetures like:
 
+* Event propagation
+* Declarative bean creation
+* Internationalization support
+* Environment abstraction
+
+4. Different Implementations: Common implementations of Application context include:
+
 * ClassPathXmlApplicationContext
-
 * FileSystemXmlApplicationContext
-
 * AnnotationConfigApplicationContext
-
 * GenericWebApplicationContext
-
 
 # POJO vs JavaBean vs SpringBean
 
@@ -179,7 +182,13 @@ The `@Qualifier` works by auto injecting a designated bean into the Spring beans
 
 # How to Wire Spring to Create and Manage Spring Beans
 
-Firstly, we will use the annotation `@Configuration`, on our class that contains the `Spring Context`. Typically, the Spring `Application Context` which is an `IOC (Inversion of Control) Container`. 
+Firstly, we will use the annotation `@Configuration`, on our class that contains the `Spring Context`. Typically, the Spring `ApplicationContext`, which is an `IoC (Inversion of Control) Container`. 
+
+
+
+
+
+
 
 
 
